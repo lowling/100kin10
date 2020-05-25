@@ -1,0 +1,108 @@
+// General Stuff
+@import url("https://use.typekit.net/wmx8jns.css");
+*{
+  box-sizing: border-box;
+  font-family: brandon-grotesque, sans-serif;
+}
+body{
+  margin: 0;
+}
+$cell: 24px;
+$green: #398981;
+$purple: #5D4F60;
+$transparent: rgba(255,255,255,.75);
+
+// Toggle
+#toggle{
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  position: fixed;
+  top: $cell;
+  left: $cell;
+  background: none;
+  border: 2px solid $green;
+  outline: 0;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $green;
+  background: $transparent;
+  padding: $cell/2;
+  cursor: pointer;
+  &:active{
+    opacity: .7;
+  }
+  #toggle-icon{
+    width: $cell;
+    margin-right: $cell/4;
+    &:after, &:before, & > div{
+      background-color: $green;
+      border-radius: 3px;
+      content: '';
+      display: block;
+      height: 3px;
+      margin: 4px 0;
+      transition: transform .2s ease-in-out;
+    }
+  }
+}
+
+// Navigation
+nav{
+  position: fixed;
+  height: 100vh;
+  width: 320px;
+  padding: $cell*4 $cell $cell;
+  background: $transparent;
+  border-right: 3px $green solid;
+  transition: .3s left, .2s opacity;
+  left: -320px;
+  opacity: 0;
+  overflow: scroll;
+  a{
+    color: $green;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: $cell/2;
+    border-bottom: 1px dotted $purple;
+    span{
+      font-size: 10px;
+      display: block;
+    }
+    img{
+      float: left;
+      max-height: 40px;
+      margin-left: $cell*-.5;
+      width:auto;
+      margin-right: $cell/4;
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    width: 100%;
+    border: 0;
+  }
+}
+
+// "show_nav" State
+.show_nav{
+  #toggle-icon{
+    &:before {
+      transform: translateY(7px) rotate(135deg);
+    }
+    &:after {
+      transform: translateY(-7px) rotate(-135deg);
+    }
+    div {
+      transform: scale(0);
+    }
+  }
+  nav{
+    left: 0;
+    opacity: 1;
+  }
+}

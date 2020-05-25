@@ -1,0 +1,59 @@
+<head>
+  <meta charset="utf-8">
+
+  <title>100kin10 Navigaiton</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <button id="toggle" onclick="toggleNav()">
+    <div id="toggle-icon"><div></div></div>
+    Menu
+  </button>
+  <nav>
+    <a href="#">Introduction</a>
+    <a href="#">Using this field guide</a>
+    <a href="#">
+      <img src="images/TOC_icon1-01.png">
+      Strategy 1
+      <span>Build a Coalition</span>
+    </a>
+    <a href="#">
+      <img src="images/TOC_icon2-02.png">
+      Strategy 2
+      <span>Understand, Identify and FIND Focus</span>
+    </a>
+    <a href="#">
+      <img src="images/TOC_icon3-03.png">
+      Strategy 3
+      <span>Support People to Work Together</span>
+    </a>
+    <a href="#">
+      <img src="images/TOC_icon4-04.png">
+      Strategy 4
+      <span>Avoid Recreating the Wheel</span>
+    </a>
+    <a href="#">
+      <img src="images/TOC_icon5-05.png">
+      Strategy 5
+      <span>Mobilize Problem Solving</span>
+    </a>
+    <a href="#">
+      <img src="images/TOC_icon6-06.png">
+      Strategy 6
+      <span>Sustain Efforts over the Long Haul</span>
+    </a>
+  </nav>
+  <script>
+    function toggleNav() {
+      var element = document.getElementsByTagName('body')[0];
+      element.classList.toggle('show_nav');
+    }
+  </script>
+
+  <!-- Begin temp. div -->
+  <div style="height: 500vh; background:linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);"></div>
+  <!-- End temp. div -->
+
+</body>

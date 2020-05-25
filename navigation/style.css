@@ -1,0 +1,122 @@
+@import url("https://use.typekit.net/wmx8jns.css");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: brandon-grotesque, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+#toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  background: none;
+  border: 2px solid #398981;
+  outline: 0;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #398981;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 12px;
+  cursor: pointer;
+}
+
+#toggle:active {
+  opacity: .7;
+}
+
+#toggle #toggle-icon {
+  width: 24px;
+  margin-right: 6px;
+}
+
+#toggle #toggle-icon:after, #toggle #toggle-icon:before, #toggle #toggle-icon > div {
+  background-color: #398981;
+  border-radius: 3px;
+  content: '';
+  display: block;
+  height: 3px;
+  margin: 4px 0;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+
+nav {
+  position: fixed;
+  height: 100vh;
+  width: 320px;
+  padding: 96px 24px 24px;
+  background: rgba(255, 255, 255, 0.75);
+  border-right: 3px #398981 solid;
+  -webkit-transition: .3s left, .2s opacity;
+  transition: .3s left, .2s opacity;
+  left: -320px;
+  opacity: 0;
+  overflow: scroll;
+}
+
+nav a {
+  color: #398981;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: 12px;
+  border-bottom: 1px dotted #5D4F60;
+}
+
+nav a span {
+  font-size: 10px;
+  display: block;
+}
+
+nav a img {
+  float: left;
+  max-height: 40px;
+  margin-left: -12px;
+  width: auto;
+  margin-right: 6px;
+}
+
+@media only screen and (max-width: 550px) {
+  nav {
+    width: 100%;
+    border: 0;
+  }
+}
+
+.show_nav #toggle-icon:before {
+  -webkit-transform: translateY(7px) rotate(135deg);
+          transform: translateY(7px) rotate(135deg);
+}
+
+.show_nav #toggle-icon:after {
+  -webkit-transform: translateY(-7px) rotate(-135deg);
+          transform: translateY(-7px) rotate(-135deg);
+}
+
+.show_nav #toggle-icon div {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.show_nav nav {
+  left: 0;
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */
