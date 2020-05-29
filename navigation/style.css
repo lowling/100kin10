@@ -78,6 +78,16 @@ nav a {
   display: block;
   padding: 12px;
   border-bottom: 1px dotted #5D4F60;
+  -webkit-transition: .2s opacity;
+  transition: .2s opacity;
+}
+
+nav a:hover {
+  opacity: .4;
+}
+
+nav a:active {
+  opacity: .7;
 }
 
 nav a span {

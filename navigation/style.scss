@@ -70,6 +70,13 @@ nav{
     display: block;
     padding: $cell/2;
     border-bottom: 1px dotted $purple;
+    transition: .2s opacity;
+    &:hover{
+      opacity: .4;
+    }
+    &:active{
+      opacity: .7;
+    }
     span{
       font-size: 10px;
       display: block;

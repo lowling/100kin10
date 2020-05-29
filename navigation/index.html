@@ -12,48 +12,65 @@
     Menu
   </button>
   <nav>
-    <a href="#">Introduction</a>
-    <a href="#">Using this field guide</a>
-    <a href="#">
+    <a href="#intro">Introduction</a>
+    <a href="#using">Using this field guide</a>
+    <a href="#1">
       <img src="images/TOC_icon1-01.png">
       Strategy 1
       <span>Build a Coalition</span>
     </a>
-    <a href="#">
+    <a href="#2">
       <img src="images/TOC_icon2-02.png">
       Strategy 2
       <span>Understand, Identify and FIND Focus</span>
     </a>
-    <a href="#">
+    <a href="#3">
       <img src="images/TOC_icon3-03.png">
       Strategy 3
       <span>Support People to Work Together</span>
     </a>
-    <a href="#">
+    <a href="#4">
       <img src="images/TOC_icon4-04.png">
       Strategy 4
       <span>Avoid Recreating the Wheel</span>
     </a>
-    <a href="#">
+    <a href="#5">
       <img src="images/TOC_icon5-05.png">
       Strategy 5
       <span>Mobilize Problem Solving</span>
     </a>
-    <a href="#">
+    <a href="#6">
       <img src="images/TOC_icon6-06.png">
       Strategy 6
       <span>Sustain Efforts over the Long Haul</span>
     </a>
   </nav>
   <script>
-    function toggleNav() {
-      var element = document.getElementsByTagName('body')[0];
-      element.classList.toggle('show_nav');
-    }
+  function toggleNav() {
+    var element = document.getElementsByTagName('body')[0];
+    element.classList.toggle('show_nav');
+  }
   </script>
 
-  <!-- Begin temp. div -->
-  <div style="height: 500vh; background:linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);"></div>
-  <!-- End temp. div -->
+  <!-- Begin temporary content -->
+  <style>
+    html{
+      scroll-behavior: smooth;
+    }
+  </style>
+  <div id="intro" style="position: absolute; top:2300px;"></div>
+  <div id="using" style="position: absolute; top:3500px;"></div>
+  <div id="1" style="position: absolute; top:4310px;"></div>
+  <div id="2" style="position: absolute; top:9850px"></div>
+  <div id="3" style="position: absolute; top:15150px;"></div>
+  <div id="4" style="position: absolute; top:20916px"></div>
+  <div id="5" style="position: absolute; top:26880px"></div>
+  <div id="6" style="position: absolute; top:30950px"></div>
+  <img src="temp/1.jpg" style="width: 100%; height: auto;">
+  <img src="temp/2.jpg" style="width: 100%; height: auto;">
+  <!-- <script>
+  document.onmousemove = function(e) { document.title = "X: " + e.pageX + " - Y: " + e.pageY; };
+  </script> -->
+  <!-- End temporary content -->
 
 </body>
