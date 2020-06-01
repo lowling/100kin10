@@ -1,0 +1,50 @@
+/*--------------------------------------------------------------
+# BOARD 2 STYLES
+--------------------------------------------------------------*/
+@import url("https://use.typekit.net/wmx8jns.css");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: brandon-grotesque, sans-serif;
+}
+
+body {
+  margin: 0;
+  font: Regular 28px/36px brandon-grotesque;
+}
+
+h1 {
+  font: Bold 46px/58px brandon-grotesque;
+  letter-spacing: 1.15px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font: Bold 24px/34px brandon-grotesque;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font: Bold 24px/34px brandon-grotesque;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+}
+
+img {
+  margin: 0;
+  height: auto;
+}
+
+a img {
+  outline: none;
+}
+
+section > p {
+  font: Regular 28px/36px brandon-grotesque;
+}
+
+section div p {
+  font: Regular 22px/28px brandon-grotesque;
+}
+/*# sourceMappingURL=style.css.map */

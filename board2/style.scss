@@ -1,0 +1,73 @@
+/*--------------------------------------------------------------
+# BOARD 2 STYLES
+--------------------------------------------------------------*/
+// Fonts
+@import url("https://use.typekit.net/wmx8jns.css");
+
+// Variables
+$cell: 24px;
+$green: #398981;
+$yellow: #FDF5CC;
+$gold: #E8BC51;
+$peach: #FFB688;
+$purple: #5D4F60;
+$gray: #F6F9F8;
+$transparent: rgba(255,255,255,.75);
+$font-standard: Regular 28px/36px brandon-grotesque;
+$font-smaller: Regular 22px/28px brandon-grotesque;
+
+// Mixins
+@mixin h1 {
+  font: Bold 46px/58px brandon-grotesque;
+  letter-spacing: 1.15px;
+  text-transform: uppercase;
+}
+@mixin h2 {
+  font: Bold 24px/34px brandon-grotesque;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+@mixin h3 {
+  font: Bold 24px/34px brandon-grotesque;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+}
+
+// Elements
+*{
+  box-sizing: border-box;
+  font-family: brandon-grotesque, sans-serif;
+}
+body{
+  margin: 0;
+  font: $font-standard;
+}
+h1{
+  @include h1();
+}
+h2{
+  @include h2();
+}
+h3{
+  @include h3();
+}
+img{
+  margin: 0;
+  height: auto;
+}
+a{
+  img{
+    outline: none;
+  }
+}
+section{
+  & > p{
+    font: $font-standard;
+  }
+  div p{
+    font: $font-smaller;
+  }
+}
+
+// Global Classes
+.
