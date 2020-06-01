@@ -1,0 +1,161 @@
+/*--------------------------------------------------------------
+# BOARD 2 STYLES (Shared)
+--------------------------------------------------------------*/
+@import url("https://use.typekit.net/wmx8jns.css");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: brandon-grotesque, sans-serif;
+}
+
+body {
+  margin: 0;
+  font: Regular 28px/36px brandon-grotesque;
+}
+
+h1 {
+  font: Bold 46px/58px brandon-grotesque;
+  letter-spacing: 1.15px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font: Bold 24px/34px brandon-grotesque;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font: Bold 24px/34px brandon-grotesque;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+}
+
+img {
+  margin: 0;
+  height: auto;
+}
+
+a img {
+  outline: none;
+}
+
+section > p {
+  font: Regular 28px/36px brandon-grotesque;
+}
+
+section div p {
+  font: Regular 22px/28px brandon-grotesque;
+}
+
+/*--------------------------------------------------------------
+# BOARD 1 STYLES 
+--------------------------------------------------------------*/
+.dotted-line-1 {
+  overflow: visible;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  width: 4.4vw;
+  opacity: .75;
+  margin-bottom: .4vw;
+  height: 1px;
+}
+
+.b1_section-1 {
+  background-image: url("img/cover1_05.png");
+  width: 100%;
+  padding-top: 115%;
+  background-position: top center;
+  background-size: 100% auto;
+  position: relative;
+  margin-top: -10%;
+  margin-bottom: -38%;
+}
+
+.b1_section-1_logo {
+  position: absolute;
+  margin: 0px auto;
+  top: 38%;
+  width: 100%;
+  text-align: center;
+}
+
+.b1_section-1_logo_img {
+  margin: 0px auto;
+  width: 29vw;
+}
+
+.b1_section-2_title {
+  color: #5D4F60;
+  font-size: 2.1vw;
+  font-weight: bold;
+  line-height: 2.7vw;
+  width: 100%;
+  margin: 1.1vw auto;
+  padding-left: 23vw;
+}
+
+.b1_section-2_toc {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 3.2vw;
+  margin-top: 2vw;
+}
+
+.b1_section-2_toc li {
+  padding: 0;
+  font-size: 1.25vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 4.7vw;
+}
+
+.b1_section-2_list-item-img {
+  max-width: 6.8vw;
+  max-height: 6.6vw;
+  text-align: right;
+}
+
+.b1_section-2_list-item-img img {
+  width: 100%;
+}
+
+.b1_section-2_list-item-text {
+  margin-top: -4.1vw;
+  padding-left: 6.8vw;
+  color: #398981;
+}
+
+.b1_section-2_list-item-text small {
+  color: black;
+  font-size: 1vw;
+  font-weight: bold;
+  vertical-align: top;
+  display: inline-block;
+  padding-top: .1vw;
+}
+
+.b1_section-2_toc_push-1 {
+  margin-left: 13.5vw;
+  margin-bottom: 1.5vw;
+}
+
+.b1_section-2_toc_push-2 {
+  margin-left: 30.2vw;
+  margin-bottom: 2vw;
+}
+
+.b1_section-2_toc_push-2.first {
+  margin-top: 3.2vw;
+}
+
+.b1_section-2_toc_push-3 {
+  margin-left: 50vw;
+  margin-bottom: 2vw;
+}
+
+.b1_section-2_toc_push-3.first {
+  margin-top: 6vw;
+}
+/*# sourceMappingURL=style.css.map */
