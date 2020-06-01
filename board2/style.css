@@ -47,4 +47,8 @@ section > p {
 section div p {
   font: Regular 22px/28px brandon-grotesque;
 }
+
+.right {
+  float: right;
+}
 /*# sourceMappingURL=style.css.map */
