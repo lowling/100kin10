@@ -6,6 +6,8 @@
 
 // Variables
 $cell: 24px;
+$black: black;
+$white: white;
 $green: #398981;
 $yellow: #FDF5CC;
 $gold: #E8BC51;
@@ -13,12 +15,16 @@ $peach: #FFB688;
 $purple: #5D4F60;
 $gray: #F6F9F8;
 $transparent: rgba(255,255,255,.75);
-$font-standard: Regular 28px/36px brandon-grotesque;
-$font-smaller: Regular 22px/28px brandon-grotesque;
+$font-standard: 24px/36px brandon-grotesque;
+$font-small: 18px/24px brandon-grotesque;
+$contaier-wide: 1040px;
+$container-standard: 720px;
+$container-smaller: 460px;
+$container-small: 360px;
 
 // Mixins
 @mixin h1 {
-  font: Bold 46px/58px brandon-grotesque;
+  font: Bold 38px/42px brandon-grotesque;
   letter-spacing: 1.15px;
   text-transform: uppercase;
 }
@@ -28,7 +34,7 @@ $font-smaller: Regular 22px/28px brandon-grotesque;
   text-transform: uppercase;
 }
 @mixin h3 {
-  font: Bold 24px/34px brandon-grotesque;
+  font: Bold 22px/30px brandon-grotesque;
   letter-spacing: 0.36px;
   text-transform: capitalize;
 }
@@ -53,6 +59,7 @@ h3{
 }
 img{
   margin: 0;
+  max-width: 100%;
   height: auto;
 }
 a{
@@ -61,16 +68,46 @@ a{
   }
 }
 section{
-  & > p{
-    font: $font-standard;
+  position: relative;
+  overflow: hidden;
+  background-size: 100%;
+  background-attachment: fixed;
+  padding: $cell*3 $cell/2;
+  & > p, & > h3, & > h2, & > h1{
+    text-align: center;
   }
-  div p{
-    font: $font-smaller;
+  & > p{
+    display: block;
+    font: $font-standard;
+    max-width: $contaier-wide;
+    margin: 1em auto;
+  }
+  div{
+    max-width: $contaier-wide;
+    margin: 1em auto;
+    p{
+      font: $font-small;
+    }
   }
 }
-blockquote{}
-hr{}
+blockquote{
+  display: block;
+  border: 4px solid $black;
+  padding: $cell*2;
+  margin: 0;
+  text-align: center;
+  font: $font-small;
+}
+hr{
+  clear: both;
+  max-width: $contaier-wide;
+  border: none;
+  border-bottom: 2px dashed $green;
+  margin: 0 auto $cell*3 auto;
+  padding-top: $cell*3;
+}
 ul{
+  font: $font-small;
   li{}
 }
 
@@ -78,4 +115,271 @@ ul{
 .number{}
 .right{
   float:right;
+}
+.left{
+  left: 0;
+  float: left;
+}
+.right{
+  right: 0;
+  float: right;
+}
+.icon{
+  max-width: $cell*4;
+}
+.half{
+  width: 50%;
+}
+.number{
+  font-size: 50px;
+  font-weight: bold;
+}
+.ellipses{
+  display: block;
+  &:before{
+    content: '....';
+    font-size: 25px;
+    margin-left: -32px;
+    padding-right: $cell/2;
+  }
+}
+.columns{
+  display: flex;
+  align-items: center;
+}
+
+// Segments
+#b1{
+  background-color: $yellow;
+  color: $purple;
+}
+#b2{
+  background-color: $white;
+  h3{
+    color: $purple;
+  }
+  p{
+    display: block;
+    max-width: $container-smaller;
+  }
+}
+#b3{
+  background-color: $purple;
+  color: $yellow;
+}
+#b4{
+  background: $white;
+  h1{
+    color: $green;
+  }
+  h3{
+    color: $gold;
+  }
+  blockquote{
+    border-color: $green;
+    color: $green;
+  }
+  #tree_thing{
+    position: relative;
+    & > div{
+      .number{
+        color: $gold;
+        margin: 0 0 $cell;
+        clear: both;
+      }
+      position: absolute;
+      top: 0;
+      width: 300px;
+      &:nth-last-of-type(1){
+        right: 0;
+      }
+    }
+  }
+}
+#b5{
+  background-color: $gold;
+  h3{
+    color: $green;
+  }
+}
+#b6{
+  display: flex;
+  flex-wrap: wrap;
+  & > p{
+    text-align: left;
+    color: $green;
+  }
+  #four_trees{
+    display: flex;
+    flex-wrap: wrap;
+    & > div{
+      width: 25%;
+      .number{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $gray;
+        height: $cell*6;
+        width: $cell*6;
+        border-radius: 50%;
+        color: $gold;
+        text-align: center;
+      }
+      p{ 
+        display: block;
+        text-align: center;
+        margin: 0 $cell;
+      }
+      img{
+        margin-top: $cell;
+      }
+    }
+  }
+}
+#b7{
+  background-color: $gray;
+  h1{
+    color: $purple;
+  }
+  h3:first-of-type{
+    color: $peach;
+  }
+  blockquote{
+    color: $peach;
+    border-color: $peach;
+    margin-left: $cell*2;
+  }
+}
+#b8{
+  & > div{
+    position: relative;
+    & > div{
+      position: absolute;
+      background: $gray;
+      border: 1px solid $peach;
+      width: 50%;
+      right: 0;
+      top: 0;
+      padding: $cell;
+    }
+    div:before{
+      position: absolute;
+      left: -40px;
+      color: $peach;
+      font-size: 40px;
+      font-weight: bold;
+    }
+    &:nth-of-type(1) div:before{
+      content: '1.';
+    }
+    &:nth-of-type(2) div:before{
+      content: '2.';
+    }
+    &:nth-of-type(3) div:before{
+      content: '3.';
+    }
+  }
+}
+#b9{
+  background-color: $yellow;
+  #b9_title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & > *{
+      width: 50%;
+    }
+  }
+  h3{
+    color: $purple;
+  }
+  ul{
+    list-style: none;
+    font-weight: bold;
+    li{
+      margin-top: 1em;
+      color: $purple
+    }
+    li:before{
+      content: "\2022";
+      color: $peach;
+      font-weight: bold;
+      width: 1em;
+      margin-left: 0em;
+      padding-right: 1em;
+    }
+  }
+}
+#b10{
+  background-color: $purple;
+  color: $yellow;
+  .interview{
+    color: $peach;
+    margin-top: $cell*3;
+  }
+}
+#b11{}
+#b12{
+  background-color: $yellow;
+}
+#b13{
+  h1{
+    color: $purple;
+  }
+  h3{
+    color: $green;
+  }
+}
+#b14{
+  background-color: $gray;
+  h1, h3{
+    color: $purple;
+  }
+  p, h3{
+    width: 50%;
+    text-align: center;
+  }
+  .b14_columns{
+    display: flex;
+  }
+  #b14_title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    & > *{
+      width: 50%;
+    }    
+  }
+  img{
+    max-width: 50%;
+  }
+  #b14_image2, #b14_image3, #b14_image4, #b14_image5, #b14_image6{
+  }
+  #b14_image2{
+    position: absolute;
+    left: -200px;
+  }
+  #b14_image3{}
+  #b14_image4{
+    position: absolute;
+    right: -100px;
+  }
+  #b14_image5{
+    position: absolute;
+    left: -100px;
+  }
+  #b14_image6{}
+  #b14_image7{
+    position: absolute;
+    left: -100px;
+  }
+  #b14_image7{}
+  #b14_image8{}
+  #b14_image9{}
+  #b14_image10{
+    position: absolute;
+    right: -100px;
+  }
+
 }

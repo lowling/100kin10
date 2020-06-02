@@ -10,11 +10,11 @@
 
 body {
   margin: 0;
-  font: Regular 28px/36px brandon-grotesque;
+  font: 24px/36px brandon-grotesque;
 }
 
 h1 {
-  font: Bold 46px/58px brandon-grotesque;
+  font: Bold 38px/42px brandon-grotesque;
   letter-spacing: 1.15px;
   text-transform: uppercase;
 }
@@ -26,13 +26,14 @@ h2 {
 }
 
 h3 {
-  font: Bold 24px/34px brandon-grotesque;
+  font: Bold 22px/30px brandon-grotesque;
   letter-spacing: 0.36px;
   text-transform: capitalize;
 }
 
 img {
   margin: 0;
+  max-width: 100%;
   height: auto;
 }
 
@@ -40,15 +41,403 @@ a img {
   outline: none;
 }
 
+section {
+  position: relative;
+  overflow: hidden;
+  background-size: 100%;
+  background-attachment: fixed;
+  padding: 72px 12px;
+}
+
+section > p, section > h3, section > h2, section > h1 {
+  text-align: center;
+}
+
 section > p {
-  font: Regular 28px/36px brandon-grotesque;
+  display: block;
+  font: 24px/36px brandon-grotesque;
+  max-width: 1040px;
+  margin: 1em auto;
+}
+
+section div {
+  max-width: 1040px;
+  margin: 1em auto;
 }
 
 section div p {
-  font: Regular 22px/28px brandon-grotesque;
+  font: 18px/24px brandon-grotesque;
+}
+
+blockquote {
+  display: block;
+  border: 4px solid black;
+  padding: 48px;
+  margin: 0;
+  text-align: center;
+  font: 18px/24px brandon-grotesque;
+}
+
+hr {
+  clear: both;
+  max-width: 1040px;
+  border: none;
+  border-bottom: 2px dashed #398981;
+  margin: 0 auto 72px auto;
+  padding-top: 72px;
+}
+
+ul {
+  font: 18px/24px brandon-grotesque;
 }
 
 .right {
   float: right;
+}
+
+.left {
+  left: 0;
+  float: left;
+}
+
+.right {
+  right: 0;
+  float: right;
+}
+
+.icon {
+  max-width: 96px;
+}
+
+.half {
+  width: 50%;
+}
+
+.number {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.ellipses {
+  display: block;
+}
+
+.ellipses:before {
+  content: '....';
+  font-size: 25px;
+  margin-left: -32px;
+  padding-right: 12px;
+}
+
+.columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#b1 {
+  background-color: #FDF5CC;
+  color: #5D4F60;
+}
+
+#b2 {
+  background-color: white;
+}
+
+#b2 h3 {
+  color: #5D4F60;
+}
+
+#b2 p {
+  display: block;
+  max-width: 460px;
+}
+
+#b3 {
+  background-color: #5D4F60;
+  color: #FDF5CC;
+}
+
+#b4 {
+  background: white;
+}
+
+#b4 h1 {
+  color: #398981;
+}
+
+#b4 h3 {
+  color: #E8BC51;
+}
+
+#b4 blockquote {
+  border-color: #398981;
+  color: #398981;
+}
+
+#b4 #tree_thing {
+  position: relative;
+}
+
+#b4 #tree_thing > div {
+  position: absolute;
+  top: 0;
+  width: 300px;
+}
+
+#b4 #tree_thing > div .number {
+  color: #E8BC51;
+  margin: 0 0 24px;
+  clear: both;
+}
+
+#b4 #tree_thing > div:nth-last-of-type(1) {
+  right: 0;
+}
+
+#b5 {
+  background-color: #E8BC51;
+}
+
+#b5 h3 {
+  color: #398981;
+}
+
+#b6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#b6 > p {
+  text-align: left;
+  color: #398981;
+}
+
+#b6 #four_trees {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#b6 #four_trees > div {
+  width: 25%;
+}
+
+#b6 #four_trees > div .number {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F6F9F8;
+  height: 144px;
+  width: 144px;
+  border-radius: 50%;
+  color: #E8BC51;
+  text-align: center;
+}
+
+#b6 #four_trees > div p {
+  display: block;
+  text-align: center;
+  margin: 0 24px;
+}
+
+#b6 #four_trees > div img {
+  margin-top: 24px;
+}
+
+#b7 {
+  background-color: #F6F9F8;
+}
+
+#b7 h1 {
+  color: #5D4F60;
+}
+
+#b7 h3:first-of-type {
+  color: #FFB688;
+}
+
+#b7 blockquote {
+  color: #FFB688;
+  border-color: #FFB688;
+  margin-left: 48px;
+}
+
+#b8 > div {
+  position: relative;
+}
+
+#b8 > div > div {
+  position: absolute;
+  background: #F6F9F8;
+  border: 1px solid #FFB688;
+  width: 50%;
+  right: 0;
+  top: 0;
+  padding: 24px;
+}
+
+#b8 > div div:before {
+  position: absolute;
+  left: -40px;
+  color: #FFB688;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#b8 > div:nth-of-type(1) div:before {
+  content: '1.';
+}
+
+#b8 > div:nth-of-type(2) div:before {
+  content: '2.';
+}
+
+#b8 > div:nth-of-type(3) div:before {
+  content: '3.';
+}
+
+#b9 {
+  background-color: #FDF5CC;
+}
+
+#b9 #b9_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#b9 #b9_title > * {
+  width: 50%;
+}
+
+#b9 h3 {
+  color: #5D4F60;
+}
+
+#b9 ul {
+  list-style: none;
+  font-weight: bold;
+}
+
+#b9 ul li {
+  margin-top: 1em;
+  color: #5D4F60;
+}
+
+#b9 ul li:before {
+  content: "\2022";
+  color: #FFB688;
+  font-weight: bold;
+  width: 1em;
+  margin-left: 0em;
+  padding-right: 1em;
+}
+
+#b10 {
+  background-color: #5D4F60;
+  color: #FDF5CC;
+}
+
+#b10 .interview {
+  color: #FFB688;
+  margin-top: 72px;
+}
+
+#b12 {
+  background-color: #FDF5CC;
+}
+
+#b13 h1 {
+  color: #5D4F60;
+}
+
+#b13 h3 {
+  color: #398981;
+}
+
+#b14 {
+  background-color: #F6F9F8;
+}
+
+#b14 h1, #b14 h3 {
+  color: #5D4F60;
+}
+
+#b14 p, #b14 h3 {
+  width: 50%;
+  text-align: center;
+}
+
+#b14 .b14_columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#b14 #b14_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+
+#b14 #b14_title > * {
+  width: 50%;
+}
+
+#b14 img {
+  max-width: 50%;
+}
+
+#b14 #b14_image2 {
+  position: absolute;
+  left: -200px;
+}
+
+#b14 #b14_image4 {
+  position: absolute;
+  right: -100px;
+}
+
+#b14 #b14_image5 {
+  position: absolute;
+  left: -100px;
+}
+
+#b14 #b14_image7 {
+  position: absolute;
+  left: -100px;
+}
+
+#b14 #b14_image10 {
+  position: absolute;
+  right: -100px;
 }
 /*# sourceMappingURL=style.css.map */
