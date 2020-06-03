@@ -1101,3 +1101,151 @@ p {
       color: $peach;
     }
   }
+  // Section 14 
+  .b1_section-14 {
+    position: relative;
+    background-color: $yellow;
+    height:95vw;
+    h3 {
+        color:$blue;
+        font-weight:bold;
+    }
+    .img-1 {
+        position:absolute;
+        width:67vw;
+        left:16.3vw;
+        top:4vw;
+    }
+    .block-1, .block-2, .block-3 {
+        position:absolute;
+        text-align:center;
+        div {
+            width:19vw;
+            font-size: 1.15vw;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1.45vw;
+        }
+        .sub-1 {
+            background:white;
+            padding:1vw;
+            text-align:center;
+            
+        }
+        span {
+            font-weight: bold;
+            color:$blue;
+        }
+    }
+    .block-1{
+        left:18vw;
+        top:5vw;
+        .sub-2, .sub-3, .sub-4{
+            position:absolute;
+        }
+        .sub-1{
+            margin-top:24vw;
+        }
+        .sub-2 {
+            text-align: right;
+            top: 43vw;
+            left: -10vw;
+        }
+        .sub-3 {
+            top: 55vw;
+            text-align: right;
+            left: -6vw;
+        }
+        .sub-4 {
+            top: 61vw;
+            left: -2vw;
+            text-align: right;
+        }
+    }
+    .block-2{
+        left:37vw;
+        top:11vw;
+        .sub-1{
+            margin-top:25vw;
+        }
+        .sub-2, .sub-3, .sub-4{
+            position:absolute;
+        }
+        .sub-2 {
+            text-align: right;
+            top: 40vw;
+            left: -2vw;
+            width: 13vw;
+
+        }
+        .sub-3 {
+            top: 53vw;
+            text-align: right;
+            left: 3vw;
+            width: 12vw;
+        }
+        .sub-4 {
+            top: 63vw;
+            left: 13vw;
+            text-align: left;
+            width: 12vw;
+        }
+    }
+    .block-3{
+        left:57vw;
+        top:10vw;
+        .sub-1{
+            margin-top:32vw;
+        }
+        .sub-2, .sub-3, .sub-4{
+            position:absolute;
+        }
+        .sub-2 {
+            text-align: left;
+            top: 43vw;
+            left: 14vw;
+        }
+        .sub-3 {
+            top: 52vw;
+            text-align: right;
+            left: -1vw;
+            width: 12vw;
+        }
+    }
+  }
+  //Section 15
+  .b1_section-15 {
+    background-color: #4671b1;
+    padding-top: 9.7vw;
+    padding-bottom: 5.7vw;
+    position: relative;
+    p {
+      font-size: 1.45vw;
+      line-height: 1.875vw;
+      color:$yellow;
+      position:relative;
+    }
+    .block-1 {
+      width: 57.29vw;
+      margin: auto;
+      text-align: center;
+    }
+    .img-1 {
+      position: absolute;
+      left: -15vw;
+      width: 40vw;
+      top: -5vw;
+      mix-blend-mode:multiply;
+    }
+    .img-2 {
+      position: absolute;
+      right: 4vw;
+      width: 80vw;
+      top: -1vw;
+      mix-blend-mode:multiply;
+    }
+  
+    h2 {
+      color: $peach;
+    }
+  }
