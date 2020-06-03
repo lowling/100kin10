@@ -750,4 +750,143 @@ p {
   top: 69vw;
   right: 38vw;
 }
+
+.b1_section-8 {
+  background: #f6f9f8;
+  height: 124.1vw;
+  position: relative;
+}
+
+.b1_section-8 .img-1, .b1_section-8 .img-2, .b1_section-8 .img-3 {
+  position: absolute;
+}
+
+.b1_section-8 .img-1 {
+  width: 49.8vw;
+  top: 26vw;
+  left: 12vw;
+}
+
+.b1_section-8 .img-2 {
+  width: 33vw;
+  right: 20vw;
+  top: 77vw;
+}
+
+.b1_section-8 .img-3 {
+  width: 28vw;
+  left: 11vw;
+  bottom: -2vw;
+}
+
+.b1_section-8 h2, .b1_section-8 h3 {
+  display: block;
+}
+
+.b1_section-8 h3 {
+  color: black;
+  margin: 0;
+}
+
+.b1_section-8 .block-1 {
+  padding-top: 8vw;
+  margin-left: 13vw;
+  width: 25vw;
+}
+
+.b1_section-8 .block-1 h2 {
+  padding-top: 1vw;
+}
+
+.b1_section-8 .block-1 h3 {
+  padding-top: 5vw;
+  font-weight: bold;
+}
+
+.b1_section-8 .block-1 p {
+  margin: 0;
+}
+
+.b1_section-8 .block-2 {
+  position: absolute;
+  width: 21vw;
+  top: 20vw;
+  right: 16vw;
+}
+
+.b1_section-8 .block-2 p {
+  text-align: center;
+}
+
+.b1_section-8 .block-3 {
+  position: absolute;
+  width: 15vw;
+  top: 50vw;
+  right: 39vw;
+}
+
+.b1_section-8 .block-3 p {
+  text-align: center;
+}
+
+.b1_section-8 .dotted-line-14 {
+  position: absolute;
+  width: 73vw;
+  top: 74vw;
+  left: 11vw;
+  height: 5px;
+}
+
+.b1_section-8 .block-5 {
+  padding-top: 8vw;
+  margin-top: 25vw;
+  margin-left: 13vw;
+  width: 25vw;
+}
+
+.b1_section-8 .block-5 h3 {
+  font-weight: bold;
+}
+
+.b1_section-8 .block-6 {
+  margin-left: 50vw;
+  margin-top: 8vw;
+  width: 25vw;
+}
+
+.b1_section-9 {
+  background-color: #ffd1a2;
+  padding-top: 6.7vw;
+  padding-bottom: 4.7vw;
+  position: relative;
+}
+
+.b1_section-9 p {
+  font-size: 1.45vw;
+  line-height: 1.875vw;
+}
+
+.b1_section-9 .block-1 {
+  width: 57.29vw;
+  margin: auto;
+  text-align: center;
+}
+
+.b1_section-9 .img-1 {
+  position: absolute;
+  left: 0;
+  width: 23.28vw;
+  top: 2vw;
+}
+
+.b1_section-9 .img-2 {
+  position: absolute;
+  right: 0;
+  width: 21vw;
+  top: 8vw;
+}
+
+.b1_section-9 h2 {
+  color: #398981;
+}
 /*# sourceMappingURL=style.css.map */
