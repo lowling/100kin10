@@ -38,6 +38,12 @@ $container-small: 360px;
   letter-spacing: 0.36px;
   text-transform: capitalize;
 }
+@mixin h4 {
+  font: Bold 12px/18px brandon-grotesque;
+  letter-spacing: 0.86px;
+  text-transform: uppercase;
+}
+
 
 // Elements
 *{
@@ -57,6 +63,9 @@ h2{
 h3{
   @include h3();
 }
+h4{
+  @include h4();
+}
 img{
   margin: 0;
   max-width: 100%;
@@ -72,6 +81,8 @@ section{
   overflow: hidden;
   background-size: 100%;
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: $cell*3 $cell/2;
   & > p, & > h3, & > h2, & > h1{
     text-align: center;
@@ -126,6 +137,7 @@ ul{
 }
 .icon{
   max-width: $cell*4;
+  margin-bottom: $cell;
 }
 .half{
   width: 50%;
@@ -172,7 +184,7 @@ ul{
   h1{
     color: $green;
   }
-  h3{
+  h2, h3{
     color: $gold;
   }
   blockquote{
@@ -214,6 +226,8 @@ ul{
     flex-wrap: wrap;
     & > div{
       width: 25%;
+      display: flex;
+      flex-wrap: wrap;
       .number{
         display: inline-flex;
         align-items: center;
@@ -223,6 +237,7 @@ ul{
         width: $cell*6;
         border-radius: 50%;
         color: $gold;
+        margin-bottom: $cell;
         text-align: center;
       }
       p{ 
@@ -232,6 +247,7 @@ ul{
       }
       img{
         margin-top: $cell;
+        align-self: flex-end;
       }
     }
   }
@@ -282,6 +298,9 @@ ul{
 }
 #b9{
   background-color: $yellow;
+  h1{
+    color: $purple;
+  }
   #b9_title{
     display: flex;
     align-items: center;
@@ -318,9 +337,88 @@ ul{
     margin-top: $cell*3;
   }
 }
-#b11{}
+#b11{
+  min-height: 1700px;
+  h3{
+    color: $purple;
+  }
+  h4{
+    color: $peach;
+  }
+  & > div:first-of-type{
+    position: relative;
+    z-index: 1;
+    h3, p{
+      max-width: $container-smaller;
+    }
+  }
+  & > div {
+    position: relative;
+    div, img{
+      position: absolute;
+    }
+    div{
+      background: $gray;
+      padding: $cell;
+    }
+    #b11-box_1{
+      right: 0;
+      max-width: 450px;
+    }
+    #b11-box_2{
+      max-width: 300px;
+      right: 350px;
+      top: 250px;
+      text-align: center;
+      z-index: 1;
+    }
+    #b11-box_3{
+      max-width: 300px;
+      right: 400px;
+      top: 550px;
+      text-align: center;
+    }
+    #b11-box_4{
+      max-width: 300px;
+      left: 0;
+      top: 500px;
+      text-align: center;
+    }
+    #b11-box_5{
+      max-width: 430px;
+      right: 0;
+      top: 820px;
+      text-align: center;
+    }
+    #b11-box_6{
+      max-width: 550px;
+      right: 200px;
+      top: 1100px;
+      text-align: center;
+    }
+    #b11-image_1{
+      top: -60px;
+      left: -50px;
+      max-width: 500px;
+    }
+    #b11-image_2{
+      top: 800px;
+      left: -50px;
+      max-width: 600px;
+
+    }
+    #b11-image_3{
+      max-width: 400px;
+      right: -50;
+      top: 300px;
+    }
+  }
+}
 #b12{
   background-color: $yellow;
+  h1{
+    color: $purple
+  }
 }
 #b13{
   h1{
@@ -336,11 +434,16 @@ ul{
     color: $purple;
   }
   p, h3{
-    width: 50%;
     text-align: center;
   }
-  .b14_columns{
+  .icon{
+    margin-bottom: $cell;
+    max-width: 100px;
+  }
+  .columns{
     display: flex;
+    justify-content: space-evenly;
+    position: relative;
   }
   #b14_title{
     display: flex;
@@ -364,6 +467,7 @@ ul{
   #b14_image4{
     position: absolute;
     right: -100px;
+    top: 900px
   }
   #b14_image5{
     position: absolute;
@@ -374,7 +478,10 @@ ul{
     position: absolute;
     left: -100px;
   }
-  #b14_image7{}
+  #b14_image7{
+    left: -250px;
+    top: 2500px;
+  }
   #b14_image8{}
   #b14_image9{}
   #b14_image10{
