@@ -95,6 +95,13 @@ hr {
   padding-top: 72px;
 }
 
+@media only screen and (max-width: 600px) {
+  hr {
+    padding-top: 0;
+    margin-bottom: 24px;
+  }
+}
+
 ul {
   font: 18px/24px brandon-grotesque;
 }
@@ -122,6 +129,12 @@ ul {
   width: 50%;
 }
 
+@media only screen and (max-width: 600px) {
+  .half {
+    width: 100%;
+  }
+}
+
 .number {
   font-size: 50px;
   font-weight: bold;
@@ -138,6 +151,12 @@ ul {
   padding-right: 12px;
 }
 
+@media only screen and (max-width: 600px) {
+  .ellipses:before {
+    margin-left: 0;
+  }
+}
+
 .columns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -145,6 +164,19 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .no_mobile {
+    display: none;
+  }
 }
 
 #b1 {
@@ -203,6 +235,16 @@ ul {
   clear: both;
 }
 
+@media only screen and (max-width: 600px) {
+  #b4 #tree_thing > div {
+    position: relative;
+    text-align: center;
+  }
+  #b4 #tree_thing > div:first-of-type {
+    margin-bottom: 72px;
+  }
+}
+
 #b4 #tree_thing > div:nth-last-of-type(1) {
   right: 0;
 }
@@ -213,14 +255,6 @@ ul {
 
 #b5 h3 {
   color: #398981;
-}
-
-#b6 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 #b6 > p {
@@ -243,6 +277,12 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+  #b6 #four_trees > div {
+    width: 50%;
+  }
 }
 
 #b6 #four_trees > div .number {
@@ -294,6 +334,16 @@ ul {
   margin-left: 48px;
 }
 
+#b7 #image_b7-2 {
+  margin-bottom: 48px;
+}
+
+@media only screen and (max-width: 600px) {
+  #b7 p {
+    width: 100%;
+  }
+}
+
 #b8 > div {
   position: relative;
 }
@@ -308,12 +358,27 @@ ul {
   padding: 24px;
 }
 
+@media only screen and (max-width: 600px) {
+  #b8 > div > div {
+    position: relative;
+    width: 100%;
+  }
+}
+
 #b8 > div div:before {
   position: absolute;
   left: -40px;
   color: #FFB688;
   font-size: 40px;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  #b8 > div div:before {
+    left: 24px;
+    top: 10px;
+    font-size: 14px;
+  }
 }
 
 #b8 > div:nth-of-type(1) div:before {
@@ -348,8 +413,21 @@ ul {
           justify-content: space-between;
 }
 
+@media only screen and (max-width: 600px) {
+  #b9 #b9_title {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 #b9 #b9_title > * {
   width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  #b9 #b9_title > * {
+    width: 100%;
+  }
 }
 
 #b9 h3 {
@@ -414,9 +492,21 @@ ul {
   position: absolute;
 }
 
+@media only screen and (max-width: 600px) {
+  #b11 > div div, #b11 > div img {
+    position: relative;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    max-width: 100% !important;
+    text-align: center;
+  }
+}
+
 #b11 > div div {
   background: #F6F9F8;
   padding: 24px;
+  z-index: 1;
 }
 
 #b11 > div #b11-box_1 {
@@ -432,11 +522,24 @@ ul {
   z-index: 1;
 }
 
+@media only screen and (max-width: 980px) {
+  #b11 > div #b11-box_2 {
+    max-width: 450px;
+    right: 150px;
+  }
+}
+
 #b11 > div #b11-box_3 {
   max-width: 300px;
   right: 400px;
   top: 550px;
   text-align: center;
+}
+
+@media only screen and (max-width: 980px) {
+  #b11 > div #b11-box_3 {
+    right: 24px;
+  }
 }
 
 #b11 > div #b11-box_4 {
@@ -476,6 +579,12 @@ ul {
   max-width: 400px;
   right: -50;
   top: 300px;
+}
+
+@media only screen and (max-width: 980px) {
+  #b11 > div #b11-image_3 {
+    display: none;
+  }
 }
 
 #b12 {
@@ -534,8 +643,22 @@ ul {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 600px) {
+  #b14 #b14_title {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
 #b14 #b14_title > * {
   width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  #b14 #b14_title > * {
+    width: 100%;
+  }
 }
 
 #b14 img {
