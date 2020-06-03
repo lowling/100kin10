@@ -21,6 +21,7 @@ $contaier-wide: 1040px;
 $container-standard: 720px;
 $container-smaller: 460px;
 $container-small: 360px;
+$screen-break: 600px;
 
 // Mixins
 @mixin h1 {
@@ -43,7 +44,6 @@ $container-small: 360px;
   letter-spacing: 0.86px;
   text-transform: uppercase;
 }
-
 
 // Elements
 *{
@@ -116,6 +116,10 @@ hr{
   border-bottom: 2px dashed $green;
   margin: 0 auto $cell*3 auto;
   padding-top: $cell*3;
+  @media only screen and (max-width: $screen-break) {
+    padding-top: 0;
+    margin-bottom: $cell;
+  }
 }
 ul{
   font: $font-small;
@@ -141,6 +145,9 @@ ul{
 }
 .half{
   width: 50%;
+  @media only screen and (max-width: $screen-break) {
+    width: 100%;
+  }
 }
 .number{
   font-size: 50px;
@@ -153,11 +160,22 @@ ul{
     font-size: 25px;
     margin-left: -32px;
     padding-right: $cell/2;
+    @media only screen and (max-width: $screen-break) {
+      margin-left: 0;
+    }
   }
 }
 .columns{
   display: flex;
   align-items: center;
+  @media only screen and (max-width: $screen-break) {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: $screen-break) {
+  .no_mobile{
+    display: none;
+  }
 }
 
 // Segments
@@ -202,6 +220,13 @@ ul{
       position: absolute;
       top: 0;
       width: 300px;
+      @media only screen and (max-width: $screen-break) {
+        position: relative;
+        text-align: center;
+        &:first-of-type{
+          margin-bottom: $cell*3;
+        }
+      }
       &:nth-last-of-type(1){
         right: 0;
       }
@@ -215,11 +240,10 @@ ul{
   }
 }
 #b6{
-  display: flex;
-  flex-wrap: wrap;
   & > p{
     text-align: left;
     color: $green;
+
   }
   #four_trees{
     display: flex;
@@ -228,6 +252,9 @@ ul{
       width: 25%;
       display: flex;
       flex-wrap: wrap;
+      @media only screen and (max-width: $screen-break) {
+        width: 50%;
+      }
       .number{
         display: inline-flex;
         align-items: center;
@@ -265,6 +292,14 @@ ul{
     border-color: $peach;
     margin-left: $cell*2;
   }
+  #image_b7-2{
+    margin-bottom: $cell*2;
+  }
+  @media only screen and (max-width: $screen-break) {
+    p{
+      width: 100%;
+    }
+  }
 }
 #b8{
   & > div{
@@ -277,6 +312,10 @@ ul{
       right: 0;
       top: 0;
       padding: $cell;
+      @media only screen and (max-width: $screen-break) {
+        position: relative;
+        width: 100%;
+      }
     }
     div:before{
       position: absolute;
@@ -284,6 +323,11 @@ ul{
       color: $peach;
       font-size: 40px;
       font-weight: bold;
+      @media only screen and (max-width: $screen-break) {
+        left: $cell;
+        top: 10px;
+        font-size: 14px;
+      }
     }
     &:nth-of-type(1) div:before{
       content: '1.';
@@ -305,8 +349,14 @@ ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media only screen and (max-width: $screen-break) {
+      flex-wrap: wrap;
+    }
     & > *{
       width: 50%;
+      @media only screen and (max-width: $screen-break) {
+        width: 100%;
+      }
     }
   }
   h3{
@@ -356,10 +406,19 @@ ul{
     position: relative;
     div, img{
       position: absolute;
+      @media only screen and (max-width: $screen-break) {
+        position: relative;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        max-width: 100% !important;
+        text-align: center;
+      }
     }
     div{
       background: $gray;
       padding: $cell;
+      z-index: 1;
     }
     #b11-box_1{
       right: 0;
@@ -371,12 +430,20 @@ ul{
       top: 250px;
       text-align: center;
       z-index: 1;
+      @media only screen and (max-width: 980px) {
+        max-width: 450px;
+        right: 150px;
+
+      }
     }
     #b11-box_3{
       max-width: 300px;
       right: 400px;
       top: 550px;
       text-align: center;
+      @media only screen and (max-width: 980px) {
+        right: $cell;
+      }
     }
     #b11-box_4{
       max-width: 300px;
@@ -411,6 +478,9 @@ ul{
       max-width: 400px;
       right: -50;
       top: 300px;
+      @media only screen and (max-width: 980px) {
+        display: none;
+      }
     }
   }
 }
@@ -450,8 +520,15 @@ ul{
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+    @media only screen and (max-width: $screen-break) {
+      flex-wrap: wrap;
+      text-align: center;
+    }
     & > *{
       width: 50%;
+      @media only screen and (max-width: $screen-break) {
+        width: 100%;
+      }
     }    
   }
   img{
