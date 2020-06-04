@@ -1,53 +1,72 @@
+<!DOCTYPE html>
+<html>
+
 <head>
     <meta charset="utf-8">
 
     <title>100kin10</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
-    <script src="script.js"></script>
+    <link 
+        rel="stylesheet" 
+        href="css/style.min.css">
+
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+        <script src="/vendor/on-screen.umd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js" integrity="sha256-7QS1cHsH75h3IFgrFKsdhmKHHpWqF82sb/9vNLqcqs0=" crossorigin="anonymous"></script>
+
+        <script src="script.js"></script>
 </head>
 
 <body>
     <!-- Navigation -->
     <button id="toggle" onclick="toggleNav()">
-        <div id="toggle-icon"><div></div></div>
+        <div id="toggle-icon">
+            <div></div>
+        </div>
         Menu
-      </button>
-      <nav>
+    </button>
+    <nav>
         <a href="#intro">Introduction</a>
         <a href="#using">Using this field guide</a>
-        <a href="#1">
-          <img src="img/nav/TOC_icon1-01.png">
-          Strategy 1
-          <span>Build a Coalition</span>
+        <a href="#s1">
+            <img src="img/nav/TOC_icon1-01.png">
+            Strategy 1
+            <span>Build a Coalition</span>
         </a>
-        <a href="#2">
-          <img src="img/nav/TOC_icon2-02.png">
-          Strategy 2
-          <span>Understand, Identify and FIND Focus</span>
+        <a href="#s2">
+            <img src="img/nav/TOC_icon2-02.png">
+            Strategy 2
+            <span>Understand, Identify and FIND Focus</span>
         </a>
-        <a href="#3">
-          <img src="img/nav/TOC_icon3-03.png">
-          Strategy 3
-          <span>Support People to Work Together</span>
+        <a href="#s3">
+            <img src="img/nav/TOC_icon3-03.png">
+            Strategy 3
+            <span>Support People to Work Together</span>
         </a>
-        <a href="#4">
-          <img src="img/nav/TOC_icon4-04.png">
-          Strategy 4
-          <span>Avoid Recreating the Wheel</span>
+        <a href="#s4">
+            <img src="img/nav/TOC_icon4-04.png">
+            Strategy 4
+            <span>Avoid Recreating the Wheel</span>
         </a>
-        <a href="#5">
-          <img src="img/nav/TOC_icon5-05.png">
-          Strategy 5
-          <span>Mobilize Problem Solving</span>
+        <a href="#s5">
+            <img src="img/nav/TOC_icon5-05.png">
+            Strategy 5
+            <span>Mobilize Problem Solving</span>
         </a>
-        <a href="#6">
-          <img src="img/nav/TOC_icon6-06.png">
-          Strategy 6
-          <span>Sustain Efforts over the Long Haul</span>
+        <a href="#s6">
+            <img src="img/nav/TOC_icon6-06.png">
+            Strategy 6
+            <span>Sustain Efforts over the Long Haul</span>
         </a>
-      </nav>
-      <!-- Sections -->
+    </nav>
+
+    <!-- Sections -->
+    <div id="content">
     <section class="b1_section-1">
         <div class="b1_section-1_logo">
             <img class="b1_section-1_logo_img" src="img/cover2_05.png">
@@ -58,16 +77,24 @@
 
         <ul class="toc">
             <li class="toc_push-1">
-                <div class="list-item-img"><img src="img/TOC_icon1_01.png"></div>
-                <div class="list-item-text">Introduction</div>
+                <a href="#intro">
+                    <div class="list-item-img"><img src="img/TOC_icon1_01.png"></div>
+                    <div class="list-item-text">Introduction</div>
+                </a>
             </li>
             <li class="toc_push-1">
+                <a href="#using">
                 <div class="list-item-img"><img src="img/TOC_icon2_02.png"></div>
                 <div class="list-item-text">How to use this field guide</div>
+                </a>
             </li>
 
             <li class="toc_push-2 first">
-                <div class="list-item-img"><img src="img/TOC_icon3_03.png"></div>
+                <a href="#s1" class="anim">
+                <!-- <div class="list-item-img"><img src="img/TOC_icon3_03.png"></div>-->
+                <video class="list-item-img video" muted="muted">
+                    <source src="video/bee-static-whiteBG.mp4" type="video/mp4">
+                </video>
                 <div class="list-item-text">
                     STRATEGY 1
                     <svg class="dotted-line-1" viewBox="0 0 86 1">
@@ -78,9 +105,14 @@
                     </svg>
                     <small>Build a Coalition</small>
                 </div>
+                </a>
             </li>
             <li class="toc_push-2">
-                <div class="list-item-img"><img src="img/TOC_icon4_04.png"></div>
+                <a href="#s2" class="anim">
+                <!-- <div class="list-item-img"><img src="img/TOC_icon4_04.png"></div> -->
+                <video class="list-item-img video" muted="muted">
+                    <source src="video/seed icon.mp4" type="video/mp4">
+                </video>
                 <div class="list-item-text">
                     STRATEGY 2
                     <svg class="dotted-line-1" viewBox="0 0 86 1">
@@ -91,9 +123,14 @@
                     </svg>
                     <small>Understand, <br />Identify and FIND Focus</small>
                 </div>
+                </a>
             </li>
             <li class="toc_push-2">
-                <div class="list-item-img"><img src="img/TOC_icon5_05.png"></div>
+                <a href="#s3" class="anim">
+                <!-- <div class="list-item-img"><img src="img/TOC_icon5_05.png"></div> -->
+                <video class="list-item-img video" muted="muted">
+                    <source src="video/Dandelion icon.mp4" type="video/mp4">
+                </video>
                 <div class="list-item-text">
                     STRATEGY 3
                     <svg class="dotted-line-1" viewBox="0 0 86 1">
@@ -104,9 +141,14 @@
                     </svg>
                     <small>Support People to Work <br />Together</small>
                 </div>
+                </a>
             </li>
             <li class="toc_push-2">
-                <div class="list-item-img"><img src="img/TOC_icon6_06_g.png"></div>
+                <a href="#s4" class="anim">
+                <!-- <div class="list-item-img"><img src="img/TOC_icon6_06_g.png"></div> -->
+                <video class="list-item-img video" muted="muted">
+                    <source src="video/fern icon.mp4" type="video/mp4">
+                </video>
                 <div class="list-item-text">
                     STRATEGY 4
                     <svg class="dotted-line-1" viewBox="0 0 86 1">
@@ -117,9 +159,14 @@
                     </svg>
                     <small>Avoid Recreating <br />the Wheel</small>
                 </div>
+                </a>
             </li>
             <li class="toc_push-2">
-                <div class="list-item-img"><img src="img/TOC_icon7_07.png"></div>
+                <a href="#s5" class="anim">
+                <!-- <div class="list-item-img"><img src="img/TOC_icon7_07.png"></div> -->
+                <video class="list-item-img video" muted="muted">
+                    <source src="video/bare tree icon_wave.mp4" type="video/mp4">
+                </video>
                 <div class="list-item-text">
                     STRATEGY 5
                     <svg class="dotted-line-1" viewBox="0 0 86 1">
@@ -130,9 +177,14 @@
                     </svg>
                     <small>Mobilize Problem Solving</small>
                 </div>
+                </a>
             </li>
             <li class="toc_push-2">
-                <div class="list-item-img"><img src="img/TOC_icon8_08.png"></div>
+                <a href="#s6" class="anim">
+                <!-- <div class="list-item-img"><img src="img/TOC_icon8_08.png"></div> -->
+                <video class="list-item-img video" muted="muted">
+                    <source src="video/forest icon ground.mp4" type="video/mp4">
+                </video>
                 <div class="list-item-text">
                     STRATEGY 6
                     <svg class="dotted-line-1" viewBox="0 0 86 1">
@@ -143,29 +195,36 @@
                     </svg>
                     <small>Sustain Efforts <br />over the Long Haul</small>
                 </div>
+                </a>
             </li>
             <li class="toc_push-3 first">
+                <a href="#s7">
                 <div class="list-item-img"><img src="img/TOC_icon9_09.png"></div>
                 <div class="list-item-text">
                     Stumbles and Learnings
                 </div>
+                </a>
             </li>
             <li class="toc_push-3">
+                <a href="#s8">
                 <div class="list-item-img"><img src="img/TOC_icon10_10.png"></div>
                 <div class="list-item-text">
                     Looking Beyond 2021
                 </div>
+                </a>
             </li>
             <li class="toc_push-3">
+                <a href="#s9">
                 <div class="list-item-img"><img src="img/TOC_icon11_11.png"></div>
                 <div class="list-item-text">
                     Gratitude
                 </div>
+                </a>
             </li>
         </ul>
     </section>
-    <a name="intro"></a>
-    <section class="b1_section-3">
+    <a id="intro" name="intro"></a>
+    <section class="b1_section-3" >
         <div class="block-1">
             <h1>FIELD GUIDE <br />FOR CATALYZING <br />CHANGE</h1>
             <h2>Introduction</h2>
@@ -206,8 +265,9 @@
                 <b>Talia Milgrom-Elcott</b>
             </p>
         </div>
-        <a name="using"></a>
-        <div class="block-3">
+       
+        <div class="block-3"> 
+            <a name="using" id="using"></a>
             <h1>HOW TO USE THIS FIELD GUIDE</h1>
             <p>While this is our “annual report” it’s really a cross between a collection of shorts and a how-to manual;
                 a mix of narratives, numbers, and most of all, a practical, hands-on guide for making change. Each
@@ -223,9 +283,10 @@
                 field guide as a place for reflection, brainstorming, and ideation.</p>
         </div>
     </section>
-    <a name="1"></a>
+    
     <section class="b1_section-4">
         <div class="block-1">
+            <a name="1" id="s1"></a>
             <img class="section-icon" src="img/strategy1_icon_08.png">
             <h1>BUILD A COALITION</h1>
             <h2>Inspire Action with A Big Goal</h2>
@@ -237,7 +298,7 @@
                 that’s so big it’s hard to grasp? You start at the end, with an audacious goal. The goal should be
                 larger than any individual could ever reach on their own, yet something people can imagine accomplishing
                 if they work together. That goal can become the inspiration that drives working together differently.
-            <p>
+            </p>
                 <img class="img-1" src="img/honeycomb2_06.png">
         </div>
         <div class="block-2">
@@ -469,11 +530,14 @@
             </path>
         </svg>
         <img class="img-2" src="img/bee3_04.png">
-        <img class="img-3" src="img/bee2_04.png">
+        <!--<img class="img-3" src="img/bee2_04.png">-->
+        <video class="img-3 video" muted="muted">
+            <source src="video/bee-hovering-orangeBG.mp4" type="video/mp4">
+        </video>
         <img class="img-4" src="img/bee1_04.png">
         <img class="img-5" src="img/strategy1_flowers_05.png">
         <div class="block-2">
-            <span>83&percnt;</span>
+            <span><em class="countup" data-count="83">0</em>&percnt;</span>
             <p>
                 of partners say they feel inspired by participation in 100Kin10 to stay focused on their STEM teaching
                 work
@@ -481,7 +545,7 @@
         </div>
         <div class="block-3">
 
-            <span>84&percnt;</span>
+            <span><em class="countup" data-count="84">0</em>&percnt;</span>
             <p>
                 of partners say
                 they’ve been inspired to take action as a result of participating in 100Kin10 network
@@ -489,7 +553,7 @@
         </div>
         <div class="block-4">
 
-            <span>72&percnt;</span>
+            <span><em class="countup" data-count="72">0</em>&percnt;</span>
             <p>of partners have spent time outside of 100Kin10-organized opportunities doing work that is inspired by
                 participation in the 100Kin10 network
             </p>
@@ -526,7 +590,7 @@
         </div>
 
     </section>
-    <a name="2"></a>
+    <a name="2" id="s2"></a>
     <section class="b1_section-8">
         <div class="circle-1"></div>
         <div class="circle-2"></div>
@@ -661,7 +725,7 @@
         <div class="block-2">
             <div class="circle-1"></div>
             <div class="text">
-                <span>94%</span>
+                <span><em class="countup" data-count="94">0</em>%</span>
                 <p>
                     of partners say that of partners say that addressing the Grand Challenges is an organizational
                     priority
@@ -679,7 +743,7 @@
         <div class="block-4">
             <div class="circle-2"></div>
             <div class="text">
-                <span>138</span>
+                <span><em class="countup" data-count="138">0</em></span>
                 <p>
                     partners made 360 new
                     commitments aligned to the Grand Challenges in 2019</p>
@@ -696,7 +760,7 @@
         <div class="block-6">
             <div class="circle-3"></div>
             <div class="text">
-                <span>104,963</span>
+                <span><em class="countup" data-count="104963">0</em></span>
                 <p>
                     Pageviews in 2019 alone of our website that details all the grand challenges in STEM education</p>
             </div>
@@ -738,7 +802,7 @@
                 Liaison, Penn State Center for Science and the Schools</span>
         </div>
     </section>
-    <a name="3"></a>
+    <a name="3" id="s3"></a>
     <section class="b1_section-12">
         <div class="block-1">
             <img class="section-icon" src="img/strategy3_icon_08.png">
@@ -760,7 +824,10 @@
                 work and advance our collective goals. </p>
 
         </div>
-        <img class="img-1" src="img/strategy3_flower1_14.png">
+        <!--<img class="img-1" src="img/strategy3_flower1_14.png">-->
+        <video class="img-1 video" muted="muted" width="580">
+            <source src="video/strategy3_flower1-14_v02.mp4" type="video/mp4">
+        </video>
         <img class="img-2" srcset="img/strategy3_flower2_14.png">
         <div class="block-2">
             <h3>How We Implement:</h3>
@@ -801,32 +868,43 @@
             <h3>Annual Summit</h3>
 
             <div class="sub-1">At Summit, <span>97%</span> of attendees
-connected with new partners or allies</div>
+                connected with new partners or allies</div>
 
-<div class="sub-2">Summit is our inspirational national convening that connects partners from across the country and builds the trust they need to engage in knowledge sharing and plant the seeds for collaborative problem-solving.</div>
+            <div class="sub-2">Summit is our inspirational national convening that connects partners from across the
+                country and builds the trust they need to engage in knowledge sharing and plant the seeds for
+                collaborative problem-solving.</div>
 
-<div class="sub-3"><span>237</span> attendees at Summit
-representing <span>132</span> orgs</div>
+            <div class="sub-3"><span>237</span> attendees at Summit
+                representing <span>132</span> orgs</div>
 
-<div class="sub-4">“Summit was incredibly inspirational, and allowed me to think about how networking with a group of STEM professionals can revolutionize teaching. I am eager to see what an even bigger difference I can make in STEM education on a regional, national, and global scale.”</div>
+            <div class="sub-4">“Summit was incredibly inspirational, and allowed me to think about how networking with a
+                group of STEM professionals can revolutionize teaching. I am eager to see what an even bigger difference
+                I can make in STEM education on a regional, national, and global scale.”</div>
         </div>
         <div class="block-2">
             <h3>Collaboration Grants</h3>
 
-            <div class="sub-1">Through collaboration grants, <span>100%</span> of attendees said they connected with new partners or allies</div>
+            <div class="sub-1">Through collaboration grants, <span>100%</span> of attendees said they connected with new
+                partners or allies</div>
 
-            <div class="sub-2">Collaboration grants are quick-turnaround grants that provide funding and support for organizations to meet in person to explore an idea.</div>
+            <div class="sub-2">Collaboration grants are quick-turnaround grants that provide funding and support for
+                organizations to meet in person to explore an idea.</div>
 
-            <div class="sub-3"><span>15</span> collaboration grants were awarded to 33 organizations, enabling a total of 61 individuals to participate.</div>
+            <div class="sub-3"><span>15</span> collaboration grants were awarded to 33 organizations, enabling a total
+                of 61 individuals to participate.</div>
 
-            <div class="sub-4"><span>85%</span> of grantees felt that collaboration grants were the highest impact 100Kin10 opportunity that they had participated in this year.</div>
+            <div class="sub-4"><span>85%</span> of grantees felt that collaboration grants were the highest impact
+                100Kin10 opportunity that they had participated in this year.</div>
         </div>
         <div class="block-3">
             <h3>1-on-1 Calls</h3>
 
-            <div class="sub-1">Through 1-on-1 calls <span>81%</span> of participants said they connected with new partners or allies</div>
+            <div class="sub-1">Through 1-on-1 calls <span>81%</span> of participants said they connected with new
+                partners or allies</div>
 
-            <div class="sub-2">1-on-1 calls are personalized engagements for partners to speak directly to 100Kin10 staff, who help connect them to needed resources and other organizations working on similar challenges.</div>
+            <div class="sub-2">1-on-1 calls are personalized engagements for partners to speak directly to 100Kin10
+                staff, who help connect them to needed resources and other organizations working on similar challenges.
+            </div>
 
             <div class="sub-3"><span>135</span> 1-on-1 calls made to partners in 2019</div>
         </div>
@@ -839,21 +917,49 @@ representing <span>132</span> orgs</div>
                 Connecting to New Ideas
             </h2>
             <p>
-                Through 100Kin10, staff from Chicago Public Schools (CPS), one of the largest school districts in the country, was able to connect with the University of Washington and learn about their Ambitious Science Teaching practices. Soon after, a 100Kin10 collaboration grant enabled Alissa Berg, the Science Manager for CPS, to travel to Seattle and observe firsthand some of the innovative phenomenon-based teaching strategies that were in practice there.</p>
+                Through 100Kin10, staff from Chicago Public Schools (CPS), one of the largest school districts in the
+                country, was able to connect with the University of Washington and learn about their Ambitious Science
+                Teaching practices. Soon after, a 100Kin10 collaboration grant enabled Alissa Berg, the Science Manager
+                for CPS, to travel to Seattle and observe firsthand some of the innovative phenomenon-based teaching
+                strategies that were in practice there.</p>
 
             <p>
-                After returning, Berg shared these strategies with science teachers she was working with and helped form a professional learning community to support teachers in better understanding and implementing these strategies. As Berg reflected on the experience, she shared how broadly the impact has been felt. “We now have schools where every science teacher is engaging their students in figuring out how and why puzzling phenomena occur. It’s beyond exciting to see students connecting evidence from multiple sources/investigations to science ideas as they formulate in-depth explanations. The ‘aha’ moments are plentiful and never get old!”</p>
+                After returning, Berg shared these strategies with science teachers she was working with and helped form
+                a professional learning community to support teachers in better understanding and implementing these
+                strategies. As Berg reflected on the experience, she shared how broadly the impact has been felt. “We
+                now have schools where every science teacher is engaging their students in figuring out how and why
+                puzzling phenomena occur. It’s beyond exciting to see students connecting evidence from multiple
+                sources/investigations to science ideas as they formulate in-depth explanations. The ‘aha’ moments are
+                plentiful and never get old!”</p>
 
         </div>
     </section>
     <section class="b1_section-16">
-        <img class="img-1" src="img/strategy3_flower3_15.png">
-        <div class="block-1"><h3>Trust was at an all-time high:</h3><p>Deep meaningful relationships that lay the groundwork for collaboration are built on trust. In 2019 trust reached an apex in the network, as did the number of connections built through our programming</p></div>
-        <div class="block-2"><p>93% of partners said they could bring their “whole self” to our annual Summit</p></div>
-        <div class="block-3"><p>93% of partners reported they felt enough trust to share vulnerabilities without filtering</p></div>
-        <div class="block-4"><p>“One of the powerful tactics 100Kin10 employs is connecting people, and that approach is vital to advancing learning in the field.”</p></div>
-        <div class="block-5"><p>84% of individuals Strengthened connections with existing partners or alliesThrough</p></div>
-        <div class="block-6"><p>85% of individuals connected with new partners or allies</p></div>
+        <!--<img class="img-1" src="img/strategy3_flower3_15.png">-->
+        <video class="img-1 video" muted="muted" width="580">
+            <source src="video/strategy3_flower3-15_full res.mp4" type="video/mp4">
+        </video>
+        <div class="block-1">
+            <h3>Trust was at an all-time high:</h3>
+            <p>Deep meaningful relationships that lay the groundwork for collaboration are built on trust. In 2019 trust
+                reached an apex in the network, as did the number of connections built through our programming</p>
+        </div>
+        <div class="block-2">
+            <p>93% of partners said they could bring their “whole self” to our annual Summit</p>
+        </div>
+        <div class="block-3">
+            <p>93% of partners reported they felt enough trust to share vulnerabilities without filtering</p>
+        </div>
+        <div class="block-4">
+            <p>“One of the powerful tactics 100Kin10 employs is connecting people, and that approach is vital to
+                advancing learning in the field.”</p>
+        </div>
+        <div class="block-5">
+            <p>84% of individuals Strengthened connections with existing partners or alliesThrough</p>
+        </div>
+        <div class="block-6">
+            <p>85% of individuals connected with new partners or allies</p>
+        </div>
     </section>
 
     <section class="b1_section-17">
@@ -864,34 +970,58 @@ representing <span>132</span> orgs</div>
                 Fruitful Connections Across Regions
             </h2>
             <p>
-                Through 100Kin10 webinars, Dr. Lara Smetana of Loyola University Chicago was able to find other partners collaborating with local museums on teacher preparation, motivating her and her colleagues to apply for a collaboration grant to learn more. Smetana and a graduate assistant, Jenna Carlson Sanai, were able to travel to Washington, D.C., to meet with partners from both The George Washington University and the Smithsonian Museum for Natural History. Then, in a reciprocal visit, the DC folks came to Chicago, where they learned more about Loyola University Chicago’s Cultural Institutions in Teacher Education Partnership and even attended some museum-based course field experiences. As Smetana recalled, “A number of excellent conversations were shared and we generated new ideas for Loyola and our teacher preparation program overall.”</p>
+                Through 100Kin10 webinars, Dr. Lara Smetana of Loyola University Chicago was able to find other partners
+                collaborating with local museums on teacher preparation, motivating her and her colleagues to apply for
+                a collaboration grant to learn more. Smetana and a graduate assistant, Jenna Carlson Sanai, were able to
+                travel to Washington, D.C., to meet with partners from both The George Washington University and the
+                Smithsonian Museum for Natural History. Then, in a reciprocal visit, the DC folks came to Chicago, where
+                they learned more about Loyola University Chicago’s Cultural Institutions in Teacher Education
+                Partnership and even attended some museum-based course field experiences. As Smetana recalled, “A number
+                of excellent conversations were shared and we generated new ideas for Loyola and our teacher preparation
+                program overall.”</p>
 
             <p>
-                Since then, the two partners have presented to both research and practitioner audiences at multiple conferences and continued collaborating on grant applications, along with staying in touch to share ideas on programs and research initiatives. “It’s been wonderful to have these other thought partners,” said Smetana, “I’d encourage other 100kin10 partners to take advantage of the Collaboration Grants, as it is wonderful to be able to meet in person and experience the programming and collaboration that another organization is engaged in. We were able to have rich conversations about the successes and challenges and lessons learned and also share outside perspectives to help move our efforts forward.”</p>
+                Since then, the two partners have presented to both research and practitioner audiences at multiple
+                conferences and continued collaborating on grant applications, along with staying in touch to share
+                ideas on programs and research initiatives. “It’s been wonderful to have these other thought partners,”
+                said Smetana, “I’d encourage other 100kin10 partners to take advantage of the Collaboration Grants, as
+                it is wonderful to be able to meet in person and experience the programming and collaboration that
+                another organization is engaged in. We were able to have rich conversations about the successes and
+                challenges and lessons learned and also share outside perspectives to help move our efforts forward.”
+            </p>
 
         </div>
     </section>
-    <a name="4"></a>
+    <a name="4" id="s4"></a>
     <section class="b1_section-18">
         <img class="img-1" src="img/treeroots2_03.png">
         <div class="block-1">
             <img class="section-icon" src="img/TOC_icon6_06.png">
             <h1>
-                AVOID<br/>
-                RECREATING<br/>
+                AVOID<br />
+                RECREATING<br />
                 THE WHEEL:
             </h1>
             <h2>
-                Facilitate Learning<br/>
+                Facilitate Learning<br />
                 and Sharing
             </h2>
             <h3>
                 The Strategy:
             </h3>
             <p>
-                Most of the problems we need to solve have been solved by someone, somewhere. Yet we rarely find the solutions we need when we need them, relegating us to start from scratch when we could be building on the shoulders of the inventions that came before. Networks with trust and many points of connection are primed to facilitate robust learning and information sharing, so that no one needs to recreate the wheel.
-            </p><p>
-                Bringing partners together to share insights and connect with peers working on similar challenges allows individuals to build on each other’s wisdom. Supporting information sharing not only grows the collective capacity of a network to solve complex problems, it also promotes a culture of cooperative learning, fostering close-knit communities of collaborators who inspire and motivate each other with new ideas, adaptations, and perspectives
+                Most of the problems we need to solve have been solved by someone, somewhere. Yet we rarely find the
+                solutions we need when we need them, relegating us to start from scratch when we could be building on
+                the shoulders of the inventions that came before. Networks with trust and many points of connection are
+                primed to facilitate robust learning and information sharing, so that no one needs to recreate the
+                wheel.
+            </p>
+            <p>
+                Bringing partners together to share insights and connect with peers working on similar challenges allows
+                individuals to build on each other’s wisdom. Supporting information sharing not only grows the
+                collective capacity of a network to solve complex problems, it also promotes a culture of cooperative
+                learning, fostering close-knit communities of collaborators who inspire and motivate each other with new
+                ideas, adaptations, and perspectives
             </p>
         </div>
         <img class="img-2" src="img/purpletree_03.png">
@@ -900,24 +1030,53 @@ representing <span>132</span> orgs</div>
                 How We Implement:
             </h3>
             <p>
-                At 100Kin10, we’ve implemented this strategy on multiple scales. First, we’ve designed our programs by learning from and building on decades of research in systems change to identify the methods and approaches best suited to our network of partners. Next, we structured those programs to enable partners to do the same, helping them identify the information they need, when they need it most. Finally, we leverage the best ideas of the entire network, compiling them all in easy-to-use resources and programs so partners can find and access exactly what they need. Here are just a few ways in which we do this:
+                At 100Kin10, we’ve implemented this strategy on multiple scales. First, we’ve designed our programs by
+                learning from and building on decades of research in systems change to identify the methods and
+                approaches best suited to our network of partners. Next, we structured those programs to enable partners
+                to do the same, helping them identify the information they need, when they need it most. Finally, we
+                leverage the best ideas of the entire network, compiling them all in easy-to-use resources and programs
+                so partners can find and access exactly what they need. Here are just a few ways in which we do this:
             </p>
         </div>
         <svg class="dotted-line-17" viewBox="7125.932 20079.35 66.068 3">
-            <path fill="transparent" stroke="rgba(232,188,81,1)" stroke-width="3px" stroke-linejoin="miter" stroke-linecap="butt" stroke-dasharray="3" stroke-dashoffset="0" stroke-miterlimit="4" shape-rendering="auto" class="Path_2062_Class" d="M 7192 20079.349609375 L 7125.93212890625 20079.349609375">
+            <path fill="transparent" stroke="rgba(232,188,81,1)" stroke-width="3px" stroke-linejoin="miter"
+                stroke-linecap="butt" stroke-dasharray="3" stroke-dashoffset="0" stroke-miterlimit="4"
+                shape-rendering="auto" class="Path_2062_Class"
+                d="M 7192 20079.349609375 L 7125.93212890625 20079.349609375">
             </path>
         </svg>
-        <div class="block-3"><p><b>Brain Trusts:</b> When we bring partners together to collaborate on solving challenges, we support their work by convening experts and thought leaders in the field to help them learn about the best ideas already out there. These Brain Trusts are customized to each challenge, providing insights on current research in the field, innovative methods and approaches, what’s worked and what hasn’t, helping to fuel partners with the knowledge and information they need to work on groundbreaking territory.</p></div>
+        <div class="block-3">
+            <p><b>Brain Trusts:</b> When we bring partners together to collaborate on solving challenges, we support
+                their work by convening experts and thought leaders in the field to help them learn about the best ideas
+                already out there. These Brain Trusts are customized to each challenge, providing insights on current
+                research in the field, innovative methods and approaches, what’s worked and what hasn’t, helping to fuel
+                partners with the knowledge and information they need to work on groundbreaking territory.</p>
+        </div>
         <svg class="dotted-line-18" viewBox="7012.242 20312.07 92.758 147.93">
-            <path fill="transparent" stroke="rgba(232,188,81,1)" stroke-width="2px" stroke-linejoin="miter" stroke-linecap="butt" stroke-dasharray="6" stroke-dashoffset="0" stroke-miterlimit="4" shape-rendering="auto" class="Path_2063_Class" d="M 7105 20460 L 7012.2421875 20312.0703125">
+            <path fill="transparent" stroke="rgba(232,188,81,1)" stroke-width="2px" stroke-linejoin="miter"
+                stroke-linecap="butt" stroke-dasharray="6" stroke-dashoffset="0" stroke-miterlimit="4"
+                shape-rendering="auto" class="Path_2063_Class" d="M 7105 20460 L 7012.2421875 20312.0703125">
             </path>
         </svg>
-        <div class="block-4"><p><b>Workshops & Webinars:</b> We create in-person venues and digital opportunities for partners to share ideas and knowledge directly with one another. These workshops and webinars help build connections between partners who are working on similar challenges, fostering information sharing and learning across sectors, geographies and disciplines.</p></div>
+        <div class="block-4">
+            <p><b>Workshops & Webinars:</b> We create in-person venues and digital opportunities for partners to share
+                ideas and knowledge directly with one another. These workshops and webinars help build connections
+                between partners who are working on similar challenges, fostering information sharing and learning
+                across sectors, geographies and disciplines.</p>
+        </div>
         <svg class="dotted-line-19" viewBox="6542 20315.211 216.305 257.789">
-            <path fill="transparent" stroke="rgba(232,188,81,1)" stroke-width="2px" stroke-linejoin="miter" stroke-linecap="butt" stroke-dasharray="6" stroke-dashoffset="0" stroke-miterlimit="4" shape-rendering="auto" class="Path_2064_Class" d="M 6542 20573 L 6758.3046875 20315.2109375">
+            <path fill="transparent" stroke="rgba(232,188,81,1)" stroke-width="2px" stroke-linejoin="miter"
+                stroke-linecap="butt" stroke-dasharray="6" stroke-dashoffset="0" stroke-miterlimit="4"
+                shape-rendering="auto" class="Path_2064_Class" d="M 6542 20573 L 6758.3046875 20315.2109375">
             </path>
         </svg>
-        <div class="block-5"><p><b>Research Scout:</b> As the backbone of a network of 300+ partners, 100Kin10 staff play a critical role in connecting the dots between partners who are working on similar issues. This year we hired a part-time research scout who gathers and synthesizes insights partners have developed across the country, as well as insights from research and literature reviews, and shares back out with everyone working on those issues.</p></div>
+        <div class="block-5">
+            <p><b>Research Scout:</b> As the backbone of a network of 300+ partners, 100Kin10 staff play a critical role
+                in connecting the dots between partners who are working on similar issues. This year we hired a
+                part-time research scout who gathers and synthesizes insights partners have developed across the
+                country, as well as insights from research and literature reviews, and shares back out with everyone
+                working on those issues.</p>
+        </div>
     </section>
     <section class="b1_section-19">
         <img class="img-1" src="img/TOC_icon6_06_gn.png">
@@ -927,428 +1086,650 @@ representing <span>132</span> orgs</div>
                 Building on the Work of Others
             </h2>
             <p>
-                Deborah Sachs first learned about the “Get the Facts Out” toolkit at the 2018 100Kin10 Summit. She was excited to see so much information about the myths and facts of teaching pulled together and organized in a single easy-to-use resource. Reflecting on how many myths there are about teachers and teaching, she thought it might be a good jumping-off point to build visibility for the University of Indianapolis’s teacher-preparation programs.</p>
+                Deborah Sachs first learned about the “Get the Facts Out” toolkit at the 2018 100Kin10 Summit. She was
+                excited to see so much information about the myths and facts of teaching pulled together and organized
+                in a single easy-to-use resource. Reflecting on how many myths there are about teachers and teaching,
+                she thought it might be a good jumping-off point to build visibility for the University of
+                Indianapolis’s teacher-preparation programs.</p>
 
             <p>
-                Sachs and her colleagues adapted the content and produced both a poster and a flier, highlighting the myths and facts information. The flier was used for various recruiting events, and the poster was put in buildings around campus, particularly those that host STEM coursework. But it wasn’t only future teachers that Sachs and her colleagues sought to help inform. They also presented the myths and facts at teacher conferences where they could reach current educators who interact daily with potential future teachers, helping to spread the ripple of knowledge.</p>
-                <p>“The most valuable part of this work for me and my colleagues has been the opportunity to connect with individuals who are all addressing the same challenges, allowing us to brainstorm and share ideas with people across the broad spectrum of 100Kin10 partners. It has helped to not feel so isolated in our work and to know that there is a cohesive group of people all working to improve education in many ways and at many levels,” said Sachs.</p>
+                Sachs and her colleagues adapted the content and produced both a poster and a flier, highlighting the
+                myths and facts information. The flier was used for various recruiting events, and the poster was put in
+                buildings around campus, particularly those that host STEM coursework. But it wasn’t only future
+                teachers that Sachs and her colleagues sought to help inform. They also presented the myths and facts at
+                teacher conferences where they could reach current educators who interact daily with potential future
+                teachers, helping to spread the ripple of knowledge.</p>
+            <p>“The most valuable part of this work for me and my colleagues has been the opportunity to connect with
+                individuals who are all addressing the same challenges, allowing us to brainstorm and share ideas with
+                people across the broad spectrum of 100Kin10 partners. It has helped to not feel so isolated in our work
+                and to know that there is a cohesive group of people all working to improve education in many ways and
+                at many levels,” said Sachs.</p>
 
         </div>
     </section>
     <section class="b1_section-20">
         <img class="img-1" src="img/PURPLEROOTTREE_02.png">
         <div class="block-1">
-            <h3>The Impact of Learning and<br/>
+            <h3>The Impact of Learning and<br />
                 Information Sharing</h3>
-            <p>In 2019 we heard from partners that our efforts to share information and promote learning amongst partners across the country had significant impact on their day-to-day work:</p>
+            <p>In 2019 we heard from partners that our efforts to share information and promote learning amongst
+                partners across the country had significant impact on their day-to-day work:</p>
         </div>
         <div class="block-2">
-            <p><span>75%</span> of partners said they tackled challenges they couldn’t have taken on alone</p>
+            <p><span><em class="countup" data-count="75">0</em>%</span> of partners said they tackled challenges they couldn’t have taken on alone</p>
         </div>
         <div class="block-3">
-            <p><span>82%</span> of partners said they shared expertise or insights from their own work back out with the network</p>
+            <p><span><em class="countup" data-count="82">0</em>%</span> of partners said they shared expertise or insights from their own work back out with the
+                network</p>
         </div>
         <div class="block-4">
-            <p><span>84%</span> of partners said they accessed expertise or insights that they would not have encountered otherwise</p>
+            <p><span><em class="countup" data-count="84">0</em>%</span> of partners said they accessed expertise or insights that they would not have
+                encountered otherwise</p>
         </div>
         <div class="block-5">
-            <p><span>89%</span> of partners said they learned something new in the 100Kin10 network</p>
+            <p><span><em class="countup" data-count="89">0</em>%</span> of partners said they learned something new in the 100Kin10 network</p>
         </div>
     </section>
     <div id="board_2">
-    <section id="b1" style="background-image:url('img/b1-1.jpg')">
-        <h3>Cross-Sector Learning Partnerships</h3>
-        <p>In 2019, California Science Center (CSC) was eager to connect with local school districts in their state to support STEM educators with their resources and expertise. At 100Kin10’s 2019 Regional Gathering, CSC was able to connect with folks from Torrance Unified School District, and a new partnership was born. CSC applied for a 100Kin10 collaboration grant to support a series of meetings to begin building new collaborations and was able to meet directly with TUSD. Ramona Chang, Director of Curriculum and Instruction at TUSD, reflected on what it’s been like for schools to build partnerships with organizations outside of the education sector.</p>
-        <p>“I have found that working with organizations such as the California Science Center provided us the opportunity to see beyond the K-12 sector. Collaborations with groups outside the K-12 sector is vital for both the school district and the other organizations. We all have extended our science knowledge, pedagogical knowledge, and NGSS knowledge. While we have always known that this is a vital component, it is because of 100Kin10 that we have been able to expand our professional network.”</p>
-      </section>
-    
-      <section id="b2">
-        <div>
-          <h3>Facilitate Local Learning Networks</h3>
-          <p>Regional gatherings are one of our core programs to provide time and space for organizations working in the same local context to network and learn from one another. These short convenings are low-barrier opportunities for partners to learn about inspirational work going on in their own backyard and build relationships with local organizations.</p>
-          <img src="img/b2-1.jpg">
-        </div>
-      </section>
-    
-      <section id="b3">
-        <h3>Self-Initiated Networks of Partners</h3>
-        <p>In 2019, Amanda Smith and Rebecca Theobald noticed that many 100Kin10 partners, just like themselves, were working with rural schools. While many of these partners worked in different rural contexts, they often found that they faced common challenges. Smith and Theobald began thinking, “There are so many great educators and practitioners working in rural settings... how do we share everything, how can we develop a strong community of practice and ensure that we can all start with the best ideas out there?”</p>
-        <p>With the help of 100Kin10, Smith and Theobald were able to do just that, launching the first-ever 100Kin10 micro-network to bring together rural STEM practitioners from across the country. They met at Summit in 2019 and held numerous calls and virtual meet-ups to share ideas, discuss their practices, and give feedback. After the first year, Theobald says, “We’re just starting to scratch the surface and really starting to grow,” and Smith added that the rural micro-network has “built a foundation for relationships… we’re already learning so much from each other, and we’re really just starting.”</p>
-        <p>“What 100Kin10 does is connect people, they are working at this really high level… they keep everything organized and they create the structure and setting for you to thrive,” says Smith. Theobald explained that they were modeling that same behavior with the rural micro-network, “It was all the participation in 100Kin10 that led us to see how much was out there and how much we needed to connect everyone.”</p>
-      </section>
-      <a name="5"></a>
-      <section id="b4">
-        <div>
-          <img class="icon" src="img/b4-1.jpg ">
-          <h1>MOBILIZE<br>PROBLEM SOLVING:</h1>
-          <h2>Structure and Support<br>Collaborative Action</h2>
-        </div>
-        <div>
-        <div class="columns">
-          <div>
-            <h3>The Strategy:</h3>
-            <p>To solve challenges in a way that can stick, multiple players, from multiple perspectives and contexts and bringing their diverse expertise to bear, need to work together. Yet collaboration can be cumbersome and time-consuming, often yielding lowest-common-denominator results. Networks trying to effect lasting change therefore need tools to bring people together to collaborate and problem-solve effectively.</p>
-            <p>Strong processes and the right kind of support and resources allow diverse individuals and organizations to use their expertise to advance the problem at hand, rather than figuring out how to manage logistics. As a result, individuals who have the passion and desire to tackle a challenge feel supported in stepping up to lead and participate in cross-organizational teams.</p>
-            <p>As more partners step into leadership roles and small communities of shared purpose grow, stronger networks form amongst likely and unlikely allies, putting into motion positive feedback loops. When more people take on leadership roles, the entire network benefits</p>
-            <img src="img/b4-3.jpg ">
-          </div>
-          <div>
-            <img class="no_mobile" src="img/b4-2.jpg ">
-            <blockquote>
-              "Before Project Teams, I didn't know any other way to pull together people from accross the nation that could have an impact on the teaching profession. I put my idea out there and ended up with lots of great partners."<br>-PT Leader
-            </blockquote>
-            <h3>How We Implement:</h3>
-            <p>At 100Kin10, we’ve continued to iterate and design new forms of networked problem solving. Over the years, we’ve honed in on an approach that provides structure, support, and resources for collaborative innovation, which we call Project Teams.</p>
-            <p>Project Teams are small groups of partners that collaborate on time-bound projects to address specific challenges. Partners identify a problem they can’t solve alone and invite others to work on it with them.</p>
-            <p>Partners propose a topic that is a pressing need for them, and others join if that need is shared. Our goal is to create a structure that allows everyone to bring their unique expertise to bear and that offloads the burden of logistics onto us, allowing partners to focus on what they do best.</p>
-          </div>
-        </div>
-        <hr />
-        <div id="tree_thing">
-          <img class="no_mobile" src="img/b4-4.jpg ">
-          <div>
-            <div class="number">14</div>
-            Project Teams in 2019 representing 76 organizations and 92 individuals
-          </div>
-          <div>
-            <div class="number">24</div>
-            In 2020, there will be multiple project teams focused on all of the 7 Catalyst themes
-          </div>
-        </div>
-      </section>
-    
-      <section id="b5" style="background-image: url('img/b5-1.jpg')">
-        <h3>Project Team Profile<br>
-          Measuring Positive Work Environments<br>
-          and Culture in Schools</h3>
-        <p>STEM teacher turnover is highest in schools that serve students who are most in need, but there is little existing research on why that is and how it can be addressed. In 2019 a Project Team took up this challenge by investigating publicly accessible measures of teachers’ work environment, analyzing 14 measures using an equity framework. The Project Team grounded their work in three equity-focused statements: students are at the center of our work, equitable access to excellent teaching is the backdrop for this work, teachers should be considered professionals.</p>
-        <p>The Project Team set forth recommendations for researchers to better understand STEM teachers’ perceptions of the work environment, and published their research paper. Since then, Project Team leaders and all members have utilized this framework in their work, and have noticed that states are increasingly focusing on retention strategies, not just recruitment strategies, including improving work place culture. Project Team leaders have also become advocates for assessing work environments in schools, sharing this work with state leads focusing on supporting teachers and making recommendations for school and district leaders to promote the use of data to strengthen and nurture a positive work environment for STEM teachers.</p>
-      </section>
-    
-      <section id="b6">
-        <p><strong>2019 project team Impact</strong></p>
-        <div id="four_trees">
-          <div>
-            <p>
-              <span class="number">92%</span><br>
-              said that as a result of their experience they feel more inspired to stay focused on STEM teaching work
+        <section id="b1" style="background-image:url('img/b1-1.jpg')">
+            <h3>Cross-Sector Learning Partnerships</h3>
+            <p>In 2019, California Science Center (CSC) was eager to connect with local school districts in their state
+                to support STEM educators with their resources and expertise. At 100Kin10’s 2019 Regional Gathering, CSC
+                was able to connect with folks from Torrance Unified School District, and a new partnership was born.
+                CSC applied for a 100Kin10 collaboration grant to support a series of meetings to begin building new
+                collaborations and was able to meet directly with TUSD. Ramona Chang, Director of Curriculum and
+                Instruction at TUSD, reflected on what it’s been like for schools to build partnerships with
+                organizations outside of the education sector.</p>
+            <p>“I have found that working with organizations such as the California Science Center provided us the
+                opportunity to see beyond the K-12 sector. Collaborations with groups outside the K-12 sector is vital
+                for both the school district and the other organizations. We all have extended our science knowledge,
+                pedagogical knowledge, and NGSS knowledge. While we have always known that this is a vital component, it
+                is because of 100Kin10 that we have been able to expand our professional network.”</p>
+        </section>
+
+        <section id="b2">
+            <div>
+                <h3>Facilitate Local Learning Networks</h3>
+                <p>Regional gatherings are one of our core programs to provide time and space for organizations working
+                    in the same local context to network and learn from one another. These short convenings are
+                    low-barrier opportunities for partners to learn about inspirational work going on in their own
+                    backyard and build relationships with local organizations.</p>
+                <img src="img/b2-1.jpg">
+            </div>
+        </section>
+
+        <section id="b3">
+            <h3>Self-Initiated Networks of Partners</h3>
+            <p>In 2019, Amanda Smith and Rebecca Theobald noticed that many 100Kin10 partners, just like themselves,
+                were working with rural schools. While many of these partners worked in different rural contexts, they
+                often found that they faced common challenges. Smith and Theobald began thinking, “There are so many
+                great educators and practitioners working in rural settings... how do we share everything, how can we
+                develop a strong community of practice and ensure that we can all start with the best ideas out there?”
             </p>
-            <img src="img/b6-1.jpg">
-          </div>
-          <div>
-            
-            <p><span class="number">97%</span><br>reported that they would change something about their work based on what they learned on their project team</p>
-            <img src="img/b6-2.jpg">
-          </div>
-          <div>
-            
-            <p><span class="number">97%</span><br>said they have an implementation plan to, or have already, put learnings into action to change something about their current work</p>
-            <img src="img/b6-3.jpg">
-          </div>
-          <div>
-            
-            <p><span class="number">98%</span><br>said that 100Kin10 effectively removed all significant barriers to collaboration for their team’s work</p>
-            <img src="img/b6-4.jpg">
-          </div>
-        </div>
-      </section>
-      <a name="6"></a>
-      <section id="b7">
-        <div>
-          <img class="icon" src="img/b7-1.png">
-          <img id="image_b7-2" class="right half no_mobile" src="img/b7-2.jpg">
-          <h1>SUSTAIN EFFORTS<br>OVER THE LONG HAUL:</h1>
-          <h3>Nourish Catalyst Communities</h3>
-          <h3>The Strategy</h3>
-          <p class="half">The kind of change that lasts doesn’t happen overnight. It takes years of continued effort. This shouldn’t surprise us -- it took generations to build the systems that have led to the inequitable outcomes we are all seeing so clearly right now. There are no shortcuts to rebuilding them with equity and inclusion. But given unceasing demands and scattered attention, maintaining that kind of focus requires continued support and nourishment. With it, we can fuel work for the long haul.</p>
-          <p class="half">Networks need support to build trust, share their challenges, learn from one another, experiment together, adapt to their contexts, and hone in on effective solutions while staying focused on their shared goal. If we can foster these kinds of communities, they will do the hard work of making progress over the duration. We cannot do that work for them; all we can do is create the conditions where they can feel safe, inspired, and supported to do it together.</p>
-          <blockquote class="half right">
-            "It's not often we get to work outside of our bubbles on shared problems, but unless we do that we will all invent the same or similar or antithetical solutions to the same problems."
-          </blockquote>
-          <h3>How We Implement:<br>
-            Catalyst Communities</h3>
-          <p>At 100Kin10, we’ve developed communities of partners around the Catalysts; the highest leverage challenges in STEM education. Our three-part process helps sustain teams over the long-term by providing a range of support and resources. This structure is informed by a deep understanding of how systems change, and what challenges teams need to overcome at each stage of the process.</p>
-        </div>
-      </section>
-    
-      <section id="b8">
-        <div>
-          <img class="half" src="img/b8-1.jpg">
-          <div>
-            <p><strong>GET SMART: BRAIN TRUST, RESEARCH, REPORT</strong></p>
-            <p>We help gather the information and knowledge needed to understand the challenges, tapping the wisdom of practitioners and other experts to build on the best ideas out there.</p>  
-          </div>
-        </div>
-        <div>
-          <img class="half" src="img/b8-2.jpg">
-          <div>
-            <p><strong>MOBILIZE AND PROBLEM SOLVE: <br>WORKSHOPS AND NATIONAL PROJECT TEAMS</strong></p>
-            <p>We help partners gather to collaborate, explore shared problems, and form teams to focus on the challenges that have the highest potential for system-wide impact, supplying structure and resources to fuel collaborative problem solving.</p>  
-          </div>
-        </div>
-        <div>
-          <img class="half" src="img/b8-3.jpg">
-          <div>
-            <p><strong>BUILD ON WHAT WORKS: <br>KNOWLEDGE STRATEGY</strong></p>
-            <p>We help partners continue to articulate their challenges in real time and find, within or beyond the network, the solutions they need, so they can always start from the best ideas out there and build on that. We are constantly feeding what we learn back into the network, fueling teams to keep building on each other’s work.</p>  
-          </div>
-        </div>
-      </section>
-    
-      <section id="b9">
-        <div>
-          <div id="b9_title">
-            <h1>ZOOMING IN ON<br> THE 2019 CATALYST COMMUNITIES</h1>
-            <p>In 2019, two catalyst communities engaged in a wide breadth of work to address Work Environments and Foundational Math in STEM.</p>
-          </div>
-          <hr/>
-          <img class="half right" src="img/b9-1.png">
-         <h3>
-            Work Environment Catalyst Community
-          </h3>
-          <p>In 2018, a Brain trust of 21 partners and teachers guided the development of an actionable research report “Teachers at work” that was Featured in Education Dive, Ed Week, Politico New York, and eSchool News.</p>
-          <p>Building on that report, 43 partners and allies convened at a workshop to examine the research and identify opportunities for collaborative action.</p>
-          <p>Coming out of that workshop, 4 project teams (comprised of 28 partners) tackled the Work Environments catalyst, each working to collaboratively solve problems standing in the way of schools being supportive and growth-oriented workplaces for teachers.</p>
-          <ul>
-            <li>Supporting Holistic Frameworks for Mentoring Teacher Leaders</li>
-            <li>Measuring Positive Work Environment and Culture In Schools</li>
-            <li>Partnering With Schools To Nurture Positive Work Environment</li>
-            <li>Integrating Professional Growth Into the School Day</li>
-          </ul>
-          <img class="half left" src="img/b9-2.png">
-          <p class="ellipses">35 partners and allies came together at a second in-person gathering a year later to learn from each other, celebrate progress made and identify new ways to collaborate.</p>
-          <p class="ellipses">11 individuals joined an ongoing Brain Trust to support partners to find solutions to challenges they’re experiencing, so that no one has to reinvent the wheel.</p>
-          <img class="half right" src="img/b9-3.png">
-          <h3>Foundational Math Catalyst Community</h3>
-          <p class="ellipses">A Brain Trust of 35 partners and teachers guided the development of an actionable research report, “Doing the Math: Building the Foundations of Joyful and Authentic Math Learning for All Students”, that was featured by The 74, Forbes, EdSource, and Education</p>
-          <ul>
-            <li>Featured by The 74, Forbes, EdSource, and Education Dive.</li>
-          </ul>
-          <p class="ellipses">34 partners and allies came together in an action-oriented workshop to dig into the research and identify how to take collaborative action to address the work-environment catalysts.</p>
-          <img class="half left" src="img/b9-4.png">
-          <p class="ellipses">4 Project Teams proposed for 2020</p>
-          <ul>
-            <li>Developing and Supporting STEM Mindsets in Elementary Teachers</li>
-            <li>Elementary Teacher Preparation with a STEM Focus</li>
-            <li>Standards For Culturally Relevant Mathematical Practice and Inquiry</li>
-            <li>Universal Design To Improve Math Instruction For All Learners</li>
-          </ul>
-          <p class="ellipses">14 individuals joined an ongoing Brain Trust to support partners to find solutions to challenges they’re experiencing, so that no one has to reinvent the wheel.</p>
-          <p class="ellipses">81% of attendees at our Fall Foundational Math workshop indicated that what they learned would have a breakthrough or strong positive impact on their work</p>
-          <p class="ellipses">100% of attendees at our Fall Foundational Math workshop felt free to share challenges without filters</p>
-        </div>
-      </section>
-    
-      <section id="b10">
-        <div>
-          <h3>Building a Community of<br>
-          Practice and Care</h3>
-          <p>A Brief Interview with Toni Stith on<br>
-          Building Communities within 100Kin1</p>
-        </div>
-        <p class="interview"><strong>100Kin10</strong>: Can you tell us about how you first got involved with Project Teams?</p>
-        <p><strong>Toni Stith</strong>: I first learned about Project Teams when I attended a virtual meet-up. I knew I wanted to be involved in one because I was already looking for opportunities to do some professional learning on my own but hadn’t found the right venue. Project Teams were just the right amount of time and felt really feasible; it wasn’t graduate school or a P.hD, just 6-months focused on professional development. Most importantly, there was a Project Team with a topic that directly related to my work, so I knew it would align with what I was already doing.100Kin10: And what was the experience like for you?</p>
-        <p class="interview"><strong>100Kin10</strong>: 100Kin10: And what was the experience like for you?</p>
-        <p><strong>Toni Stith</strong>: I found the Project Team to be very relevant to my work; the work itself fed directly into the project I was already working on, and while it was additional work, the structure made it easy to plug in and the other partners supply the passion you need to work on the project throughout the 6 months… That really motivated me, I just enjoyed the camaraderie with my teammates, they were all new people, and we all got along and worked together. It was so great to be learning from other people who are in similar situations to you. That first Project Team I was a part of aligned so well with my work and helped me in so many ways that I decided to come back and lead one!</p>
-        <p class="interview"><strong>100Kin10</strong>: That’s great to hear! So what was it like stepping into a leadership role?</p>
-        <p><strong>Toni Stith</strong>: Well 100Kin10 encouraged me to use the Project Team to support my work. They know we’re already super busy and they ask us to find ways for their programs to contribute to the work we’re already doing. It was helpful to have a whole team of folks working together on the Project Team, and it was inspiring to see how our work could contribute to STEM education nationwide, while at the same time being directly beneficial for each of us in our own work. Leading the Project Team was exciting and invigorating, and at first, it seemed like a lot, but 100Kin10 helped support us with structure and format… their guidance made it all manageable and helped us get focused and set a work plan and schedule that would work for everyone. Spending time with my project team has been great; it’s not just putting all the content together and working collaboratively, it’s also an opportunity to talk through ideas with other partners who have different experiences than me, who are working in different places all around the country, and we really learn from each other.</p>
-        <p class="interview"><strong>100Kin10</strong>: So can you give us an update on how it’s been going?</p>
-        <p><strong>Toni Stith</strong>: Right now we’re about half-way through the process, but we decided to pause the work because of COVID-19. However, even though the Project Team work has paused, we’re all still coming together regularly to check-in and talk about these topics. Even though we’re not actively working together, we’re all still observing and sharing with one another, and that’s enabled us to continue learning from each other. I facilitate a conversation each call and we talk through what we’ve learned and how we are doing, and even beyond the Project Team work, we continue to learn from one another. It’s become a venue for supporting each other on a personal and professional level… we have truly formed a learning community now and this pandemic is showing us just how important we are to one another! None of us knew each other before this Project Team, and now we’re leaning on each other for support and seeing our team as an important part of our professional nourishment… and I can tell that everyone on our team values this because despite us all having so many extra responsibilities every single person is still attending our meetings. Our project team and the learning community it’s led to are providing us meaning far beyond the work itself.</p>
-      </section>
-    
-      <section id="b11">
-        <div>
-          <h3>Impact of Catalyst Communities</h3>
-          <p>In 2019 we supported two catalyst communities, each focused on a different key catalyst for change in STEM education; Work Environments in STEM education, and Foundational Math.</p>
-        </div>
-        <div>
-          <div id="b11-box_1">
-            <h4>Increased Involvement Over Time:</h4>
-            <p>Work Environments project teams more than doubled -- from 4 to 9 -- in the second year, illustrating that the Work Environments catalyst community is gaining interest from the network</p>
-          </div>
-          <div id="b11-box_2">
-            <h4>Critical Players Present:</h4>
-            <p>92% of the Work Environments participants and 97% of the Foundational Math participants reported that the critical players were present to be able to do this systems change work</p>
-          </div>
-          <div id="b11-box_3">
-            <h4>Learning & Understanding:</h4>
-            <p>65% of the Work Environments participants and 76% of the Foundational Math participants reported strong learning as a result of participation</p>
-          </div>
-          <div id="b11-box_4">
-            <h4>Network-Wide Focus:</h4>
-            <p>50% of partners increased their focus on catalysts, and 47 partners made 123 new commitments aligned to catalysts</p>
-          </div>
-          <div id="b11-box_5">
-            <h4>Enhanced Connection & Trust:</h4>
-            <p>96% of the Work Environments participants and 100% of the Foundational Math participants reported that they connected with at least one person at their workshop that they intend to follow-up with</p>
-          </div>
-          <div id="b11-box_6">
-            <h4>Potential for Impact:</h4>
-            <p>80% of Foundational Math workshop attendees said what they learned would provide a strong foundation for their work, and 43% of the Work Environments workshop attendees said the experience had already impacted the way their organizations approached their work/p>
-          </div>
-          <img id="b11-image_1" class="no_mobile" src="img/b11-1.jpg">
-          <img id="b11-image_2" class="no_mobile" src="img/b11-3.jpg">
-          <img id="b11-image_3" class="no_mobile" src="img/b11-2.jpg">
-        </div>
-      </section>
-    
-      <section id="b12">
-        <div>
-          <h1><img class="icon" src="img/b12-1.jpg"><Br>Stumbles and<br>Learnings</h1>
-          <div class="columns">
-            <p>Systems change is hard. It doesn’t happen at all once, but is the result of years of experimenting and adapting. In the process, we sometimes find that even our best efforts don’t pan out the way we hoped. These are opportunities for us to learn, better understand the challenges we face, and develop more refined, better informed, and more strategic responses. As long as we learn from what we’ve done, we’ve gotten one step closer to making progress. We hope that by sharing these stumbles and learnings, we are practicing the kind of openness and vulnerability that animates 100Kin10. We know that the more we share both what works and what doesn’t, the more effectively we will work together to end the STEM teacher shortage.</p>
-            <img class="half" src="img/b12-2.jpg">
-          </div>
-          <div class="columns">
-            <img class="half no_mobile" src="img/b12-3.jpg">
+            <p>With the help of 100Kin10, Smith and Theobald were able to do just that, launching the first-ever
+                100Kin10 micro-network to bring together rural STEM practitioners from across the country. They met at
+                Summit in 2019 and held numerous calls and virtual meet-ups to share ideas, discuss their practices, and
+                give feedback. After the first year, Theobald says, “We’re just starting to scratch the surface and
+                really starting to grow,” and Smith added that the rural micro-network has “built a foundation for
+                relationships… we’re already learning so much from each other, and we’re really just starting.”</p>
+            <p>“What 100Kin10 does is connect people, they are working at this really high level… they keep everything
+                organized and they create the structure and setting for you to thrive,” says Smith. Theobald explained
+                that they were modeling that same behavior with the rural micro-network, “It was all the participation
+                in 100Kin10 that led us to see how much was out there and how much we needed to connect everyone.”</p>
+        </section>
+        <a name="5" id="s5"></a>
+        <section id="b4">
             <div>
-              <h3>Providing Support that Matches Capacity</h3>
-              <p><strong>OUR GOAL:</strong> We’ve always encouraged and supported our partners to engage in research and learning before launching the design phase of their Project Teams work. In 2019 we supported them with data consultants who could help design surveys and analyze data to conduct primary research, further supplementing the research phase.</p>
-              <p><strong>OUR STUMBLE:</strong> We took for granted that partners would have the capacity to do secondary research on their own, without the need for additional research support. While many Project Teams did engage in secondary research, we realized it was taking a significant amount of time, which left them with less time to focus on the design and ideation phase of the project.</p>
-              <p><strong>HOW WE’RE LEARNING AND CHANGING:</strong> In 2020, we are experimenting with giving a subset of our teams access to a specialized researcher who conducts landscape scans to surface solutions that already exist. Our intention is to take the additional work off their shoulders and ensure that teams working on our focus areas always build off of an understanding of existing research, so that they dive into the design phase faster and better prepared.</p>
+                <img class="icon" src="img/b4-1.jpg ">
+                <h1>MOBILIZE<br>PROBLEM SOLVING:</h1>
+                <h2>Structure and Support<br>Collaborative Action</h2>
             </div>
-          </div>
-          <div class="columns">
             <div>
-              <h3>Guiding Partners to High-Impact Work</h3>
-              <p class="ellipses">OUR GOAL: Through our extensive research and mapping, we honed in on foundational math as a key lever for change in the STEM ecosystem, identifying two key focus areas within foundational math. In 2019 we sought to engage a broad range of partners to join forces to address the focus areas by zooming out to highlight the big-picture challenges and goals surrounding foundational math.</p>
-              <p class="ellipses">OUR STUMBLE: While we saw lots of enthusiasm and participation in the events we hosted around foundational math, there was such a diverse group of partners that the conversation went in dozens of directions, and we initially lost sight of the two key focus areas we had identified. This left partners with lots of excitement for a broad topic, but fewer opportunities to dive into specific collaborative projects</p>
-              <p class="ellipses">HOW WE’RE LEARNING AND CHANGING: We’ve realized that having an expansive frame is helpful for mobilizing partners and generating interest in a topic, but isn’t as productive for building collaborative problem solving teams focused on specific topics. In 2020 we’ll implement this learning by clarifying the distinction between mobilizing language and the specific areas of focus, so that we can inspire a broad and diverse coalition to focus on the highest-leverage challenges</p>
+                <div class="columns">
+                    <div>
+                        <h3>The Strategy:</h3>
+                        <p>To solve challenges in a way that can stick, multiple players, from multiple perspectives and
+                            contexts and bringing their diverse expertise to bear, need to work together. Yet
+                            collaboration can be cumbersome and time-consuming, often yielding lowest-common-denominator
+                            results. Networks trying to effect lasting change therefore need tools to bring people
+                            together to collaborate and problem-solve effectively.</p>
+                        <p>Strong processes and the right kind of support and resources allow diverse individuals and
+                            organizations to use their expertise to advance the problem at hand, rather than figuring
+                            out how to manage logistics. As a result, individuals who have the passion and desire to
+                            tackle a challenge feel supported in stepping up to lead and participate in
+                            cross-organizational teams.</p>
+                        <p>As more partners step into leadership roles and small communities of shared purpose grow,
+                            stronger networks form amongst likely and unlikely allies, putting into motion positive
+                            feedback loops. When more people take on leadership roles, the entire network benefits</p>
+                        <!-- <img src="img/b4-3.jpg "> -->
+                        <video class="list-item-img video" muted="muted" width="580">
+                            <source src="video/GREENTREE_WOPEOPLE1-02.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div>
+                        <!-- <img class="no_mobile" src="img/b4-2.jpg "> -->
+                        <video class="list-item-img video" muted="muted" width="580">
+                            <source src="video/greentree_wopeople3-04.mp4" type="video/mp4">
+                        </video>
+                        <blockquote>
+                            "Before Project Teams, I didn't know any other way to pull together people from accross the
+                            nation that could have an impact on the teaching profession. I put my idea out there and
+                            ended up with lots of great partners."<br>-PT Leader
+                        </blockquote>
+                        <h3>How We Implement:</h3>
+                        <p>At 100Kin10, we’ve continued to iterate and design new forms of networked problem solving.
+                            Over the years, we’ve honed in on an approach that provides structure, support, and
+                            resources for collaborative innovation, which we call Project Teams.</p>
+                        <p>Project Teams are small groups of partners that collaborate on time-bound projects to address
+                            specific challenges. Partners identify a problem they can’t solve alone and invite others to
+                            work on it with them.</p>
+                        <p>Partners propose a topic that is a pressing need for them, and others join if that need is
+                            shared. Our goal is to create a structure that allows everyone to bring their unique
+                            expertise to bear and that offloads the burden of logistics onto us, allowing partners to
+                            focus on what they do best.</p>
+                    </div>
+                </div>
+                <hr />
+                <div id="tree_thing">
+                    <img class="no_mobile" src="img/b4-4.jpg ">
+                    <div>
+                        <div class="number"><em class="countup" data-count="14">0</em></div>
+                        Project Teams in 2019 representing 76 organizations and 92 individuals
+                    </div>
+                    <div>
+                        <div class="number"><em class="countup" data-count="24">0</em></div>
+                        In 2020, there will be multiple project teams focused on all of the 7 Catalyst themes
+                    </div>
+                </div>
+        </section>
+
+        <section id="b5" style="background-image: url('img/b5-1.jpg')">
+            <h3>Project Team Profile<br>
+                Measuring Positive Work Environments<br>
+                and Culture in Schools</h3>
+            <p>STEM teacher turnover is highest in schools that serve students who are most in need, but there is little
+                existing research on why that is and how it can be addressed. In 2019 a Project Team took up this
+                challenge by investigating publicly accessible measures of teachers’ work environment, analyzing 14
+                measures using an equity framework. The Project Team grounded their work in three equity-focused
+                statements: students are at the center of our work, equitable access to excellent teaching is the
+                backdrop for this work, teachers should be considered professionals.</p>
+            <p>The Project Team set forth recommendations for researchers to better understand STEM teachers’
+                perceptions of the work environment, and published their research paper. Since then, Project Team
+                leaders and all members have utilized this framework in their work, and have noticed that states are
+                increasingly focusing on retention strategies, not just recruitment strategies, including improving work
+                place culture. Project Team leaders have also become advocates for assessing work environments in
+                schools, sharing this work with state leads focusing on supporting teachers and making recommendations
+                for school and district leaders to promote the use of data to strengthen and nurture a positive work
+                environment for STEM teachers.</p>
+        </section>
+
+        <section id="b6">
+            <p><strong>2019 project team Impact</strong></p>
+            <div id="four_trees">
+                <div>
+                    <p>
+                        <span class="number"><em class="countup" data-count="92">0</em>%</span><br>
+                        said that as a result of their experience they feel more inspired to stay focused on STEM
+                        teaching work
+                    </p>
+                    <img src="img/b6-1.jpg">
+                </div>
+                <div>
+
+                    <p><span class="number"><em class="countup" data-count="97">0</em>%</span><br>reported that they would change something about their work
+                        based on what they learned on their project team</p>
+                    <img src="img/b6-2.jpg">
+                </div>
+                <div>
+
+                    <p><span class="number"><em class="countup" data-count="97">0</em>%</span><br>said they have an implementation plan to, or have already, put
+                        learnings into action to change something about their current work</p>
+                    <img src="img/b6-3.jpg">
+                </div>
+                <div>
+
+                    <p><span class="number"><em class="countup" data-count="98">0</em>%</span><br>said that 100Kin10 effectively removed all significant
+                        barriers to collaboration for their team’s work</p>
+                    <img src="img/b6-4.jpg">
+                </div>
             </div>
-            <img class="half" src="img/b12-4.jpg">
-          </div>
-        </div>
-      </section>
-    
-      <section id="b13">
-        <div>
-          <img class="icon" src="img/b13-1.jpg">
-          <h1>Looking<br>Beyond 2021:</h1>
-          <h3>Ending the STEM Teacher Shortage</h3>
-          <div class="columns">
-            <p>We’ve spent the last eight years striving toward an ambitious goal, and in the process we’ve gained a much deeper understanding of what needs to be done to create true systemic change. We can see now that our 100,000 STEM teacher goal is only the first part of a multi-decade effort to end the STEM teacher shortage once and for all.</p>
-            <img class="half" src="img/b13-2.jpg">
-          </div>
-          <div class="columns">
-            <img class="half no_mobile" src="img/b13-3.jpg">
+        </section>
+        <a name="6" id="s6"></a>
+        <section id="b7">
             <div>
-              <p>As we close in on our 100,000 STEM teachers goal, we’re reflecting on everything we’ve learned about how to create systems change, and we realize it’s time to build an even broader coalition and expand our work even further. We’re actively working on planning that future, and coming full circle, trying to once again identify a big goal that can inspire action for the next 10 years and beyond. But this time we won’t be simply reaching for big numbers, we’ve got our sights set on transforming the very roots of the challenges we face.</p>
-              <p>While we’re in the final two years of our initial effort, our work is truly just beginning. Don’t worry, we’re not going anywhere in 2021. As we continue to develop new plans, we’ll look to you for guidance and input, because we know that this unprecedented network of 300+ partners has only scratched the surface of what we can accomplish together.</p>
-            </div>  
-          </div>
-        </div>
-      </section>
-    
-      <section id="b14">
-        <div id="b14_title">
-          <h1><img class="icon" src="img/b14-1.jpg"><br>Gratitude</h1>
-          <p>
-            Over the past eight years, we’ve accomplished more than we could have hoped, and it simply would not be possible without the support of so many people and organizations, coalescing around a common vision for change.
-          </p>
-        </div>
-        <hr>
-        <div>
-          <img id="b14_image2" class="no_mobile" src="img/b14-2.jpg">
-          <img id="b14_image4" class="no_mobile" src="img/b14-4.jpg">
-          <div class="columns">
-            <div>
-              <h3>100KIN10 STAFF (MAY 2020)</h3>
-              <p>
-                Grace Clawater Doramus
-                <br>Guadalupe Carrasco
-                <br>Joi Rae
-                <br>Julie Paturzo
-                <br>Kate Isenberg
-                <br>Kendra Danowski
-                <br>Lauren Baier
-                <br>Mable Yiu
-                <br>Mesha Byrd
-                <br>Monique Hoeflinger
-                <br>Pomai Verzon
-                <br>Talia Milgrom-Elcott
-                <br>Vincent Baggett
-              </p>
+                <img class="icon" src="img/b7-1.png">
+                <img id="image_b7-2" class="right half no_mobile" src="img/b7-2.jpg">
+                <h1>SUSTAIN EFFORTS<br>OVER THE LONG HAUL:</h1>
+                <h3>Nourish Catalyst Communities</h3>
+                <h3>The Strategy</h3>
+                <p class="half">The kind of change that lasts doesn’t happen overnight. It takes years of continued
+                    effort. This shouldn’t surprise us -- it took generations to build the systems that have led to the
+                    inequitable outcomes we are all seeing so clearly right now. There are no shortcuts to rebuilding
+                    them with equity and inclusion. But given unceasing demands and scattered attention, maintaining
+                    that kind of focus requires continued support and nourishment. With it, we can fuel work for the
+                    long haul.</p>
+                <p class="half">Networks need support to build trust, share their challenges, learn from one another,
+                    experiment together, adapt to their contexts, and hone in on effective solutions while staying
+                    focused on their shared goal. If we can foster these kinds of communities, they will do the hard
+                    work of making progress over the duration. We cannot do that work for them; all we can do is create
+                    the conditions where they can feel safe, inspired, and supported to do it together.</p>
+                <blockquote class="half right">
+                    "It's not often we get to work outside of our bubbles on shared problems, but unless we do that we
+                    will all invent the same or similar or antithetical solutions to the same problems."
+                </blockquote>
+                <h3>How We Implement:<br>
+                    Catalyst Communities</h3>
+                <p>At 100Kin10, we’ve developed communities of partners around the Catalysts; the highest leverage
+                    challenges in STEM education. Our three-part process helps sustain teams over the long-term by
+                    providing a range of support and resources. This structure is informed by a deep understanding of
+                    how systems change, and what challenges teams need to overcome at each stage of the process.</p>
             </div>
-            <img id="b14_image3" src="img/b14-3.jpg">
-          </div>
-          <img id="b14_image5" src="img/b14-5.jpg">
-          <div class="columns">
-            <img id="b14_image6" class="no_mobile" src="img/b14-6.jpg">
+        </section>
+
+        <section id="b8">
             <div>
-              <h3>2019 100KIN10 FUNDERS</h3>
-              <p>
-                Amgen
-                <br>AT&T Aspire
-                <br>Carbonite
-                <br>Carnegie Corporation of New York
-                <br>Chan Zuckerberg Initiative
-                <br>Chevron
-                <br>CME Group Foundation
-                <br>Dell
-                <br>Freeport-McMoran
-                <br>Genentech
-                <br>Grable Foundation
-                <br>Heising-Simons Foundation
-                <br>Peter and Carmen Lucia Buck Foundation
-                <br>Project Management Institute Education Foundation
-                <br>Qualcomm
-              </p>
+                <!-- <img class="half" src="img/b8-1.jpg"> -->
+                <video class="half video" muted="muted">
+                    <source src="video/seeds dirpile.mp4" type="video/mp4">
+                </video>
+                
+                <div>
+                    <p><strong>GET SMART: BRAIN TRUST, RESEARCH, REPORT</strong></p>
+                    <p>We help gather the information and knowledge needed to understand the challenges, tapping the
+                        wisdom of practitioners and other experts to build on the best ideas out there.</p>
+                </div>
             </div>
-          </div>
-          <img id="b14_image7" src="img/b14-7.jpg">
-          <div class="columns">
             <div>
-              <h3>2019 100KIN10 STRATEGIC ADVISORS</h3>
-              <p>
-                Brandon Barnett
-                <br>Claudia Juech
-                <br>Cristin Dorgelo
-                <br>Debbie Sterling
-                <br>Eileen Yang
-                <br>Ellen Moir
-                <br>Eric Berlow
-                <br>James Liebman
-                <br>Jean Desravines
-                <br>Jeff Milbourne
-                <br>Jim Short
-                <br>Joey Wilson
-                <br>John Deasy
-                <br>Josh Wright
-                <br>Karen Hawley-Miles
-                <br>Kartik Raghavan
-                <br>Kimberly Scott
-                <br>Kristin Kearns-Jordan
-                <br>Lance Fors
-                <br>Larry Friedman
-                <br>Laura Samberg
-              </p>
+                <!-- <img class="half" src="img/b8-2.jpg"> -->
+                <video class="half video" muted="muted">
+                    <source src="video/half grown.mp4" type="video/mp4">
+                </video>
+                <div>
+                    <p><strong>MOBILIZE AND PROBLEM SOLVE: <br>WORKSHOPS AND NATIONAL PROJECT TEAMS</strong></p>
+                    <p>We help partners gather to collaborate, explore shared problems, and form teams to focus on the
+                        challenges that have the highest potential for system-wide impact, supplying structure and
+                        resources to fuel collaborative problem solving.</p>
+                </div>
             </div>
-            <img id="b14_image8" class="no_mobile" src="img/b14-8.jpg">
-          </div>
-          <img id="b14_image10" src="img/b14-10.jpg">
-          <div class="columns">
-            <img id="b14_image9" class="no_mobile" src="img/b14-9.jpg">
-            <p>
-              Leslye Louie
-              <br>Marla Ucelli-Kashyap
-              <br>Maura Pally
-              <br>Meghan Browne
-              <br>Mo Fong
-              <br>Nadya Dabby
-              <br>Reese Pecot
-              <br>Regina Schofield
-              <br>Roberto Rodriguez
-              <br>Sam Seidel
-              <br>Scott Heimlich
-              <br>Shruti Sehra
-              <br>Sonya Pryor-Jones
-              <br>Sue Lehmann
-              <br>Susan Ditkoff
-              <br>Tonya Matthews
-              <br>Veenu Aulakh
-            </p>
-          </div>
-        </div>
-      </section>
+            <div>
+                <!-- <img class="half" src="img/b8-3.jpg"> -->
+                <video class="half video" muted="muted">
+                    <source src="video/full forest.mp4" type="video/mp4">
+                </video>
+                <div>
+                    <p><strong>BUILD ON WHAT WORKS: <br>KNOWLEDGE STRATEGY</strong></p>
+                    <p>We help partners continue to articulate their challenges in real time and find, within or beyond
+                        the network, the solutions they need, so they can always start from the best ideas out there and
+                        build on that. We are constantly feeding what we learn back into the network, fueling teams to
+                        keep building on each other’s work.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="b9">
+            <div>
+                <div id="b9_title">
+                    <h1>ZOOMING IN ON<br> THE 2019 CATALYST COMMUNITIES</h1>
+                    <p>In 2019, two catalyst communities engaged in a wide breadth of work to address Work Environments
+                        and Foundational Math in STEM.</p>
+                </div>
+                <hr />
+                <img class="half right" src="img/b9-1.png">
+                <h3>
+                    Work Environment Catalyst Community
+                </h3>
+                <p>In 2018, a Brain trust of 21 partners and teachers guided the development of an actionable research
+                    report “Teachers at work” that was Featured in Education Dive, Ed Week, Politico New York, and
+                    eSchool News.</p>
+                <p>Building on that report, 43 partners and allies convened at a workshop to examine the research and
+                    identify opportunities for collaborative action.</p>
+                <p>Coming out of that workshop, 4 project teams (comprised of 28 partners) tackled the Work Environments
+                    catalyst, each working to collaboratively solve problems standing in the way of schools being
+                    supportive and growth-oriented workplaces for teachers.</p>
+                <ul>
+                    <li>Supporting Holistic Frameworks for Mentoring Teacher Leaders</li>
+                    <li>Measuring Positive Work Environment and Culture In Schools</li>
+                    <li>Partnering With Schools To Nurture Positive Work Environment</li>
+                    <li>Integrating Professional Growth Into the School Day</li>
+                </ul>
+                <img class="half left" src="img/b9-2.png">
+                <p class="ellipses">35 partners and allies came together at a second in-person gathering a year later to
+                    learn from each other, celebrate progress made and identify new ways to collaborate.</p>
+                <p class="ellipses">11 individuals joined an ongoing Brain Trust to support partners to find solutions
+                    to challenges they’re experiencing, so that no one has to reinvent the wheel.</p>
+                <img class="half right" src="img/b9-3.png">
+                <h3>Foundational Math Catalyst Community</h3>
+                <p class="ellipses">A Brain Trust of 35 partners and teachers guided the development of an actionable
+                    research report, “Doing the Math: Building the Foundations of Joyful and Authentic Math Learning for
+                    All Students”, that was featured by The 74, Forbes, EdSource, and Education</p>
+                <ul>
+                    <li>Featured by The 74, Forbes, EdSource, and Education Dive.</li>
+                </ul>
+                <p class="ellipses">34 partners and allies came together in an action-oriented workshop to dig into the
+                    research and identify how to take collaborative action to address the work-environment catalysts.
+                </p>
+                <img class="half left" src="img/b9-4.png">
+                <p class="ellipses">4 Project Teams proposed for 2020</p>
+                <ul>
+                    <li>Developing and Supporting STEM Mindsets in Elementary Teachers</li>
+                    <li>Elementary Teacher Preparation with a STEM Focus</li>
+                    <li>Standards For Culturally Relevant Mathematical Practice and Inquiry</li>
+                    <li>Universal Design To Improve Math Instruction For All Learners</li>
+                </ul>
+                <p class="ellipses">14 individuals joined an ongoing Brain Trust to support partners to find solutions
+                    to challenges they’re experiencing, so that no one has to reinvent the wheel.</p>
+                <p class="ellipses">81% of attendees at our Fall Foundational Math workshop indicated that what they
+                    learned would have a breakthrough or strong positive impact on their work</p>
+                <p class="ellipses">100% of attendees at our Fall Foundational Math workshop felt free to share
+                    challenges without filters</p>
+            </div>
+        </section>
+
+        <section id="b10">
+            <div>
+                <h3>Building a Community of<br>
+                    Practice and Care</h3>
+                <p>A Brief Interview with Toni Stith on<br>
+                    Building Communities within 100Kin1</p>
+            </div>
+            <p class="interview"><strong>100Kin10</strong>: Can you tell us about how you first got involved with
+                Project Teams?</p>
+            <p><strong>Toni Stith</strong>: I first learned about Project Teams when I attended a virtual meet-up. I
+                knew I wanted to be involved in one because I was already looking for opportunities to do some
+                professional learning on my own but hadn’t found the right venue. Project Teams were just the right
+                amount of time and felt really feasible; it wasn’t graduate school or a P.hD, just 6-months focused on
+                professional development. Most importantly, there was a Project Team with a topic that directly related
+                to my work, so I knew it would align with what I was already doing.100Kin10: And what was the experience
+                like for you?</p>
+            <p class="interview"><strong>100Kin10</strong>: 100Kin10: And what was the experience like for you?</p>
+            <p><strong>Toni Stith</strong>: I found the Project Team to be very relevant to my work; the work itself fed
+                directly into the project I was already working on, and while it was additional work, the structure made
+                it easy to plug in and the other partners supply the passion you need to work on the project throughout
+                the 6 months… That really motivated me, I just enjoyed the camaraderie with my teammates, they were all
+                new people, and we all got along and worked together. It was so great to be learning from other people
+                who are in similar situations to you. That first Project Team I was a part of aligned so well with my
+                work and helped me in so many ways that I decided to come back and lead one!</p>
+            <p class="interview"><strong>100Kin10</strong>: That’s great to hear! So what was it like stepping into a
+                leadership role?</p>
+            <p><strong>Toni Stith</strong>: Well 100Kin10 encouraged me to use the Project Team to support my work. They
+                know we’re already super busy and they ask us to find ways for their programs to contribute to the work
+                we’re already doing. It was helpful to have a whole team of folks working together on the Project Team,
+                and it was inspiring to see how our work could contribute to STEM education nationwide, while at the
+                same time being directly beneficial for each of us in our own work. Leading the Project Team was
+                exciting and invigorating, and at first, it seemed like a lot, but 100Kin10 helped support us with
+                structure and format… their guidance made it all manageable and helped us get focused and set a work
+                plan and schedule that would work for everyone. Spending time with my project team has been great; it’s
+                not just putting all the content together and working collaboratively, it’s also an opportunity to talk
+                through ideas with other partners who have different experiences than me, who are working in different
+                places all around the country, and we really learn from each other.</p>
+            <p class="interview"><strong>100Kin10</strong>: So can you give us an update on how it’s been going?</p>
+            <p><strong>Toni Stith</strong>: Right now we’re about half-way through the process, but we decided to pause
+                the work because of COVID-19. However, even though the Project Team work has paused, we’re all still
+                coming together regularly to check-in and talk about these topics. Even though we’re not actively
+                working together, we’re all still observing and sharing with one another, and that’s enabled us to
+                continue learning from each other. I facilitate a conversation each call and we talk through what we’ve
+                learned and how we are doing, and even beyond the Project Team work, we continue to learn from one
+                another. It’s become a venue for supporting each other on a personal and professional level… we have
+                truly formed a learning community now and this pandemic is showing us just how important we are to one
+                another! None of us knew each other before this Project Team, and now we’re leaning on each other for
+                support and seeing our team as an important part of our professional nourishment… and I can tell that
+                everyone on our team values this because despite us all having so many extra responsibilities every
+                single person is still attending our meetings. Our project team and the learning community it’s led to
+                are providing us meaning far beyond the work itself.</p>
+        </section>
+
+        <section id="b11">
+            <div>
+                <h3>Impact of Catalyst Communities</h3>
+                <p>In 2019 we supported two catalyst communities, each focused on a different key catalyst for change in
+                    STEM education; Work Environments in STEM education, and Foundational Math.</p>
+            </div>
+            <div>
+                <div id="b11-box_1">
+                    <h4>Increased Involvement Over Time:</h4>
+                    <p>Work Environments project teams more than doubled -- from 4 to 9 -- in the second year,
+                        illustrating that the Work Environments catalyst community is gaining interest from the network
+                    </p>
+                </div>
+                <div id="b11-box_2">
+                    <h4>Critical Players Present:</h4>
+                    <p>92% of the Work Environments participants and 97% of the Foundational Math participants reported
+                        that the critical players were present to be able to do this systems change work</p>
+                </div>
+                <div id="b11-box_3">
+                    <h4>Learning & Understanding:</h4>
+                    <p>65% of the Work Environments participants and 76% of the Foundational Math participants reported
+                        strong learning as a result of participation</p>
+                </div>
+                <div id="b11-box_4">
+                    <h4>Network-Wide Focus:</h4>
+                    <p>50% of partners increased their focus on catalysts, and 47 partners made 123 new commitments
+                        aligned to catalysts</p>
+                </div>
+                <div id="b11-box_5">
+                    <h4>Enhanced Connection & Trust:</h4>
+                    <p>96% of the Work Environments participants and 100% of the Foundational Math participants reported
+                        that they connected with at least one person at their workshop that they intend to follow-up
+                        with</p>
+                </div>
+                <div id="b11-box_6">
+                    <h4>Potential for Impact:</h4>
+                    <p>80% of Foundational Math workshop attendees said what they learned would provide a strong
+                        foundation for their work, and 43% of the Work Environments workshop attendees said the
+                        experience had already impacted the way their organizations approached their work/p>
+                </div>
+                <img id="b11-image_1" class="no_mobile" src="img/b11-1.jpg">
+                <img id="b11-image_2" class="no_mobile" src="img/b11-3.jpg">
+                <img id="b11-image_3" class="no_mobile" src="img/b11-2.jpg">
+            </div>
+        </section>
+        <a name="7" id="s7"></a>
+        <section id="b12">
+            <div>
+                <h1><img class="icon" src="img/b12-1.jpg"><Br>Stumbles and<br>Learnings</h1>
+                <div class="columns">
+                    <p>Systems change is hard. It doesn’t happen at all once, but is the result of years of
+                        experimenting and adapting. In the process, we sometimes find that even our best efforts don’t
+                        pan out the way we hoped. These are opportunities for us to learn, better understand the
+                        challenges we face, and develop more refined, better informed, and more strategic responses. As
+                        long as we learn from what we’ve done, we’ve gotten one step closer to making progress. We hope
+                        that by sharing these stumbles and learnings, we are practicing the kind of openness and
+                        vulnerability that animates 100Kin10. We know that the more we share both what works and what
+                        doesn’t, the more effectively we will work together to end the STEM teacher shortage.</p>
+                    <img class="half" src="img/b12-2.jpg">
+                </div>
+                <div class="columns">
+                    <img class="half no_mobile" src="img/b12-3.jpg">
+                    <div>
+                        <h3>Providing Support that Matches Capacity</h3>
+                        <p><strong>OUR GOAL:</strong> We’ve always encouraged and supported our partners to engage in
+                            research and learning before launching the design phase of their Project Teams work. In 2019
+                            we supported them with data consultants who could help design surveys and analyze data to
+                            conduct primary research, further supplementing the research phase.</p>
+                        <p><strong>OUR STUMBLE:</strong> We took for granted that partners would have the capacity to do
+                            secondary research on their own, without the need for additional research support. While
+                            many Project Teams did engage in secondary research, we realized it was taking a significant
+                            amount of time, which left them with less time to focus on the design and ideation phase of
+                            the project.</p>
+                        <p><strong>HOW WE’RE LEARNING AND CHANGING:</strong> In 2020, we are experimenting with giving a
+                            subset of our teams access to a specialized researcher who conducts landscape scans to
+                            surface solutions that already exist. Our intention is to take the additional work off their
+                            shoulders and ensure that teams working on our focus areas always build off of an
+                            understanding of existing research, so that they dive into the design phase faster and
+                            better prepared.</p>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div>
+                        <h3>Guiding Partners to High-Impact Work</h3>
+                        <p class="ellipses">OUR GOAL: Through our extensive research and mapping, we honed in on
+                            foundational math as a key lever for change in the STEM ecosystem, identifying two key focus
+                            areas within foundational math. In 2019 we sought to engage a broad range of partners to
+                            join forces to address the focus areas by zooming out to highlight the big-picture
+                            challenges and goals surrounding foundational math.</p>
+                        <p class="ellipses">OUR STUMBLE: While we saw lots of enthusiasm and participation in the events
+                            we hosted around foundational math, there was such a diverse group of partners that the
+                            conversation went in dozens of directions, and we initially lost sight of the two key focus
+                            areas we had identified. This left partners with lots of excitement for a broad topic, but
+                            fewer opportunities to dive into specific collaborative projects</p>
+                        <p class="ellipses">HOW WE’RE LEARNING AND CHANGING: We’ve realized that having an expansive
+                            frame is helpful for mobilizing partners and generating interest in a topic, but isn’t as
+                            productive for building collaborative problem solving teams focused on specific topics. In
+                            2020 we’ll implement this learning by clarifying the distinction between mobilizing language
+                            and the specific areas of focus, so that we can inspire a broad and diverse coalition to
+                            focus on the highest-leverage challenges</p>
+                    </div>
+                    <img class="half" src="img/b12-4.jpg">
+                </div>
+            </div>
+        </section>
+        <a name="8" id="s8"></a>
+        <section id="b13">
+            <div>
+                <img class="icon" src="img/b13-1.jpg">
+                <h1>Looking<br>Beyond 2021:</h1>
+                <h3>Ending the STEM Teacher Shortage</h3>
+                <div class="columns">
+                    <p>We’ve spent the last eight years striving toward an ambitious goal, and in the process we’ve
+                        gained a much deeper understanding of what needs to be done to create true systemic change. We
+                        can see now that our 100,000 STEM teacher goal is only the first part of a multi-decade effort
+                        to end the STEM teacher shortage once and for all.</p>
+                    <img class="half" src="img/b13-2.jpg">
+                </div>
+                <div class="columns">
+                    <img class="half no_mobile" src="img/b13-3.jpg">
+                    <div>
+                        <p>As we close in on our 100,000 STEM teachers goal, we’re reflecting on everything we’ve
+                            learned about how to create systems change, and we realize it’s time to build an even
+                            broader coalition and expand our work even further. We’re actively working on planning that
+                            future, and coming full circle, trying to once again identify a big goal that can inspire
+                            action for the next 10 years and beyond. But this time we won’t be simply reaching for big
+                            numbers, we’ve got our sights set on transforming the very roots of the challenges we face.
+                        </p>
+                        <p>While we’re in the final two years of our initial effort, our work is truly just beginning.
+                            Don’t worry, we’re not going anywhere in 2021. As we continue to develop new plans, we’ll
+                            look to you for guidance and input, because we know that this unprecedented network of 300+
+                            partners has only scratched the surface of what we can accomplish together.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a name="9" id="s9"></a>
+        <section id="b14">
+            <div id="b14_title">
+                <h1><img class="icon" src="img/b14-1.jpg"><br>Gratitude</h1>
+                <p>
+                    Over the past eight years, we’ve accomplished more than we could have hoped, and it simply would not
+                    be possible without the support of so many people and organizations, coalescing around a common
+                    vision for change.
+                </p>
+            </div>
+            <hr>
+            <div>
+                <img id="b14_image2" class="no_mobile" src="img/b14-2.jpg">
+                <img id="b14_image4" class="no_mobile" src="img/b14-4.jpg">
+                <div class="columns">
+                    <div>
+                        <h3>100KIN10 STAFF (MAY 2020)</h3>
+                        <p>
+                            Grace Clawater Doramus
+                            <br>Guadalupe Carrasco
+                            <br>Joi Rae
+                            <br>Julie Paturzo
+                            <br>Kate Isenberg
+                            <br>Kendra Danowski
+                            <br>Lauren Baier
+                            <br>Mable Yiu
+                            <br>Mesha Byrd
+                            <br>Monique Hoeflinger
+                            <br>Pomai Verzon
+                            <br>Talia Milgrom-Elcott
+                            <br>Vincent Baggett
+                        </p>
+                    </div>
+                    <img id="b14_image3" src="img/b14-3.jpg">
+                </div>
+                <img id="b14_image5" src="img/b14-5.jpg">
+                <div class="columns">
+                    <img id="b14_image6" class="no_mobile" src="img/b14-6.jpg">
+                    <div>
+                        <h3>2019 100KIN10 FUNDERS</h3>
+                        <p>
+                            Amgen
+                            <br>AT&T Aspire
+                            <br>Carbonite
+                            <br>Carnegie Corporation of New York
+                            <br>Chan Zuckerberg Initiative
+                            <br>Chevron
+                            <br>CME Group Foundation
+                            <br>Dell
+                            <br>Freeport-McMoran
+                            <br>Genentech
+                            <br>Grable Foundation
+                            <br>Heising-Simons Foundation
+                            <br>Peter and Carmen Lucia Buck Foundation
+                            <br>Project Management Institute Education Foundation
+                            <br>Qualcomm
+                        </p>
+                    </div>
+                </div>
+                <img id="b14_image7" src="img/b14-7.jpg">
+                <div class="columns">
+                    <div>
+                        <h3>2019 100KIN10 STRATEGIC ADVISORS</h3>
+                        <p>
+                            Brandon Barnett
+                            <br>Claudia Juech
+                            <br>Cristin Dorgelo
+                            <br>Debbie Sterling
+                            <br>Eileen Yang
+                            <br>Ellen Moir
+                            <br>Eric Berlow
+                            <br>James Liebman
+                            <br>Jean Desravines
+                            <br>Jeff Milbourne
+                            <br>Jim Short
+                            <br>Joey Wilson
+                            <br>John Deasy
+                            <br>Josh Wright
+                            <br>Karen Hawley-Miles
+                            <br>Kartik Raghavan
+                            <br>Kimberly Scott
+                            <br>Kristin Kearns-Jordan
+                            <br>Lance Fors
+                            <br>Larry Friedman
+                            <br>Laura Samberg
+                        </p>
+                    </div>
+                    <img id="b14_image8" class="no_mobile" src="img/b14-8.jpg">
+                </div>
+                <img id="b14_image10" src="img/b14-10.jpg">
+                <div class="columns">
+                    <img id="b14_image9" class="no_mobile" src="img/b14-9.jpg">
+                    <p>
+                        Leslye Louie
+                        <br>Marla Ucelli-Kashyap
+                        <br>Maura Pally
+                        <br>Meghan Browne
+                        <br>Mo Fong
+                        <br>Nadya Dabby
+                        <br>Reese Pecot
+                        <br>Regina Schofield
+                        <br>Roberto Rodriguez
+                        <br>Sam Seidel
+                        <br>Scott Heimlich
+                        <br>Shruti Sehra
+                        <br>Sonya Pryor-Jones
+                        <br>Sue Lehmann
+                        <br>Susan Ditkoff
+                        <br>Tonya Matthews
+                        <br>Veenu Aulakh
+                    </p>
+                </div>
+            </div>
+        </section>
     </div>
+</div>
 </body>
+
+</html>

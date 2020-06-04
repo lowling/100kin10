@@ -157,6 +157,8 @@ p {
 }
 // -- Section 2
 .b1_section-2 {
+  position:relative;
+  z-index:1;
   .title {
     color: $purple;
     font-size: 2.1vw;
@@ -179,6 +181,11 @@ p {
     font-weight: bold;
     text-transform: uppercase;
     height: 4.7vw;
+
+    a, a:visited{
+      text-decoration: none;
+    }
+
   }
   .list-item-img {
     max-width: 6.8vw;
@@ -569,6 +576,7 @@ p {
 // Section 7
 .b1_section-7 {
     background:$peach;
+    background:#ffbe98;//override to match video
     position:relative;
     height:108.6vw;
     h3 {
@@ -596,6 +604,10 @@ p {
         width: 18.1vw;
         top: 68vw;
         right: 45vw;
+
+        width: 15.1vw; // For video
+        top: 69vw;
+        right: 47vw;
     }
     .img-4 {
         width: 13.1vw;
@@ -702,11 +714,13 @@ p {
         width: 10vw;
         right: 59vw;
         top: 80vw;
+        z-index:1;
     }
     .dotted-line-13 {
         width: 12vw;
         top: 69vw;
         right: 38vw;
+        z-index:1;
     }
     
 }
@@ -1399,11 +1413,11 @@ p {
             color:$purple
         }
         :before{
-            position:absolute;
-            font-size:4vw;
-            color:$gold;
-            left:-4vw;
-            top:2vw;
+          position: absolute;
+          font-size: 4vw;
+          color: #e8bc51;
+          left: -6.5vw;
+          top: -1vw;
         }
     }
     .block-3 {
