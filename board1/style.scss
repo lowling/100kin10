@@ -576,7 +576,7 @@ p {
     }
     .img-1, .img-2, .img-3, .img-4, .img-5, 
     .block-1, .block-2, .block-3, .block-4, .block-5, .block-6, .block-7, .block-8, .block-9, 
-    .dotted-line-8, .dotted-line-9, .dotted-line-10, .dotted-line-11, .dotted-line-12, .dotted-line-13,
+    .dotted-line-8, .dotted-line-9, .dotted-line-10, .dotted-line-11, .dotted-line-12, .dotted-line-13
     {
         position:absolute
     } 
@@ -709,6 +709,7 @@ p {
     }
     
 }
+
 // Section 8
 .b1_section-8 {
     background:$gray;
@@ -1308,6 +1309,7 @@ p {
     padding-top: 7.7vw;
     padding-bottom: 7.7vw;
     position: relative;
+    overflow: hidden;
     p {
       font-size: 1.45vw;
       line-height: 1.875vw;
@@ -1339,3 +1341,184 @@ p {
       color: $blue;
     }
   }
+  // Section 18
+  .b1_section-18 {
+      padding-top:2vw;
+      background: $yellow;
+      position:relative;
+      height: 134vw;
+      h1,h2,h3{
+          display:block;
+          color:$purple;
+      }
+      h2 {
+          margin-top:1vw;
+      }
+      h3 {
+          color:$gold;
+          margin-top:3vw;
+          font-weight: bold;;
+      }
+      .dotted-line-17,.dotted-line-18,.dotted-line-19{
+          position:absolute;
+      }
+      .img-1, .img-2 {
+          position:absolute;
+      }
+      .img-1 {
+        width: 44.8vw;
+        right: 6vw;
+        top: 10vw;
+      }
+      .img-2 {
+          width:46vw;
+          top:45vw;
+          left:8vw;
+      }
+      .section-icon {
+          width:8.8vw;
+          margin-left:-1vw;
+          margin-bottom:-2vw;
+      }
+      .block-1 {
+          width:29vw;
+          margin-left:$push-1
+      }
+      .block-2 {
+        width:29vw;
+        margin-left:$push-2
+    }
+    .block-3,.block-4,.block-5 {
+        width:29vw;
+        position:absolute;
+        border:.15vw dashed $gold;
+        padding:2vw 3vw;
+        b{
+            text-transform: uppercase;
+            color:$purple
+        }
+        :before{
+            position:absolute;
+            font-size:4vw;
+            color:$gold;
+            left:-4vw;
+            top:2vw;
+        }
+    }
+    .block-3 {
+        right:19vw;
+        top:75vw;
+        :before{
+            content:"1."
+        }
+    }
+
+    .block-4 {
+        right:19vw;
+        top:101vw;
+        :before{
+            content:"2."
+        }
+    }
+    .block-5 {
+        left:19vw;
+        top:109vw;
+        :before{
+            content:"3."
+        }
+    }
+    .dotted-line-17 {
+        width: 7vw;
+        top: 78vw;
+        right: 53vw;
+    }
+    .dotted-line-18{
+        width: 7vw;
+        top: 90vw;
+        left: 41vw;
+    }
+    .dotted-line-19{
+        width: 16vw;
+        top: 90vw;
+        left: 16.5vw;
+    }
+  }
+  // Section 19
+  .b1_section-19 {
+        background-color: $purple;
+        padding-top: 7.7vw;
+        padding-bottom: 5.7vw;
+        position: relative;
+        overflow: hidden;
+        p {
+          font-size: 1.45vw;
+          line-height: 1.875vw;
+          color:$yellow;
+          position:relative;
+        }
+        .block-1 {
+          width: 57.29vw;
+          margin: auto;
+          text-align: center;
+        }
+        .img-1 {
+          position: absolute;
+          left: -8vw;
+          width: 44vw;
+          top: 5vw;
+          mix-blend-mode: multiply;
+        }
+        .img-2 {
+          position: absolute;
+          right: -17vw;
+          width: 40vw;
+          top: -1vw;
+          mix-blend-mode: multiply;
+        }
+        h2 {
+            color:$yellow
+        }
+}
+.b1_section-20 {
+    position:relative;
+    padding-bottom:4vw;
+    .img-1{
+        position:absolute;
+        width:51vw;
+        top:3vw;
+        left:4vw;
+    }
+    .block-1{
+        margin-left:$push-2;
+        width:24vw;
+        padding-top:12vw;
+        h3 {
+            color:$purple;
+            font-weight:bold;
+        }
+    }
+    .block-2,.block-3,.block-4,.block-5{
+        width:28vw;
+        background:#fdf5cc;
+        padding:.1vw 2vw;
+        margin-bottom:1.5vw;
+        span{
+            font-weight:bold;
+            color:$purple;
+            font-size:1.2vw;
+        }
+    }
+    .block-2 {
+        margin-top:10vw;
+        margin-left:48vw;
+    }
+    .block-3{
+        margin-left:50vw;
+    }
+    .block-4{
+        margin-left:52vw;
+    }
+    .block-5{
+        margin-left:54vw;
+    }
+} 
