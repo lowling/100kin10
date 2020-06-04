@@ -1217,7 +1217,7 @@ p {
   .b1_section-15 {
     background-color: #4671b1;
     padding-top: 9.7vw;
-    padding-bottom: 5.7vw;
+    padding-bottom: 7.7vw;
     position: relative;
     p {
       font-size: 1.45vw;
@@ -1240,12 +1240,102 @@ p {
     .img-2 {
       position: absolute;
       right: 4vw;
-      width: 80vw;
+      width: 70vw;
       top: -1vw;
       mix-blend-mode:multiply;
+      transform: scale(-1, 1);
     }
   
     h2 {
-      color: $peach;
+      color: $yellow;
+    }
+  }
+  // Section 16
+  .b1_section-16 {
+      position:relative;
+      height:74vw;
+      h3 {
+          color:$black;
+          font-weight:bold;
+      }
+      .img-1 {
+          position: absolute;
+          width:92vw;
+          left:-6vw;
+          top:4vw;
+      }
+      .block-1 {
+          position:absolute;
+          width:20vw;
+          top:5vw;
+          left:23vw;
+      }
+      .block-2, .block-3, .block-4, .block-5, .block-6 {
+            position: absolute;
+            border: 0.15vw dotted $blue;
+            width: 17vw;
+            padding: .8vw 2vw;
+      }
+      .block-2 {
+        top:10vw;
+        right:20vw;
+      }
+      .block-3 {
+        top:29vw;
+        left:16vw;
+      }
+
+      .block-4 {
+        top:43vw;
+        left:19vw;
+        border: 0.15vw solid $blue;
+      }
+
+      .block-5 {
+        top:47vw;
+        right:14vw;
+      }
+
+      .block-6 {
+        top:60vw;
+        right:24vw;
+      }
+      
+  }
+ //Section 17
+ .b1_section-17 {
+    background-color: $gray;
+    padding-top: 7.7vw;
+    padding-bottom: 7.7vw;
+    position: relative;
+    p {
+      font-size: 1.45vw;
+      line-height: 1.875vw;
+      color:black;
+      position:relative;
+    }
+    .block-1 {
+      width: 57.29vw;
+      margin: auto;
+      text-align: center;
+    }
+    .img-1 {
+      position: absolute;
+      left: -8vw;
+      width: 44vw;
+      top: 5vw;
+      mix-blend-mode:multiply;
+    }
+    .img-2 {
+      position: absolute;
+      right: -17vw;
+      width: 40vw;
+      top: -1vw;
+      mix-blend-mode:multiply;
+      transform: scale(-1, 1);
+    }
+  
+    h2 {
+      color: $blue;
     }
   }
