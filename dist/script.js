@@ -81,8 +81,7 @@ $(document).ready(function() {
     $(
         `h1,h2,h3,p,li,
         .b1_section-14 .block-1 div,.b1_section-14 .block-2 div,.b1_section-14 .block-3 div, 
-        .b1_section-4 .img-2,.b1_section-4 .img-3,
-        .b1_section-1_logo_img`
+        .b1_section-4 .img-2,.b1_section-4 .img-3`
     )
     .onScreen({
         container: window,
