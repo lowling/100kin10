@@ -46,7 +46,13 @@ $(document).ready(function() {
         waypoints[id] = waypoint;
     })
     */
-    $('h1,h2,h3,p,li').onScreen({
+    $(
+        `h1,h2,h3,p,li,
+        .b1_section-14 .block-1 div,.b1_section-14 .block-2 div,.b1_section-14 .block-3 div, 
+        .b1_section-4 .img-2,.b1_section-4 .img-3,
+        .b1_section-1_logo_img`
+    )
+    .onScreen({
         container: window,
         direction: 'vertical',
         toggleClass: 'active',

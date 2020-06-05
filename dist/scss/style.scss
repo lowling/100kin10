@@ -21,11 +21,34 @@
     }
 }
 
+  
+@keyframes fadeInUpZoom {  
+    from {
+        transform: translate3d(0,40px,0);
+        transform: scale(.4);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
 em.countup {
     font-style: normal;
 }
 
-h1.active,h2.active,h3.active,p.active,li.active {
+h1.active,
+h2.active,
+h3.active,
+p.active,
+li.active,
+.b1_section-14 .block-1 div.active,
+.b1_section-14 .block-2 div.active,
+.b1_section-14 .block-3 div.active,
+.b1_section-1_logo_img
+{
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-delay: .2s;
@@ -33,5 +56,14 @@ h1.active,h2.active,h3.active,p.active,li.active {
     animation-name: fadeInUp;
 }
 
+.b1_section-4 .img-2.active,
+.b1_section-4 .img-3.active
+{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: .2s;
+    opacity: 0;
+    animation-name: fadeInUpZoom;
+}
 
 // Mobile Overrides      
