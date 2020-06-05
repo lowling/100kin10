@@ -622,6 +622,7 @@ p {
         width:26vw;
         top: 10vw;
         right:20vw;
+        overflow: hidden;
     }
     .block-2,.block-3,.block-4 {
         width:11.1vw;
@@ -642,14 +643,17 @@ p {
     .block-2 {
         left:22vw;
         top:8vw;
+        overflow: hidden;
     }
     .block-3 {
         top: 27vw;
         right: 19vw;
+        overflow: hidden;
     }
     .block-4 {
         top: 41vw;
         right: 33vw;
+        overflow: hidden;
     }
     .block-5{
         left: 20vw;
@@ -657,6 +661,7 @@ p {
         width: 18vw;
         border: 2px solid #398981;
         padding: 2vw;
+        overflow: hidden;
     }
     .block-5 P {
         text-transform: uppercase;
@@ -669,6 +674,7 @@ p {
         width:29.2vw;
         top:57vw;
         left:22vw;
+        overflow: hidden;
     }
     .block-6 p {
         font-size:1.2vw
@@ -680,14 +686,17 @@ p {
     .block-7 {
         top:72vw;
         right: 28vw;
+        overflow: hidden;
     }
     .block-8 {
         top: 84vw;
         right: 46vw;
+        overflow: hidden;
     }
     .block-9 {
         top: 93vw;
         right: 67vw;
+        overflow: hidden;
     }
     .dotted-line-8{
         width:9vw;
