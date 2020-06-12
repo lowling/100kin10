@@ -106,7 +106,7 @@ $(document).ready(function() {
         doIn: function(){
             var $this = $(this),
             countTo = $this.attr('data-count');
-            $({ countNum: $this.text()}).animate(
+            $({ countNum: $this.text()}).delay(300).animate(
                 {
                     countNum: countTo
                 },

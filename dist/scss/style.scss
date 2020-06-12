@@ -56,6 +56,12 @@ li.active,
     animation-name: fadeInUp;
 }
 
+//remove animation for static boxes
+.static {
+    opacity: 1 !important;
+    animation-name:none !important; 
+}
+
 .b1_section-4 .img-2.active,
 .b1_section-4 .img-3.active
 {
