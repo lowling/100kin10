@@ -6,7 +6,8 @@ function toggleNav() {
 
 // lazyloader
 document.addEventListener("DOMContentLoaded", function() {
-    var lazyloadImages = document.querySelectorAll("img");    
+    var lazyloadImages = document.querySelectorAll("img");
+    
     var lazyloadThrottleTimeout;
     
     function lazyload () {
@@ -17,6 +18,10 @@ document.addEventListener("DOMContentLoaded", function() {
       lazyloadThrottleTimeout = setTimeout(function() {
           var scrollTop = window.pageYOffset;
           lazyloadImages.forEach(function(img) {
+            
+            //crutch to prevent lazy load on logo
+            if(img.className == "b1_section-1_logo_img"){return;} 
+              
               if(img.offsetTop < (window.innerHeight + scrollTop)) {
                 img.src = img.dataset.src;
                 img.classList.remove('lazy');
