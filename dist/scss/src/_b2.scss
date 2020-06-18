@@ -452,6 +452,10 @@
         right: 0;
         top: 500px;
         text-align: center;
+        @media only screen and (max-width: 980px) {
+          left: 2vw !important;
+          right: inherit;
+        }
       }
       #b11-box_5{
         max-width: 430px;
@@ -516,6 +520,17 @@
       display: flex;
       justify-content: space-evenly;
       position: relative;
+    }
+    .double{
+      h3{
+        margin-top: 2em;
+      }
+      .text{
+        column-count: 2;
+        @media only screen and (max-width: 600px) {
+          column-count: 1 !important;
+        }
+      }
     }
     #b14_title{
       display: flex;
