@@ -9,7 +9,7 @@ $(document).ready(function() {
     // Loader
     lozad('.lozad', {
         loaded: function(el) {
-            el.classList.add('active');
+            el.classList.add('fade');
         }
     }).observe()
 
