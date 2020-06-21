@@ -18,8 +18,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
         <script src="https://100kin10.decubing.com/dist/vendor/on-screen.umd.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js" integrity="sha256-7QS1cHsH75h3IFgrFKsdhmKHHpWqF82sb/9vNLqcqs0=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
         <script src="script.js"></script>
+        
 </head>
 
 <body>
@@ -34,32 +36,32 @@
         <a href="#intro">Introduction</a>
         <a href="#using">Using this field guide</a>
         <a href="#s1">
-            <img data-src="img/nav/TOC_icon1-01.png">
+            <img class="lozad"  data-src="img/nav/TOC_icon1-01.png">
             Strategy 1
             <span>Build a Coalition</span>
         </a>
         <a href="#s2">
-            <img data-src="img/nav/TOC_icon2-02.png">
+            <img class="lozad"  data-src="img/nav/TOC_icon2-02.png">
             Strategy 2
             <span>Understand, Identify and FIND Focus</span>
         </a>
         <a href="#s3">
-            <img data-src="img/nav/TOC_icon3-03.png">
+            <img class="lozad"  data-src="img/nav/TOC_icon3-03.png">
             Strategy 3
             <span>Support People to Work Together</span>
         </a>
         <a href="#s4">
-            <img data-src="img/nav/TOC_icon4-04.png">
+            <img class="lozad"  data-src="img/nav/TOC_icon4-04.png">
             Strategy 4
             <span>Avoid Recreating the Wheel</span>
         </a>
         <a href="#s5">
-            <img data-src="img/nav/TOC_icon5-05.png">
+            <img class="lozad"  data-src="img/nav/TOC_icon5-05.png">
             Strategy 5
             <span>Mobilize Problem Solving</span>
         </a>
         <a href="#s6">
-            <img data-src="img/nav/TOC_icon6-06.png">
+            <img class="lozad"  data-src="img/nav/TOC_icon6-06.png">
             Strategy 6
             <span>Sustain Efforts over the Long Haul</span>
         </a>
@@ -67,9 +69,9 @@
 
     <!-- Sections -->
     <div id="content">
-        <section class="b1_section-1">
+        <section class="b1_section-1 lozad" data-background-image="img/cover1_05.png">
             <div class="b1_section-1_logo">
-                <img class="b1_section-1_logo_img" src="img/cover2_05.png">
+                <img class="lozad b1_section-1_logo_img" data-src="img/cover2_05.png">
             </div>
         </section>
         <section class="b1_section-2">
@@ -78,21 +80,20 @@
             <ul class="toc">
                 <li class="toc_push-1">
                     <a href="#intro">
-                        <div class="list-item-img"><img data-src="img/TOC_icon1_01.png"></div>
+                        <div class="list-item-img"><img class="lozad"  data-src="img/TOC_icon1_01.png"></div>
                         <div class="list-item-text">Introduction</div>
                     </a>
                 </li>
                 <li class="toc_push-1">
                     <a href="#using">
-                    <div class="list-item-img"><img data-src="img/TOC_icon2_02.png"></div>
+                    <div class="list-item-img"><img class="lozad"  data-src="img/TOC_icon2_02.png"></div>
                     <div class="list-item-text">How to use this field guide</div>
                     </a>
                 </li>
 
                 <li class="toc_push-2 first">
                     <a href="#s1" class="anim">
-                    <!-- <div class="list-item-img"><img data-src="img/TOC_icon3_03.png"></div>-->
-                    <video class="list-item-img video" muted="muted" poster="img/TOC_icon3_03.png" loop>
+                    <video class="lozad list-item-img video" muted="muted" poster="img/TOC_icon3_03.png" loop>
                         <source src="video/bee-static-whiteBG.mp4" type="video/mp4">
                     </video>
                     <div class="list-item-text">
@@ -109,8 +110,7 @@
                 </li>
                 <li class="toc_push-2">
                     <a href="#s2" class="anim">
-                    <!-- <div class="list-item-img"><img data-src="img/TOC_icon4_04.png"></div> -->
-                    <video class="list-item-img video" muted="muted" poster="img/TOC_icon4_04.png">
+                    <video class="lozad list-item-img video" muted="muted" poster="img/TOC_icon4_04.png">
                         <source src="video/seed icon.mp4" type="video/mp4">
                     </video>
                     <div class="list-item-text">
@@ -127,8 +127,7 @@
                 </li>
                 <li class="toc_push-2">
                     <a href="#s3" class="anim">
-                    <!-- <div class="list-item-img"><img data-src="img/TOC_icon5_05.png"></div> -->
-                    <video class="list-item-img video" muted="muted" poster="img/TOC_icon5_05.png" loop>
+                    <video class="list-item-img video lozad" muted="muted" poster="img/TOC_icon5_05.png" loop>
                         <source src="video/Dandelion icon.mp4" type="video/mp4">
                     </video>
                     <div class="list-item-text">
@@ -145,8 +144,7 @@
                 </li>
                 <li class="toc_push-2">
                     <a href="#s4" class="anim">
-                    <!-- <div class="list-item-img"><img data-src="img/TOC_icon6_06_g.png"></div> -->
-                    <video class="list-item-img video" muted="muted" poster="img/TOC_icon6_06_g.png" loop>
+                    <video class="list-item-img video lozad" muted="muted" poster="img/TOC_icon6_06_g.png" loop>
                         <source src="video/fern icon.mp4" type="video/mp4">
                     </video>
                     <div class="list-item-text">
@@ -163,8 +161,7 @@
                 </li>
                 <li class="toc_push-2">
                     <a href="#s5" class="anim">
-                    <!-- <div class="list-item-img"><img data-src="img/TOC_icon7_07.png"></div> -->
-                    <video class="list-item-img video" muted="muted" poster="img/TOC_icon7_07.png" loop>
+                    <video class="list-item-img video lozad" muted="muted" poster="img/TOC_icon7_07.png" loop>
                         <source src="video/bare tree icon_wave.mp4" type="video/mp4">
                     </video>
                     <div class="list-item-text">
@@ -181,8 +178,7 @@
                 </li>
                 <li class="toc_push-2">
                     <a href="#s6" class="anim">
-                    <!-- <div class="list-item-img"><img data-src="img/TOC_icon8_08.png"></div> -->
-                    <video class="list-item-img video" muted="muted" poster="img/TOC_icon8_08.png">
+                    <video class="list-item-img video lozad" muted="muted" poster="img/TOC_icon8_08.png">
                         <source src="video/forest icon ground.mp4" type="video/mp4">
                     </video>
                     <div class="list-item-text">
@@ -199,7 +195,7 @@
                 </li>
                 <li class="toc_push-3 first">
                     <a href="#s7">
-                    <div class="list-item-img"><img data-src="img/TOC_icon9_09.png"></div>
+                    <div class="list-item-img"><img class="lozad" data-src="img/TOC_icon9_09.png"></div>
                     <div class="list-item-text">
                         Stumbles and Learnings
                     </div>
@@ -207,7 +203,7 @@
                 </li>
                 <li class="toc_push-3">
                     <a href="#s8">
-                    <div class="list-item-img"><img data-src="img/TOC_icon10_10.png"></div>
+                    <div class="list-item-img"><img class="lozad"  data-src="img/TOC_icon10_10.png"></div>
                     <div class="list-item-text">
                         Looking Beyond 2021
                     </div>
@@ -215,7 +211,7 @@
                 </li>
                 <li class="toc_push-3">
                     <a href="#s9">
-                    <div class="list-item-img"><img data-src="img/TOC_icon11_11.png"></div>
+                    <div class="list-item-img"><img class="lozad"  data-src="img/TOC_icon11_11.png"></div>
                     <div class="list-item-text">
                         Gratitude
                     </div>
@@ -224,7 +220,7 @@
             </ul>
         </section>
         <a id="intro" name="intro"></a>
-        <section class="b1_section-3" >
+        <section class="b1_section-3 lozad" data-background-image="img/intro1_04.png">
             <div class="block-1">
                 <h1>FIELD GUIDE <br />FOR CATALYZING <br />CHANGE</h1>
                 <h2>Introduction</h2>
@@ -244,10 +240,10 @@
                     solve seemingly intractable problems, and how change
                     happens in an increasingly complex world.
                 </p>
-                <img class="img-1" data-src="img/intro_2_06.png">
+                <img class="lozad img-1" data-src="img/intro_2_06.png">
             </div>
             <div class="block-2">
-                <img class="img-2" data-src="img/intro3_06.png">
+                <img class="lozad img-2" data-src="img/intro3_06.png">
                 <p>
                     We are far from figuring this out and still have so much to learn, but we’ve spent years honing these strategies and use them every day. 
                     We are sharing what we’ve learned with you so that you can build off of it and teach us from your experience, and so we can inspire each other in the ongoing task of catalyzing change that matters. We hope you will combine, add and build upon these strategies and share your own.
@@ -270,17 +266,17 @@
                     chapter shares a key strategy, methods of implementation, and stories of what these strategies look like
                     in action, from the perspective of partners in the 100Kin10 network who are working on the challenges
                     underlying the STEM teacher shortage.</p>
-                <img class="img-3" data-src="img/intro4_06.png">
+                <img class="lozad img-3" data-src="img/intro4_06.png">
             </div>
             <div class="block-4">
                 <p>Systems don’t operate nor do they change in a linear fashion. These strategies don’t work in isolation. They build on and reinforce each other to make lasting change possible. We hope this guide is of use to you as you address the systemic and quotidian challenges you confront in your work.</p>
             </div>
         </section>
         
-        <section class="b1_section-4">
+        <section class="b1_section-4 lozad" data-background-image="img/honeycomb1_01.jpg">
             <div class="block-1">
                 <a name="1" id="s1"></a>
-                <img class="section-icon" data-src="img/strategy1_icon_08.png">
+                <img class="lozad section-icon" data-src="img/strategy1_icon_08.png">
                 <h1>BUILD A COALITION</h1>
                 <h2>Inspire Action with A Big Goal</h2>
 
@@ -292,7 +288,7 @@
                     larger than any individual could ever reach on their own, yet something people can imagine accomplishing
                     if they work together. That goal can become the inspiration that drives working together differently.
                 </p>
-                    <img class="img-1" data-src="img/honeycomb2_06.png">
+                    <img class="lozad img-1" data-src="img/honeycomb2_06.png">
             </div>
             <div class="block-2">
                 <p>
@@ -318,7 +314,7 @@
                     The result is 100Kin10’s network, a multifaceted collection of institutions and their leaders, each contributing toward a goal that no single entity could reach on its own.
                 </p>
             </div>
-            <img class="img-2" data-src="img/honeycomb3_07.png">
+            <img class="lozad img-2" data-src="img/honeycomb3_07.png">
             <div class="block-5">
                 <p class="static">
                     We’ve grown from a network
@@ -337,8 +333,8 @@
                     shape-rendering="auto" class="Line_53_Class" d="M 2 0 L 0 222">
                 </path>
             </svg>
-            <img class="img-3" data-src="img/honeycomb3_07.png">
-            <img class="img-4" data-src="img/honeycomb2_03.png">
+            <img class="lozad img-3" data-src="img/honeycomb3_07.png">
+            <img class="lozad img-4" data-src="img/honeycomb2_03.png">
             <div class="block-6">
                 <p>
                     Our network is<br />
@@ -355,7 +351,7 @@
                 <p>
                     300+ organizations, representing a total of 584 individuals contributing</p>
             </div>
-            <img class="img-5" data-src="img/infographics__Recovered__04.png">
+            <img class="lozad img-5" data-src="img/infographics__Recovered__04.png">
             <div class="block-9">
                 <p>More than 80,000 new and excellent STEM teachers have been prepared</p>
 
@@ -370,11 +366,11 @@
                     d="M 7115.5 -130.6484375 C 7115.5 -130.6484375 7185.28125 -280.2890625 7389.078125 -307.6953125 C 7592.875 -335.1015625 7532.4140625 -513.65625 7532.4140625 -513.65625">
                 </path>
             </svg>
-            <img class="img-6" data-src="img/bee2_04_hs.png">
+            <img class="lozad img-6" data-src="img/bee2_04_hs.png">
         </section>
         <section class="b1_section-5">
-            <img class="img-1" data-src="img/honeycomb4_01.png">
-            <img class="img-2" data-src="img/bee1_04_hr.png">
+            <img class="lozad img-1" data-src="img/honeycomb4_01.png">
+            <img class="lozad img-2" data-src="img/bee1_04_hr.png">
             <div class="block-1">
                 <h3>Inspiring Action Through<br />
                     Co-ownership and Commitments</h3>
@@ -435,8 +431,8 @@
             </svg>
         </section>
         <section class="b1_section-6">
-            <img class="img-1" data-src="img/partnerstories1_background_02.png">
-            <img class="img-2" data-src="img/partnerstories1_background2_02.png">
+            <img class="lozad img-1" data-src="img/partnerstories1_background_02.png">
+            <img class="lozad img-2" data-src="img/partnerstories1_background2_02.png">
             <div class="block-1">
                 <h2>“It all happened because of 100Kin10…”</h2>
                 <p>
@@ -477,7 +473,7 @@
                     Our partners tell us that the 100Kin10 network inspired them personally and inspired their
                     organization’s work and commitments: </p>
             </div>
-            <img class="img-1" data-src="img/honeycomb5_03.png">
+            <img class="lozad img-1" data-src="img/honeycomb5_03.png">
             <svg class="dotted-line-8" viewBox="0 0 172 132">
                 <path fill="transparent" stroke="rgba(246,249,248,1)" stroke-width="2px" stroke-linejoin="miter"
                     stroke-linecap="butt" stroke-dasharray="6" stroke-dashoffset="0" stroke-miterlimit="4"
@@ -517,13 +513,13 @@
                     d="M 6871.39111328125 3329.796630859375 L 7068.3994140625 3228.718505859375">
                 </path>
             </svg>
-            <img class="img-2" data-src="img/bee3_04.png">
-            <!--<img class="img-3" data-src="img/bee2_04.png">-->
-            <video class="img-3 video" muted="muted" poster="img/bee2_04.png" loop>
+            <img class="lozad img-2" data-src="img/bee3_04.png">
+            <!--<img class="lozad img-3" data-src="img/bee2_04.png">-->
+            <video class="lozad img-3 video" muted="muted" poster="img/bee2_04.png" loop>
                 <source src="video/bee-hovering-orangeBG.mp4" type="video/mp4">
             </video>
-            <img class="img-4" data-src="img/bee1_04.png">
-            <img class="img-5" data-src="img/strategy1_flowers_05.png">
+            <img class="lozad img-4" data-src="img/bee1_04.png">
+            <img class="lozad img-5" data-src="img/strategy1_flowers_05.png">
             <div class="block-2">
                 <span><em class="countup" data-count="83">0</em>&percnt;</span>
                 <p>
@@ -581,9 +577,9 @@
         <section class="b1_section-8">
             <div class="circle-1"></div>
             <div class="circle-2"></div>
-            <img class="img-1" data-src="img/stategy2_root_09.jpg">
+            <img class="lozad img-1" data-src="img/stategy2_root_09.jpg">
             <div class="block-1">
-                <img class="section-icon" data-src="img/strategy2_icon_08.png">
+                <img class="lozad section-icon" data-src="img/strategy2_icon_08.png">
                 <h1>UNDERSTAND,<br /> IDENTIFY AND<br />
                     FIND FOCUS:</h1>
                 <h2>Find the Points of Highest Leverage</h2>
@@ -619,8 +615,8 @@
                     shape-rendering="auto" class="Line_18_Class" d="M 0 0 L 1100 0">
                 </path>
             </svg>
-            <img class="img-2" data-src="img/strategy2_root2_10.jpg">
-            <img class="img-3" data-src="img/strategy2_root3_11.jpg">
+            <img class="lozad img-2" data-src="img/strategy2_root2_10.jpg">
+            <img class="lozad img-3" data-src="img/strategy2_root3_11.jpg">
             <div class="block-5">
                 <h3>How We Implement:</h3>
                 <p>
@@ -644,8 +640,8 @@
             </div>
         </section>
         <section class="b1_section-9">
-            <img class="img-1" data-src="img/partnerstories2_background2_12.png">
-            <img class="img-2" data-src="img/partnerstories2_background1_12.png">
+            <img class="lozad img-1" data-src="img/partnerstories2_background2_12.png">
+            <img class="lozad img-2" data-src="img/partnerstories2_background1_12.png">
             <div class="block-1">
                 <h2>
                     Grand Challenges Adopted to Meet Local Needs
@@ -692,7 +688,7 @@
                 </p>
             </div>
 
-            <img class="img-1" data-src="img/strategy2_root4_13.jpg">
+            <img class="lozad img-1" data-src="img/strategy2_root4_13.jpg">
             <svg class="dotted-line-15" viewBox="0 0 69 37">
                 <path fill="transparent" stroke="rgba(42,114,106,1)" stroke-width="2px" stroke-linejoin="miter"
                     stroke-linecap="butt" stroke-dasharray="6" stroke-dashoffset="0" stroke-miterlimit="4"
@@ -756,8 +752,8 @@
             </div>
         </section>
         <section class="b1_section-11">
-            <img class="img-1" data-src="img/partnerstories3_background1_11.png">
-            <img class="img-2" data-src="img/partnerstories3_background2_11.png">
+            <img class="lozad img-1" data-src="img/partnerstories3_background1_11.png">
+            <img class="lozad img-2" data-src="img/partnerstories3_background2_11.png">
             <div class="block-1">
                 <h2>
                     A Brief History of a STEM Ecosystem in Pennsylvania
@@ -794,7 +790,7 @@
         <a name="3" id="s3"></a>
         <section class="b1_section-12">
             <div class="block-1">
-                <img class="section-icon" data-src="img/strategy3_icon_08.png">
+                <img class="lozad section-icon" data-src="img/strategy3_icon_08.png">
                 <h1>SUPPORT
                     <br />PEOPLE TO WORK<br /> TOGETHER:</h1>
                 <h2>
@@ -813,11 +809,11 @@
                     work and advance our collective goals. </p>
 
             </div>
-            <!--<img class="img-1" data-src="img/strategy3_flower1_14.png">-->
-            <video class="img-1 video" muted="muted" poster="img/strategy3_flower1_14.png" width="580" loop>
+            <!--<img class="lozad img-1" data-src="img/strategy3_flower1_14.png">-->
+            <video class="lozad img-1 video" muted="muted" poster="img/strategy3_flower1_14.png" width="580" loop>
                 <source src="video/strategy3_flower1-14_v02.mp4" type="video/mp4">
             </video>
-            <img class="img-2" srcset="img/strategy3_flower2_14.png">
+            <img class="lozad img-2" srcset="img/strategy3_flower2_14.png">
             <div class="block-2">
                 <h3>How We Implement:</h3>
                 <p>At 100Kin10, we have developed a set of tools to help build trust amongst partners through large
@@ -825,8 +821,8 @@
             </div>
         </section>
         <section class="b1_section-13">
-            <img class="img-1" data-src="img/strategy3_icon_08_fu.png">
-            <img class="img-2" data-src="img/strategy3_flower1_14_fs.png">
+            <img class="lozad img-1" data-src="img/strategy3_icon_08_fu.png">
+            <img class="lozad img-2" data-src="img/strategy3_flower1_14_fs.png">
             <div class="block-1">
                 <h2>
                     Finding Exactly Who You’re Looking For
@@ -852,7 +848,7 @@
             </div>
         </section>
         <section class="b1_section-14">
-            <img class="img-1" data-src="img/strategy2flower_16.jpg">
+            <img class="lozad img-1" data-src="img/strategy2flower_16.jpg">
             <div class="block-1">
                 <h3>Annual Summit</h3>
 
@@ -899,8 +895,8 @@
             </div>
         </section>
         <section class="b1_section-15">
-            <img class="img-1" data-src="img/strategy3_icon_08_fu.png">
-            <img class="img-2" data-src="img/strategy3_flower1_14_fs.png">
+            <img class="lozad img-1" data-src="img/strategy3_icon_08_fu.png">
+            <img class="lozad img-2" data-src="img/strategy3_flower1_14_fs.png">
             <div class="block-1">
                 <h2>
                     Connecting to New Ideas
@@ -924,8 +920,8 @@
             </div>
         </section>
         <section class="b1_section-16">
-            <!--<img class="img-1" data-src="img/strategy3_flower3_15.png">-->
-            <video class="img-1 video" muted="muted" poster="img/strategy3_flower3_15.png" width="580" loop>
+            <!--<img class="lozad img-1" data-src="img/strategy3_flower3_15.png">-->
+            <video class="lozad img-1 video" muted="muted" poster="img/strategy3_flower3_15.png" width="580" loop>
                 <source src="video/strategy3_flower3-15_full res.mp4" type="video/mp4">
             </video>
             <div class="block-1">
@@ -952,8 +948,8 @@
         </section>
 
         <section class="b1_section-17">
-            <img class="img-1" data-src="img/strategy3_flower2_14_fz.png">
-            <img class="img-2" data-src="img/strategy3_icon_08_fy.png">
+            <img class="lozad img-1" data-src="img/strategy3_flower2_14_fz.png">
+            <img class="lozad img-2" data-src="img/strategy3_icon_08_fy.png">
             <div class="block-1">
                 <h2>
                     Fruitful Connections Across Regions
@@ -983,9 +979,9 @@
         </section>
         <a name="4" id="s4"></a>
         <section class="b1_section-18">
-            <img class="img-1" data-src="img/treeroots2_03.png">
+            <img class="lozad img-1" data-src="img/treeroots2_03.png">
             <div class="block-1">
-                <img class="section-icon" data-src="img/TOC_icon6_06.png">
+                <img class="lozad section-icon" data-src="img/TOC_icon6_06.png">
                 <h1>
                     AVOID<br />
                     RECREATING<br />
@@ -1013,7 +1009,7 @@
                     ideas, adaptations, and perspectives
                 </p>
             </div>
-            <img class="img-2" data-src="img/purpletree_03.png">
+            <img class="lozad img-2" data-src="img/purpletree_03.png">
             <div class="block-2">
                 <h3>
                     How We Implement:
@@ -1068,8 +1064,8 @@
             </div>
         </section>
         <section class="b1_section-19">
-            <img class="img-1" data-src="img/TOC_icon6_06_gn.png">
-            <img class="img-2" data-src="img/TOC_icon6_06_gp.png">
+            <img class="lozad img-1" data-src="img/TOC_icon6_06_gn.png">
+            <img class="lozad img-2" data-src="img/TOC_icon6_06_gp.png">
             <div class="block-1">
                 <h2>
                     Building on the Work of Others
@@ -1097,7 +1093,7 @@
             </div>
         </section>
         <section class="b1_section-20">
-            <img class="img-1" data-src="img/PURPLEROOTTREE_02.png">
+            <img class="lozad img-1" data-src="img/PURPLEROOTTREE_02.png">
             <div class="block-1">
                 <h3>The Impact of Learning and<br />
                     Information Sharing</h3>
@@ -1119,7 +1115,7 @@
             </div>
         </section>
         <div id="board_2">
-            <section id="b1" style="background-image:url('img/b1-1.jpg')">
+            <section id="b1" class="lozad" style="background-image:url('img/b1-1.jpg')">
                 <h3>Cross-Sector Learning Partnerships</h3>
                 <p>In 2019, California Science Center (CSC) was eager to connect with local school districts in their state
                     to support STEM educators with their resources and expertise. At 100Kin10’s 2019 Regional Gathering, CSC
@@ -1138,7 +1134,7 @@
                         in the same local context to network and learn from one another. These short convenings are
                         low-barrier opportunities for partners to learn about inspirational work going on in their own
                         backyard and build relationships with local organizations.</p>
-                    <img data-src="img/b2-1.jpg">
+                    <img class="lozad" data-src="img/b2-1.jpg">
                 </div>
             </section>
 
@@ -1164,7 +1160,7 @@
             <a name="5" id="s5"></a>
             <section id="b4">
                 <div>
-                    <img class="icon" data-src="img/b4-1.jpg ">
+                    <img class="lozad icon" data-src="img/b4-1.jpg ">
                     <h1>MOBILIZE<br>PROBLEM SOLVING:</h1>
                     <h2>Structure and Support<br>Collaborative Action</h2>
                 </div>
@@ -1182,14 +1178,12 @@
                                 out how to manage logistics. As a result, individuals who have the passion and desire to
                                 tackle a challenge feel supported in stepping up to lead and participate in
                                 cross-organizational teams.</p>
-                            <!-- <img data-src="img/b4-3.jpg "> -->
-                            <video class="list-item-img video" muted="muted" poster="img/b4-3.jpg" width="580" loop>
+                            <video class="lozad list-item-img video" muted="muted" poster="img/b4-3.jpg" width="580" loop>
                                 <source src="video/GREENTREE_WOPEOPLE1-02.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div>
-                            <!-- <img class="no_mobile" data-src="img/b4-2.jpg "> -->
-                            <video class="list-item-img video" muted="muted" poster="img/b4-2.jpg" width="580" loop>
+                            <video class="lozad list-item-img video" muted="muted" poster="img/b4-2.jpg" width="580" loop>
                                 <source src="video/greentree_wopeople3-04.mp4" type="video/mp4">
                             </video>
                             <blockquote>
@@ -1212,7 +1206,7 @@
                     </div>
                     <hr />
                     <div id="tree_thing">
-                        <img class="no_mobile" data-src="img/b4-4.jpg ">
+                        <img class="lozad no_mobile" data-src="img/b4-4.jpg ">
                         <div>
                             <div class="number"><em class="countup" data-count="14">0</em></div>
                             Project Teams in 2019 representing 76 organizations and 92 individuals
@@ -1224,7 +1218,7 @@
                     </div>
             </section>
 
-            <section id="b5" style="background-image: url('img/b5-1.jpg')">
+            <section id="b5" class="lozad" data-background-image="img/b5-1.jpg">
                 <h3>Project Team Profile<br>
                     Measuring Positive Work Environments<br>
                     and Culture in Schools</h3>
@@ -1253,32 +1247,32 @@
                             said that as a result of their experience they feel more inspired to stay focused on STEM
                             teaching work
                         </p>
-                        <img data-src="img/b6-1.jpg">
+                        <img class="lozad" data-src="img/b6-1.jpg">
                     </div>
                     <div>
 
                         <p><span class="number"><em class="countup" data-count="97">0</em>%</span><br>reported that they would change something about their work
                             based on what they learned on their project team</p>
-                        <img data-src="img/b6-2.jpg">
+                        <img class="lozad" data-src="img/b6-2.jpg">
                     </div>
                     <div>
 
                         <p><span class="number"><em class="countup" data-count="97">0</em>%</span><br>said they have an implementation plan to, or have already, put
                             learnings into action to change something about their current work</p>
-                        <img data-src="img/b6-3.jpg">
+                        <img class="lozad" data-src="img/b6-3.jpg">
                     </div>
                     <div>
 
                         <p><span class="number"><em class="countup" data-count="98">0</em>%</span><br>said that 100Kin10 effectively removed all significant
                             barriers to collaboration for their team’s work</p>
-                        <img data-src="img/b6-4.jpg">
+                        <img class="lozad" data-src="img/b6-4.jpg">
                     </div>
                 </div>
             </section>
             <a name="6" id="s6"></a>
             <section id="b7">
                 <div>
-                    <img class="icon" data-src="img/b7-1.png">
+                    <img class="lozad icon" data-src="img/b7-1.png">
                     <img id="image_b7-2" class="right half no_mobile" data-src="img/b7-2.jpg">
                     <h1>SUSTAIN EFFORTS<br>OVER THE LONG HAUL:</h1>
                     <h3>Nourish Catalyst Communities</h3>
@@ -1306,8 +1300,7 @@
 
             <section id="b8">
                 <div>
-                    <!-- <img class="half" data-src="img/b8-1.jpg"> -->
-                    <video class="half video" muted="muted" poster="img/b8-1.jpg">
+                    <video class="lozad half video" muted="muted" poster="img/b8-1.jpg">
                         <source src="video/seeds dirpile.mp4" type="video/mp4">
                     </video>
                     
@@ -1318,8 +1311,7 @@
                     </div>
                 </div>
                 <div>
-                    <!-- <img class="half" data-src="img/b8-2.jpg"> -->
-                    <video class="half video" muted="muted" poster="img/b8-2.jpg">
+                    <video class="lozad half video" muted="muted" poster="img/b8-2.jpg">
                         <source src="video/half grown.mp4" type="video/mp4">
                     </video>
                     <div>
@@ -1330,8 +1322,8 @@
                     </div>
                 </div>
                 <div>
-                    <!-- <img class="half" data-src="img/b8-3.jpg"> -->
-                    <video class="half video" muted="muted" poster="img/b8-3.jpg">
+                    <!-- <img class="lozad half" data-src="img/b8-3.jpg"> -->
+                    <video class="lozad half video" muted="muted" poster="img/b8-3.jpg">
                         <source src="video/full forest.mp4" type="video/mp4">
                     </video>
                     <div>
@@ -1352,7 +1344,7 @@
                             and Foundational Math in STEM.</p>
                     </div>
                     <hr />
-                    <img class="half right" data-src="img/b9-1.jpg">
+                    <img class="lozad half right" data-src="img/b9-1.jpg">
                     <h3>
                         Work Environment Catalyst Community
                     </h3>
@@ -1370,12 +1362,12 @@
                         <li>Partnering With Schools To Nurture Positive Work Environment</li>
                         <li>Integrating Professional Growth Into the School Day</li>
                     </ul>
-                    <img class="half left" data-src="img/b9-2.png">
+                    <img class="lozad half left" data-src="img/b9-2.png">
                     <p class="ellipses">35 partners and allies came together at a second in-person gathering a year later to
                         learn from each other, celebrate progress made and identify new ways to collaborate.</p>
                     <p class="ellipses">11 individuals joined an ongoing Brain Trust to support partners to find solutions
                         to challenges they’re experiencing, so that no one has to reinvent the wheel.</p>
-                    <img class="half right" data-src="img/b9-3.png">
+                    <img class="lozad half right" data-src="img/b9-3.png">
                     <h3>Foundational Math Catalyst Community</h3>
                     <p class="ellipses">A Brain Trust of 35 partners and teachers guided the development of an actionable
                         research report, “Doing the Math: Building the Foundations of Joyful and Authentic Math Learning for
@@ -1386,7 +1378,7 @@
                     <p class="ellipses">34 partners and allies came together in an action-oriented workshop to dig into the
                         research and identify how to take collaborative action to address the work-environment catalysts.
                     </p>
-                    <img class="half left" data-src="img/b9-4.jpg">
+                    <img class="lozad half left" data-src="img/b9-4.jpg">
                     <p class="ellipses">4 Project Teams proposed for 2020</p>
                     <ul>
                         <li>Developing and Supporting STEM Mindsets in Elementary Teachers</li>
@@ -1495,15 +1487,15 @@
                             foundation for their work, and 43% of the Work Environments workshop attendees said the
                             experience had already impacted the way their organizations approached their work</p>
                     </div>
-                    <img id="b11-image_1" class="no_mobile" data-src="img/b11-1.jpg">
-                    <img id="b11-image_2" class="no_mobile" data-src="img/b11-3.jpg">
-                    <img id="b11-image_3" class="no_mobile" data-src="img/b11-2.jpg">
+                    <img id="b11-image_1" class="lozad no_mobile" data-src="img/b11-1.jpg">
+                    <img id="b11-image_2" class="lozad no_mobile" data-src="img/b11-3.jpg">
+                    <img id="b11-image_3" class="lozad no_mobile" data-src="img/b11-2.jpg">
                 </div>
             </section>
             <a name="7" id="s7"></a>
             <section id="b12">
                 <div>
-                    <h1><img class="icon" data-src="img/b12-1.jpg"><Br>Stumbles and<br>Learnings</h1>
+                    <h1><img class="lozad icon" data-src="img/b12-1.jpg"><Br>Stumbles and<br>Learnings</h1>
                     <div class="columns">
                         <p>Systems change is hard. It doesn’t happen at all once but is the result of years of
                             experimenting and adapting. In the process, we sometimes find that even our best efforts don’t
@@ -1513,10 +1505,10 @@
                             that by sharing these stumbles and learnings, we are practicing the kind of openness and
                             vulnerability that animates 100Kin10. We know that the more we share both what works and what
                             doesn’t, the more effectively we will work together to end the STEM teacher shortage.</p>
-                        <img class="half" data-src="img/b12-2.jpg">
+                        <img class="lozad half" data-src="img/b12-2.jpg">
                     </div>
                     <div class="columns">
-                        <img class="half no_mobile" data-src="img/b12-3.jpg">
+                        <img class="lozad half no_mobile" data-src="img/b12-3.jpg">
                         <div>
                             <h3>Providing Support that Matches Capacity</h3>
                             <p><strong>OUR GOAL:</strong> We’ve always encouraged and supported our partners to engage in
@@ -1552,14 +1544,14 @@
                                 and the specific areas of focus, so that we can inspire a broad and diverse coalition to
                                 focus on the highest-leverage challenges</p>
                         </div>
-                        <img class="half" data-src="img/b12-4.jpg">
+                        <img class="lozad half" data-src="img/b12-4.jpg">
                     </div>
                 </div>
             </section>
             <a name="8" id="s8"></a>
             <section id="b13">
                 <div>
-                    <img class="icon" data-src="img/b13-1.jpg">
+                    <img class="lozad icon" data-src="img/b13-1.jpg">
                     <h1>Looking<br>Beyond 2021:</h1>
                     <h3>Ending the STEM Teacher Shortage</h3>
                     <div class="columns">
@@ -1567,10 +1559,10 @@
                             gained a much deeper understanding of what needs to be done to create true systemic change. We
                             can see now that our 100,000 STEM teacher goal is only the first part of a multi-decade effort
                             to end the STEM teacher shortage once and for all.</p>
-                        <img class="half" data-src="img/b13-2.jpg">
+                        <img class="lozad half" data-src="img/b13-2.jpg">
                     </div>
                     <div class="columns">
-                        <img class="half no_mobile" data-src="img/b13-3.jpg">
+                        <img class="lozad half no_mobile" data-src="img/b13-3.jpg">
                         <div>
                             <p>As we close in on our 100,000 STEM teachers goal, we’re reflecting on everything we’ve
                                 learned about how to create systems change, and we realize it’s time to build an even
@@ -1590,7 +1582,7 @@
             <a name="9" id="s9"></a>
             <section id="b14">
                 <div id="b14_title">
-                    <h1><img class="icon" data-src="img/b14-1.jpg"><br>Gratitude</h1>
+                    <h1><img class="lozad icon" data-src="img/b14-1.jpg"><br>Gratitude</h1>
                     <p>
                         Over the past eight years, we’ve accomplished more than we could have hoped, and it simply would not
                         be possible without the support of so many people and organizations, coalescing around a common
@@ -1599,8 +1591,8 @@
                 </div>
                 <hr>
                 <div>
-                    <img id="b14_image2" class="no_mobile" data-src="img/b14-2.jpg">
-                    <img id="b14_image4" class="no_mobile" data-src="img/b14-4.jpg">
+                    <img id="b14_image2" class="lozad no_mobile" data-src="img/b14-2.jpg">
+                    <img id="b14_image4" class="lozad no_mobile" data-src="img/b14-4.jpg">
                     <div class="columns">
                         <div>
                             <h3>100KIN10 STAFF (MAY 2020)</h3>
@@ -1620,11 +1612,11 @@
                                 <br>Vincent Baggett
                             </p>
                         </div>
-                        <img id="b14_image3" data-src="img/b14-3.jpg">
+                        <img class="lozad" id="b14_image3" data-src="img/b14-3.jpg">
                     </div>
-                    <img id="b14_image5" data-src="img/b14-5.jpg">
+                    <img class="lozad" id="b14_image5" data-src="img/b14-5.jpg">
                     <div class="columns">
-                        <img id="b14_image6" class="no_mobile" data-src="img/b14-6.jpg">
+                        <img id="b14_image6" class="lozad no_mobile" data-src="img/b14-6.jpg">
                         <div>
                             <h3>2019 100KIN10 FUNDERS</h3>
                             <p>
@@ -1646,7 +1638,7 @@
                             </p>
                         </div>
                     </div>
-                    <img id="b14_image7" data-src="img/b14-7.jpg">
+                    <img class="lozad" id="b14_image7" data-src="img/b14-7.jpg">
                     <div class="columns">
                         <div>
                             <h3>2019 100KIN10 STRATEGIC ADVISORS</h3>
@@ -1674,11 +1666,11 @@
                                 <br>Laura Samberg
                             </p>
                         </div>
-                        <img id="b14_image8" class="no_mobile" data-src="img/b14-8.jpg">
+                        <img id="b14_image8" class="lozad no_mobile" data-src="img/b14-8.jpg">
                     </div>
-                    <img id="b14_image10" data-src="img/b14-10.jpg">
+                    <img class="lozad" id="b14_image10" data-src="img/b14-10.jpg">
                     <div class="columns">
-                        <img id="b14_image9" class="no_mobile" data-src="img/b14-9.jpg">
+                        <img id="b14_image9" class="lozad no_mobile" data-src="img/b14-9.jpg">
                         <p>
                             Leslye Louie
                             <br>Marla Ucelli-Kashyap
