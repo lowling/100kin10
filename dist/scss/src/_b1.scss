@@ -574,14 +574,14 @@ p {
     background:$peach;
     background:#ffc5a3;//override to match video
     position:relative;
-    height:108.6vw;
+    height:153.6vw;
     h3 {
         color:$green;
         font-weight:bold;
     }
     .img-1, .img-2, .img-3, .img-4, .img-5, 
     .block-1, .block-2, .block-3, .block-4, .block-5, .block-6, .block-7, .block-8, .block-9, 
-    .dotted-line-8, .dotted-line-9, .dotted-line-10, .dotted-line-11, .dotted-line-12, .dotted-line-13
+    .dotted-line-8, .dotted-line-9, .dotted-line-10, .dotted-line-11, .dotted-line-12, .dotted-line-13, .dotted-line-14
     {
         position:absolute
     } 
@@ -592,17 +592,13 @@ p {
         top:15vw;
     }
     .img-2 {
-        top: 57vw;
+        top: 105vw;
         right: 25vw;
         width: 18.6vw;
     }
     .img-3 {
-        width: 18.1vw;
-        top: 68vw;
-        right: 45vw;
-
         width: 15.1vw; // For video
-        top: 69vw;
+        top: 93vw;
         right: 47vw;
     }
     .img-4 {
@@ -669,24 +665,27 @@ p {
     }
     .block-6{
         width:29.2vw;
-        top:57vw;
-        left:22vw;
+        top:66vw;
+        left:36vw;
         overflow: hidden;
+        z-index: 3;
     }
     .block-6 p {
-        font-size:1.2vw
+        display: block;
+        font-size:1.2vw;
+        background: #ffc5a3;
     }
     .block-7, .block-8, .block-9 {
         width:15vw;
         p { color:$green; text-align: center; }
     }
     .block-7 {
-        top:72vw;
+        top:122vw;
         right: 28vw;
         overflow: hidden;
     }
     .block-8 {
-        top: 84vw;
+        top: 110vw;
         right: 46vw;
         overflow: hidden;
     }
@@ -722,10 +721,18 @@ p {
         z-index:1;
     }
     .dotted-line-13 {
-        width: 12vw;
-        top: 69vw;
-        right: 38vw;
-        z-index:1;
+      width: 10vw;
+      top: 106vw;
+      right: 39vw;
+      z-index: 1;
+      transform: skew(-40deg, 55deg);
+    }
+    .dotted-line-14 {
+      width: 12vw;
+      top: 97vw;
+      right: 62vw;
+      z-index: 2;
+      transform: rotate(-13deg);
     }
     
 }
@@ -952,6 +959,7 @@ p {
             width: 23vw;
             padding: 3vw;
             text-align: center;
+            z-index: 3;
         }
     }
 
