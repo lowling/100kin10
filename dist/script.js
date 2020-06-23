@@ -33,27 +33,6 @@ $(document).ready(function() {
             el.currentTime = 0;
         });
 
-    
-    //Section Waypoints
-    /* 
-    let waypoints = [];
-    $('section').each( function() {
-        let id = $(this).attr('class');
-        if (id == undefined){
-            id = $(this).attr('id')
-        }
-        //console.log( id );
-        
-        var waypoint = new Waypoint.Inview({
-            element: $(this) ,
-            enter: function(direction) {
-                $('section').removeClass('active');
-                $(this.element).addClass('active');
-            } 
-        });
-        waypoints[id] = waypoint;
-    })
-    */
     $(
         `h1,h2,h3,p,li,
         .b1_section-14 .block-1 div,.b1_section-14 .block-2 div,.b1_section-14 .block-3 div, 
