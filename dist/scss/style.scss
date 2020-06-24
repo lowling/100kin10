@@ -8,8 +8,7 @@
 // Board 1 
 @import 'src/_b1'; 
 
-// Animation  
-  
+// Animation            
 @keyframes fadeInUp {  
     from {
         transform: translate3d(0,40px,0)
@@ -18,7 +17,7 @@
     to {
         transform: translate3d(0,0,0);
         opacity: 1
-    }
+    }      
 }
 
   
@@ -46,15 +45,14 @@
 .fade {
     animation-name: fade;
     animation-duration: 2s;
-    -webkit-backface-visibility: hidden;
-
-}
+    -webkit-backface-visibility: hidden; 
+}            
 
 
 em.countup {
     font-style: normal;
 }
-
+ 
 h1.active,
 h2.active,
 h3.active,

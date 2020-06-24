@@ -592,14 +592,14 @@ p {
         top:15vw;
     }
     .img-2 {
-        top: 105vw;
+        top: 107vw;
         right: 25vw;
         width: 18.6vw;
     }
     .img-3 {
         width: 15.1vw; // For video
-        top: 93vw;
-        right: 47vw;
+        top: 95vw;
+        right: 48vw;
     }
     .img-4 {
         width: 13.1vw;
@@ -1299,11 +1299,17 @@ p {
           color:$black;
           font-weight:bold;
       }
-      .img-1 {
+      .img-1{
+        width: 100%;
+        margin-left: 4px;
+        margin-top: -4px;
+      }
+      .b1_section-16_img-1_wrapper {
           position: absolute;
           width:92vw;
           left:-6vw;
           top:4vw;
+          overflow:hidden;
       }
       .block-1 {
           position:absolute;

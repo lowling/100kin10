@@ -10,6 +10,10 @@ $(document).ready(function() {
     lozad('.lozad', {
         loaded: function(el) {
             el.classList.add('fade');
+            //console.log(el.tagName);
+            if(el.tagName === "VIDEO" && !el.classList.contains('list-item-img')){
+                el.play();
+            }
         }
     }).observe()
 
@@ -44,13 +48,17 @@ $(document).ready(function() {
         toggleClass: 'active',
     });
 
+    /* 
     $('video').onScreen({
         container: window,
         direction: 'vertical',
         doIn: function(){
-            $(this)[0].play();
+            if($(this)[0] !== undefined){
+                $(this)[0].play();
+            }
         }
     });
+    */
 
     $('.countup').onScreen({
         doIn: function(){

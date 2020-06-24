@@ -14,8 +14,10 @@
   $purple: #5D4F60;
   $gray: #F6F9F8;
   $transparent: rgba(255,255,255,.75);
-  $font-standard: 24px/36px brandon-grotesque;
-  $font-small: 18px/24px brandon-grotesque;
+  //$font-standard: 24px/36px brandon-grotesque;
+  $font-standard: 1.45vw/1.875vw brandon-grotesque;
+  //$font-small: 18px/24px brandon-grotesque;
+  $font-small: 1.15vw/1.45vw brandon-grotesque;
   $contaier-wide: 1040px;
   $container-standard: 720px;
   $container-smaller: 460px;
@@ -109,7 +111,7 @@
     padding: $cell*2;
     margin: 0;
     text-align: center;
-    font: $font-small;
+    font:$font-standard;
   }
   hr{
     clear: both;
@@ -201,6 +203,15 @@
   }
   #b4{
     background: $white;
+    .b4-img-1 {
+      margin-top:-10vw;
+    }
+    .b4-img-2 {
+      margin-top:10vw;
+    }
+    p {
+      //font:$font-standard;
+    }
     h1{
       color: $green;
     }
@@ -210,6 +221,7 @@
     blockquote{
       border-color: $green;
       color: $green;
+      margin-bottom:5vw;
     }
     #tree_thing{
       position: relative;
@@ -283,6 +295,9 @@
   }
   #b7{
     background-color: $gray;
+    p {
+      //font:$font-standard;
+    }
     h1{
       color: $purple;
     }
@@ -344,6 +359,9 @@
   }
   #b9{
     background-color: $yellow;
+    p {
+      //font:$font-standard;
+    }
     h1{
       color: $purple;
     }
@@ -449,7 +467,7 @@
       }
       #b11-box_4{
         max-width: 300px;
-        right: 0;
+        left: 0;
         top: 500px;
         text-align: center;
         @media only screen and (max-width: 980px) {
@@ -482,7 +500,7 @@
       }
       #b11-image_3{
         max-width: 400px;
-        right: -50;
+        right: -50px;
         top: 300px;
         @media only screen and (max-width: 980px) {
           display: none;
@@ -492,11 +510,17 @@
   }
   #b12{
     background-color: $yellow;
+    p {
+      //font:$font-standard;
+    }
     h1{
       color: $purple
     }
   }
   #b13{
+    p {
+      //font:$font-standard;
+    }
     h1{
       color: $purple;
     }
