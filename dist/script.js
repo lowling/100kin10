@@ -36,11 +36,19 @@ $(document).ready(function() {
             el.pause();
             el.currentTime = 0;
         });
-
+    
+    /*
     $(
         `h1,h2,h3,p,li,
         .b1_section-14 .block-1 div,.b1_section-14 .block-2 div,.b1_section-14 .block-3 div, 
         .b1_section-4 .img-2,.b1_section-4 .img-3`
+    )
+     */
+    $(
+        `.scrollFadeIn,
+        .b1_section-14 div div,
+        .b1_section-4 .img-2,.b1_section-4 .img-3
+        `
     )
     .onScreen({
         container: window,

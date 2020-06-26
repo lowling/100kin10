@@ -30,7 +30,6 @@ $font-smaller: Regular 22px/28px brandon-grotesque;
 @mixin h3 {
   font: Bold 24px/34px brandon-grotesque;
   letter-spacing: 0.36px;
-  text-transform: capitalize;
 }
 
 // Elements
@@ -1422,9 +1421,10 @@ p {
           left:8vw;
       }
       .section-icon {
-          width:8.8vw;
+          width:7.8vw;
           margin-left:-1vw;
           margin-bottom:-2vw;
+          margin-top:1vw;
       }
       .block-1 {
           width:29vw;

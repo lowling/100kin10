@@ -8,8 +8,8 @@
 // Board 1 
 @import 'src/_b1'; 
 
-// Animation            
-@keyframes fadeInUp {  
+// Animation             
+@keyframes fadeInUp {          
     from {
         transform: translate3d(0,40px,0)
     }
@@ -86,6 +86,48 @@ li.active,
     animation-delay: .2s;
     opacity: 0;
     animation-name: fadeInUpZoom;
+}
+
+// Global Overrides
+.small-caps {
+    text-transform: uppercase;
+    font-size: .7vw;
+}
+
+.interlude .small-caps {
+    font-size:1vw;
+}
+
+h2 .small-caps, h3 .small-caps  {
+    font-size: 1vw;
+}
+
+.interlude {
+    background-repeat: no-repeat;
+    background-position: left center, right center;
+    background-attachment: fixed;;
+}
+.b1_section-13 {
+    background-position: -20vw center, right center;
+}
+.b1_section-15 {
+    background-blend-mode: screen;
+    background-position: -20vw center, 15vw center;
+}
+.b1_section-17 {
+    background-position: -15vw center, 70vw center;
+}
+.b1_section-19 {
+    background-blend-mode: screen;
+    background-position: -15vw 0vw, 65vw 20vw;
+}
+
+.strategy-subhead {
+    font-size: 1.2vw;
+    display: block;
+    margin-top: -9vw;
+    margin-bottom: 5.3vw;
+    color:#4a4a4a;    
 }
 
 // Mobile Overrides      
